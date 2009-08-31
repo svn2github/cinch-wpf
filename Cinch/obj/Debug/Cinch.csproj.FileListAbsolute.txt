@@ -1,0 +1,77 @@
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.g.resources
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.Properties.Resources.resources
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.csproj.GenerateResource.Cache
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.g.resources
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.Properties.Resources.resources
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.csproj.GenerateResource.Cache
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.g.resources
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.Properties.Resources.resources
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.g.resources
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.Properties.Resources.resources
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.csproj.GenerateResource.Cache
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.g.resources
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.Properties.Resources.resources
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.g.resources
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.Properties.Resources.resources
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Cinch.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.g.resources
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.Properties.Resources.resources
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.csproj.GenerateResource.Cache
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\Cinch\obj\Debug\Cinch.pdb

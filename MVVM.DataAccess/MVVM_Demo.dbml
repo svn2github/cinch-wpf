@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="MVVM_Demo" Class="MVVM_DemoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=VISTA01;Initial Catalog=MVVM_Demo;User ID=sa" SettingsObjectName="MVVM.DataAccess.Properties.Settings" SettingsPropertyName="MVVM_DemoConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="CustomerId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="HomePhoneNumber" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePhoneNumber" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address2" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address3" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Customer_Order" Member="Orders" ThisKey="CustomerId" OtherKey="CustomerId" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Product" Member="Products">
+    <Type Name="Product">
+      <Column Name="ProductId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductName" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ProductPrice" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="Product_Order" Member="Orders" ThisKey="ProductId" OtherKey="ProductId" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Order]" Member="Orders">
+    <Type Name="Order">
+      <Column Name="OrderId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProductId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeliveryDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Customer_Order" Member="Customer" ThisKey="CustomerId" OtherKey="CustomerId" Type="Customer" IsForeignKey="true" />
+      <Association Name="Product_Order" Member="Product" ThisKey="ProductId" OtherKey="ProductId" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
