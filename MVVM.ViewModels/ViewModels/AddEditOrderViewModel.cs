@@ -241,7 +241,7 @@ namespace MVVM.ViewModels
         {
             Order dataLayerOrder = new Order();
             dataLayerOrder.OrderId = uiLayerOrder.OrderId.DataValue;
-            dataLayerOrder.CustomerId = CurrentCustomer.CustomerId.DataValue;
+            dataLayerOrder.CustomerId = CurrentCustomerOrder.CustomerId.DataValue;
             dataLayerOrder.ProductId = CurrentProduct.ProductId;
             dataLayerOrder.Quantity = uiLayerOrder.Quantity.DataValue;
             dataLayerOrder.DeliveryDate = uiLayerOrder.DeliveryDate.DataValue;
@@ -381,12 +381,13 @@ namespace MVVM.ViewModels
             switch (CurrentViewMode)
             {
                 case ViewMode.EditMode:
-                    this.CurrentCustomerOrder.CancelEdit();
-                    CloseActivePopUpCommand.Execute(null);
+                    CurrentCustomerOrder.CancelEdit();
+                    //CloseActivePopUpCommand.Execute(null);                        
+                    Mediator.NotifyColleagues<OrderModel>("CancelOrderEditMessage", CurrentCustomerOrder);
+
                     CancelOrderCommand.CommandSucceeded = true;
                     break;
                 default:
-                    this.CurrentCustomerOrder.CancelEdit();
                     CancelOrderCommand.CommandSucceeded = true;
                     break;
             }

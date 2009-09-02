@@ -140,7 +140,6 @@ namespace MVVM.ViewModels
             set
             {
                 currentCustomerOrder = value;
-                addEditOrderVM.CurrentCustomerOrder = currentCustomerOrder;
                 NotifyPropertyChanged(currentCustomerOrderChangeArgs);
             }
         }
@@ -409,6 +408,22 @@ namespace MVVM.ViewModels
             addEditOrderVM.CloseActivePopUpCommand.Execute(null);
             LazyFetchOrdersForCustomer();
         }
+
+        /// <summary>
+        /// Mediator callback from AddEditOrderViewModel to state that
+        /// the user cancelled the edit of the Order
+        /// </summary>
+        /// <param name="dummy">Noy used, we simply need to know about the message</param>
+        [MediatorMessageSink("CancelOrderEditMessage", ParameterType = typeof(OrderModel))]
+        private void AddedOrderSuccessfullyMessageSink(OrderModel currentOrderModel)
+        {
+            addEditOrderVM.CloseActivePopUpCommand.Execute(null);
+            CurrentCustomerOrder.CustomerId.DataValue = currentOrderModel.CustomerId.DataValue;
+            CurrentCustomerOrder.ProductId.DataValue = currentOrderModel.ProductId.DataValue;
+            CurrentCustomerOrder.DeliveryDate.DataValue = currentOrderModel.DeliveryDate.DataValue;
+            CurrentCustomerOrder.Quantity.DataValue = currentOrderModel.Quantity.DataValue;
+        }
+
         #endregion
 
         #region Command Implementation
@@ -614,15 +629,31 @@ namespace MVVM.ViewModels
         private void ExecuteEditOrderCommand()
         {
             EditOrderCommand.CommandSucceeded = false;
-            addEditOrderVM.CurrentViewMode = ViewMode.EditMode;            
-            CurrentCustomerOrder.BeginEdit();
-            addEditOrderVM.CurrentCustomer = CurrentCustomer;
-            bool? result = uiVisualizerService.ShowDialog("AddEditOrderPopup", addEditOrderVM);
+            addEditOrderVM.CurrentCustomerOrder = new OrderModel
+              {
+                  CustomerId = new DataWrapper<int>() {
+                                       DataValue = CurrentCustomerOrder.CustomerId.DataValue,
+                                       IsEditable = true },
+                  ProductId = new DataWrapper<int>()  {
+                                      DataValue =CurrentCustomerOrder.ProductId.DataValue,
+                                      IsEditable = true },
+                  DeliveryDate = new DataWrapper<DateTime>() {
+                                         DataValue = CurrentCustomerOrder.DeliveryDate.DataValue,
+                                         IsEditable = true },
+                  Quantity = new DataWrapper<int>()  {
+                                     DataValue =CurrentCustomerOrder.Quantity.DataValue,
+                                     IsEditable = true },
+                  OrderId = new DataWrapper<int>() {
+                                    DataValue =CurrentCustomerOrder.OrderId.DataValue,
+                                    IsEditable = true
+                                },
 
-            if (result.HasValue && result.Value)
-            {
-                CloseActivePopUpCommand.Execute(null);
-            }
+              };
+
+            addEditOrderVM.CurrentCustomer = CurrentCustomer;
+            addEditOrderVM.CurrentViewMode = ViewMode.EditMode; 
+            bool? result = uiVisualizerService.ShowDialog("AddEditOrderPopup", addEditOrderVM);
+                       
             EditOrderCommand.CommandSucceeded = true;
         }
         #endregion
