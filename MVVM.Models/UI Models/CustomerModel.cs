@@ -39,6 +39,7 @@ namespace MVVM.Models
         private Cinch.DataWrapper<String> address1;
         private Cinch.DataWrapper<String> address2;
         private Cinch.DataWrapper<String> address3;
+        private IEnumerable<DataWrapperBase> cachedListOfDataWrappers;
         private Cinch.DispatcherNotifiedObservableCollection<OrderModel> orders =
             new Cinch.DispatcherNotifiedObservableCollection<OrderModel>();
         private Boolean hasOrders = false;
@@ -60,6 +61,10 @@ namespace MVVM.Models
             Address2 = new DataWrapper<String>(this, address2ChangeArgs);
             Address3 = new DataWrapper<String>(this, address3ChangeArgs);
 
+            //fetch list of all DataWrappers, so they can be used again later without the
+            //need for reflection
+            cachedListOfDataWrappers =
+                DataWrapperHelper.GetWrapperProperties<CustomerModel>(this);
             #endregion
 
             #region Create Validation Rules
@@ -100,7 +105,6 @@ namespace MVVM.Models
                           return String.IsNullOrEmpty(this.address3.DataValue);
                       }));
             #endregion
-
         }
         #endregion
 
@@ -120,7 +124,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<Int32> CustomerId
         {
             get { return customerId; }
-            set
+            private set
             {
                 customerId = value;
                 NotifyPropertyChanged(customerIdChangeArgs);
@@ -136,7 +140,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<String> FirstName
         {
             get { return firstName; }
-            set
+            private set
             {
                 firstName = value;
                 NotifyPropertyChanged(firstNameChangeArgs);
@@ -152,7 +156,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<String> LastName
         {
             get { return lastName; }
-            set
+            private set
             {
                 lastName = value;
                 NotifyPropertyChanged(lastNameChangeArgs);
@@ -168,7 +172,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<String> Email
         {
             get { return email; }
-            set
+            private set
             {
                 email = value;
                 NotifyPropertyChanged(emailChangeArgs);
@@ -184,7 +188,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<String> HomePhoneNumber
         {
             get { return homePhoneNumber; }
-            set
+            private set
             {
                 homePhoneNumber = value;
                 NotifyPropertyChanged(homePhoneNumberChangeArgs);
@@ -200,7 +204,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<String> MobilePhoneNumber
         {
             get { return mobilePhoneNumber; }
-            set
+            private set
             {
                 mobilePhoneNumber = value;
                 NotifyPropertyChanged(mobilePhoneNumberChangeArgs);
@@ -216,7 +220,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<String> Address1
         {
             get { return address1; }
-            set
+            private set
             {
                 address1 = value;
                 NotifyPropertyChanged(address1ChangeArgs);
@@ -232,7 +236,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<String> Address2
         {
             get { return address2; }
-            set
+            private set
             {
                 address2 = value;
                 NotifyPropertyChanged(address2ChangeArgs);
@@ -248,7 +252,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<String> Address3
         {
             get { return address3; }
-            set
+            private set
             {
                 address3 = value;
                 NotifyPropertyChanged(address3ChangeArgs);
@@ -287,6 +291,14 @@ namespace MVVM.Models
                 NotifyPropertyChanged(hasOrdersChangeArgs);
             }
         }
+
+        /// <summary>
+        /// Returns cached collection of DataWrapperBase
+        /// </summary>
+        public IEnumerable<DataWrapperBase> CachedListOfDataWrappers
+        {
+            get { return cachedListOfDataWrappers; }
+        }
         #endregion
 
         #region Static Methods
@@ -312,32 +324,23 @@ namespace MVVM.Models
             customerModel.Orders = new Cinch.DispatcherNotifiedObservableCollection<OrderModel>(cust.Orders.ToList().ConvertAll(
                     new Converter<Order, OrderModel>(OrderModel.OrderToOrderModel)));
             return customerModel;
-         
+
         }
         #endregion
 
         #region Overrides
 
         /// <summary>
-        /// Override hook which allows us to also put any child 
-        /// EditableValidatingObject objects IsValid state into
-        /// a combined IsValid state for the whole Model
+        /// Is the Model Valid
         /// </summary>
         public override bool IsValid
         {
             get
             {
-                return
-                    base.IsValid &&
-                    customerId.IsValid &&
-                    firstName.IsValid &&
-                    lastName.IsValid &&
-                    email.IsValid &&
-                    homePhoneNumber.IsValid &&
-                    mobilePhoneNumber.IsValid &&
-                    address1.IsValid &&
-                    address2.IsValid &&
-                    address3.IsValid;
+                //return base.IsValid and use DataWrapperHelper, if you are
+                //using DataWrappers
+                return base.IsValid &&
+                    DataWrapperHelper.AllValid(cachedListOfDataWrappers);
             }
         }
 
@@ -355,7 +358,7 @@ namespace MVVM.Models
             //Now walk the list of properties in the CustomerModel
             //and call BeginEdit() on all Cinch.DataWrapper<T>s.
             //we can use the Cinch.DataWrapperHelper class for this
-            DataWrapperHelper.SetBeginEdit<CustomerModel>(this);
+            DataWrapperHelper.SetBeginEdit(cachedListOfDataWrappers);
         }
 
         /// <summary>
@@ -368,7 +371,7 @@ namespace MVVM.Models
             //Now walk the list of properties in the CustomerModel
             //and call CancelEdit() on all Cinch.DataWrapper<T>s.
             //we can use the Cinch.DataWrapperHelper class for this
-            DataWrapperHelper.SetEndEdit<CustomerModel>(this);
+            DataWrapperHelper.SetEndEdit(cachedListOfDataWrappers);
         }
 
         /// <summary>
@@ -381,7 +384,7 @@ namespace MVVM.Models
             //Now walk the list of properties in the CustomerModel
             //and call CancelEdit() on all Cinch.DataWrapper<T>s.
             //we can use the Cinch.DataWrapperHelper class for this
-            DataWrapperHelper.SetCancelEdit<CustomerModel>(this);
+            DataWrapperHelper.SetCancelEdit(cachedListOfDataWrappers);
 
         }
         #endregion

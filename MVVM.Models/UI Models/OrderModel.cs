@@ -3,6 +3,7 @@
 using Cinch;
 using MVVM.DataAccess;
 using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace MVVM.Models
 {
@@ -30,6 +31,7 @@ namespace MVVM.Models
         private Cinch.DataWrapper<Int32> productId;
         private Cinch.DataWrapper<Int32> quantity;
         private Cinch.DataWrapper<DateTime> deliveryDate;
+        private IEnumerable<DataWrapperBase> cachedListOfDataWrappers;
         #endregion
 
         #region Ctor
@@ -42,6 +44,11 @@ namespace MVVM.Models
             ProductId = new DataWrapper<Int32>(this, productIdChangeArgs);
             Quantity = new DataWrapper<Int32>(this, quantityChangeArgs);
             DeliveryDate = new DataWrapper<DateTime>(this, deliveryDateChangeArgs);
+
+            //fetch list of all DataWrappers, so they can be used again later without the
+            //need for reflection
+            cachedListOfDataWrappers =
+                DataWrapperHelper.GetWrapperProperties<OrderModel>(this);
 
             #endregion
 
@@ -60,7 +67,6 @@ namespace MVVM.Models
             //WPF, so for the purpose of this demo, DeliveryDate is
             //fixed to DateTime.Now
             DeliveryDate.DataValue = DateTime.Now;
-
         }
         #endregion
 
@@ -75,7 +81,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<Int32> OrderId
         {
             get { return orderId; }
-            set
+            private set
             {
                 orderId = value;
                 NotifyPropertyChanged(orderIdChangeArgs);
@@ -91,7 +97,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<Int32> CustomerId
         {
             get { return customerId; }
-            set
+            private set
             {
                 customerId = value;
                 NotifyPropertyChanged(customerIdChangeArgs);
@@ -107,7 +113,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<Int32> ProductId
         {
             get { return productId; }
-            set
+            private set
             {
                 productId = value;
                 NotifyPropertyChanged(productIdChangeArgs);
@@ -123,7 +129,7 @@ namespace MVVM.Models
         public Cinch.DataWrapper<Int32> Quantity
         {
             get { return quantity; }
-            set
+            private set
             {
                 quantity = value;
                 NotifyPropertyChanged(quantityChangeArgs);
@@ -139,34 +145,35 @@ namespace MVVM.Models
         public Cinch.DataWrapper<DateTime> DeliveryDate
         {
             get { return deliveryDate; }
-            set
+            private set
             {
                 deliveryDate = value;
                 NotifyPropertyChanged(deliveryDateChangeArgs);
             }
         }
+
+        /// <summary>
+        /// Returns cached collection of DataWrapperBase
+        /// </summary>
+        public IEnumerable<DataWrapperBase> CachedListOfDataWrappers
+        {
+            get { return cachedListOfDataWrappers; }
+        }
         #endregion
 
         #region Overrides
         /// <summary>
-        /// Override hook which allows us to also put any child 
-        /// EditableValidatingObject objects IsValid state into
-        /// a combined IsValid state for the whole Model
+        /// Is the Model Valid
         /// </summary>
         public override bool IsValid
         {
             get
             {
-                return
-                    base.IsValid &&
-                    //AND The DataWrapper IsValid rules
-                    //If you and not using the DataWrapper<T> objects
-                    //you will not need these extra IsValid properties to be ANDED
-                    orderId.IsValid &&
-                    customerId.IsValid &&
-                    productId.IsValid &&
-                    quantity.IsValid &&
-                    deliveryDate.IsValid;
+                //return base.IsValid and use DataWrapperHelper, if you are
+                //using DataWrappers
+                return base.IsValid &&
+                    DataWrapperHelper.AllValid(cachedListOfDataWrappers);
+
             }
         }
         #endregion
@@ -200,10 +207,10 @@ namespace MVVM.Models
         protected override void OnBeginEdit()
         {
             base.OnBeginEdit();
-            //Now walk the list of properties in the OrderModel
+            //Now walk the list of properties in the CustomerModel
             //and call BeginEdit() on all Cinch.DataWrapper<T>s.
             //we can use the Cinch.DataWrapperHelper class for this
-            DataWrapperHelper.SetBeginEdit<OrderModel>(this);
+            DataWrapperHelper.SetBeginEdit(cachedListOfDataWrappers);
         }
 
         /// <summary>
@@ -213,10 +220,10 @@ namespace MVVM.Models
         protected override void OnEndEdit()
         {
             base.OnEndEdit();
-            //Now walk the list of properties in the OrderModel
+            //Now walk the list of properties in the CustomerModel
             //and call CancelEdit() on all Cinch.DataWrapper<T>s.
             //we can use the Cinch.DataWrapperHelper class for this
-            DataWrapperHelper.SetEndEdit<OrderModel>(this);
+            DataWrapperHelper.SetEndEdit(cachedListOfDataWrappers);
         }
 
         /// <summary>
@@ -226,10 +233,11 @@ namespace MVVM.Models
         protected override void OnCancelEdit()
         {
             base.OnCancelEdit();
-            //Now walk the list of properties in the OrderModel
+            //Now walk the list of properties in the CustomerModel
             //and call CancelEdit() on all Cinch.DataWrapper<T>s.
             //we can use the Cinch.DataWrapperHelper class for this
-            DataWrapperHelper.SetCancelEdit<OrderModel>(this);
+            DataWrapperHelper.SetCancelEdit(cachedListOfDataWrappers);
+
         }
         #endregion
     }

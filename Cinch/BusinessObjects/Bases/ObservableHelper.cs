@@ -26,6 +26,19 @@ namespace Cinch
         public static PropertyChangedEventArgs CreateArgs<T>(
             Expression<Func<T, Object>> propertyExpression)
         {
+            return new PropertyChangedEventArgs(
+                GetPropertyName<T>(propertyExpression));
+        }
+
+        /// <summary>
+        /// Creates PropertyChangedEventArgs
+        /// </summary>
+        /// <param name="propertyExpression">Expression to make 
+        /// PropertyChangedEventArgs out of</param>
+        /// <returns>PropertyChangedEventArgs</returns>
+        public static string GetPropertyName<T>(
+            Expression<Func<T, Object>> propertyExpression)
+        {
             var lambda = propertyExpression as LambdaExpression;
             MemberExpression memberExpression;
             if (lambda.Body is UnaryExpression)
@@ -40,7 +53,7 @@ namespace Cinch
 
             var propertyInfo = memberExpression.Member as PropertyInfo;
 
-            return new PropertyChangedEventArgs(propertyInfo.Name);
+            return propertyInfo.Name;
         }
 
         #endregion

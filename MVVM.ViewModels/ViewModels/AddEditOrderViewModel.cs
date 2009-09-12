@@ -122,12 +122,13 @@ namespace MVVM.ViewModels
                         break;
                 }
 
-                //Now walk the list of properties in the CurrentCustomerOrder
-                //and set all Cinch.DataWrapper<T>s to the correct IsEditable
+                //Now change all the  CurrentCustomerOrder.CachedListOfDataWrappers
+                //Which sets all the Cinch.DataWrapper<T>s to the correct IsEditable
                 //state based on the new ViewMode applied to the ViewModel
                 //we can use the Cinch.DataWrapperHelper class for this
-                DataWrapperHelper.SetModeForObject<OrderModel>(
-                    CurrentCustomerOrder, currentViewMode);
+                DataWrapperHelper.SetMode(
+                    CurrentCustomerOrder.CachedListOfDataWrappers,
+                    currentViewMode);
 
                 NotifyPropertyChanged(currentViewModeChangeArgs);
             }
@@ -241,7 +242,7 @@ namespace MVVM.ViewModels
         {
             Order dataLayerOrder = new Order();
             dataLayerOrder.OrderId = uiLayerOrder.OrderId.DataValue;
-            dataLayerOrder.CustomerId = CurrentCustomerOrder.CustomerId.DataValue;
+            dataLayerOrder.CustomerId = CurrentCustomer.CustomerId.DataValue;
             dataLayerOrder.ProductId = CurrentProduct.ProductId;
             dataLayerOrder.Quantity = uiLayerOrder.Quantity.DataValue;
             dataLayerOrder.DeliveryDate = uiLayerOrder.DeliveryDate.DataValue;
@@ -381,13 +382,12 @@ namespace MVVM.ViewModels
             switch (CurrentViewMode)
             {
                 case ViewMode.EditMode:
-                    CurrentCustomerOrder.CancelEdit();
-                    //CloseActivePopUpCommand.Execute(null);                        
-                    Mediator.NotifyColleagues<OrderModel>("CancelOrderEditMessage", CurrentCustomerOrder);
-
+                    this.CurrentCustomerOrder.CancelEdit();
+                    CloseActivePopUpCommand.Execute(null);
                     CancelOrderCommand.CommandSucceeded = true;
                     break;
                 default:
+                    this.CurrentCustomerOrder.CancelEdit();
                     CancelOrderCommand.CommandSucceeded = true;
                     break;
             }

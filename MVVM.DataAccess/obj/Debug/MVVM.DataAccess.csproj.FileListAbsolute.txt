@@ -68,3 +68,13 @@ C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_
 C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.csproj.GenerateResource.Cache
 C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.dll
 C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.pdb
+C:\Users\sacha\Desktop\Cinch\MVVM.DataAccess\bin\Debug\MVVM.DataAccess.dll.config
+C:\Users\sacha\Desktop\Cinch\MVVM.DataAccess\bin\Debug\MVVM.DataAccess.dll
+C:\Users\sacha\Desktop\Cinch\MVVM.DataAccess\bin\Debug\MVVM.DataAccess.pdb
+C:\Users\sacha\Desktop\Cinch\MVVM.DataAccess\bin\Debug\Dynamic.dll
+C:\Users\sacha\Desktop\Cinch\MVVM.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\Cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.g.resources
+C:\Users\sacha\Desktop\Cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.Properties.Resources.resources
+C:\Users\sacha\Desktop\Cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\Cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.dll
+C:\Users\sacha\Desktop\Cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.pdb

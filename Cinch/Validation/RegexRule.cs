@@ -35,12 +35,16 @@ namespace Cinch
         public override bool ValidateRule(Object domainObject)
         {
             PropertyInfo pi = domainObject.GetType().GetProperty(this.PropertyName);
-            Match m = Regex.Match(pi.GetValue(domainObject, null).ToString(), _regex);
-            if (m.Success)
+            String value = pi.GetValue(domainObject, null) as String;
+            if (!String.IsNullOrEmpty(value))
             {
-                return true;
+                Match m = Regex.Match(value, _regex);
+                return !m.Success;
             }
-            else return false;
+            else
+            {
+                return false;
+            }
         }
         #endregion
     }

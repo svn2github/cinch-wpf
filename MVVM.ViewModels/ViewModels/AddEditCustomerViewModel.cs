@@ -22,7 +22,7 @@ namespace MVVM.ViewModels
         private ViewMode currentViewMode = ViewMode.AddMode;
         private CustomerModel currentCustomer;
         private Boolean hasOrders = false;
-        
+
         private SimpleCommand saveCustomerCommand;
         private SimpleCommand editCustomerCommand;
         private SimpleCommand cancelCustomerCommand;
@@ -40,7 +40,7 @@ namespace MVVM.ViewModels
         private IUIVisualizerService uiVisualizerService = null;
 
         //background workers
-        private BackgroundTaskManager<DispatcherNotifiedObservableCollection<OrderModel>> 
+        private BackgroundTaskManager<DispatcherNotifiedObservableCollection<OrderModel>>
             bgWorker = null;
 
         #endregion
@@ -140,6 +140,7 @@ namespace MVVM.ViewModels
             set
             {
                 currentCustomerOrder = value;
+                addEditOrderVM.CurrentCustomerOrder = currentCustomerOrder;
                 NotifyPropertyChanged(currentCustomerOrderChangeArgs);
             }
         }
@@ -174,12 +175,13 @@ namespace MVVM.ViewModels
                         break;
                 }
 
-                //Now walk the list of properties in the CurrentCustomer
-                //and set all Cinch.DataWrapper<T>s to the correct IsEditable
+                //Now change all the CurrentCustomer.CachedListOfDataWrappers
+                //Which sets all the Cinch.DataWrapper<T>s to the correct IsEditable
                 //state based on the new ViewMode applied to the ViewModel
                 //we can use the Cinch.DataWrapperHelper class for this
-                DataWrapperHelper.SetModeForObject<CustomerModel>(
-                    CurrentCustomer, currentViewMode);
+                DataWrapperHelper.SetMode(
+                    CurrentCustomer.CachedListOfDataWrappers,
+                    currentViewMode);
 
                 NotifyPropertyChanged(currentViewModeChangeArgs);
             }
@@ -408,22 +410,6 @@ namespace MVVM.ViewModels
             addEditOrderVM.CloseActivePopUpCommand.Execute(null);
             LazyFetchOrdersForCustomer();
         }
-
-        /// <summary>
-        /// Mediator callback from AddEditOrderViewModel to state that
-        /// the user cancelled the edit of the Order
-        /// </summary>
-        /// <param name="dummy">Noy used, we simply need to know about the message</param>
-        [MediatorMessageSink("CancelOrderEditMessage", ParameterType = typeof(OrderModel))]
-        private void AddedOrderSuccessfullyMessageSink(OrderModel currentOrderModel)
-        {
-            addEditOrderVM.CloseActivePopUpCommand.Execute(null);
-            CurrentCustomerOrder.CustomerId.DataValue = currentOrderModel.CustomerId.DataValue;
-            CurrentCustomerOrder.ProductId.DataValue = currentOrderModel.ProductId.DataValue;
-            CurrentCustomerOrder.DeliveryDate.DataValue = currentOrderModel.DeliveryDate.DataValue;
-            CurrentCustomerOrder.Quantity.DataValue = currentOrderModel.Quantity.DataValue;
-        }
-
         #endregion
 
         #region Command Implementation
@@ -481,7 +467,7 @@ namespace MVVM.ViewModels
                             messageBoxService.ShowError(
                                 "There was a problem saving the customer");
                         }
-                        SaveCustomerCommand.CommandSucceeded = true;   
+                        SaveCustomerCommand.CommandSucceeded = true;
                         break;
                     #endregion
                     #region EditMode
@@ -502,7 +488,7 @@ namespace MVVM.ViewModels
                             messageBoxService.ShowError(
                                 "There was a problem updating the customer");
                         }
-                        SaveCustomerCommand.CommandSucceeded = true;   
+                        SaveCustomerCommand.CommandSucceeded = true;
                         break;
                     #endregion
                 }
@@ -524,7 +510,7 @@ namespace MVVM.ViewModels
         {
             get
             {
-                return CurrentCustomer != null && 
+                return CurrentCustomer != null &&
                     CurrentCustomer.CustomerId.DataValue != 0 &&
                     currentViewMode == ViewMode.ViewOnlyMode;
             }
@@ -629,31 +615,15 @@ namespace MVVM.ViewModels
         private void ExecuteEditOrderCommand()
         {
             EditOrderCommand.CommandSucceeded = false;
-            addEditOrderVM.CurrentCustomerOrder = new OrderModel
-              {
-                  CustomerId = new DataWrapper<int>() {
-                                       DataValue = CurrentCustomerOrder.CustomerId.DataValue,
-                                       IsEditable = true },
-                  ProductId = new DataWrapper<int>()  {
-                                      DataValue =CurrentCustomerOrder.ProductId.DataValue,
-                                      IsEditable = true },
-                  DeliveryDate = new DataWrapper<DateTime>() {
-                                         DataValue = CurrentCustomerOrder.DeliveryDate.DataValue,
-                                         IsEditable = true },
-                  Quantity = new DataWrapper<int>()  {
-                                     DataValue =CurrentCustomerOrder.Quantity.DataValue,
-                                     IsEditable = true },
-                  OrderId = new DataWrapper<int>() {
-                                    DataValue =CurrentCustomerOrder.OrderId.DataValue,
-                                    IsEditable = true
-                                },
-
-              };
-
+            addEditOrderVM.CurrentViewMode = ViewMode.EditMode;
+            CurrentCustomerOrder.BeginEdit();
             addEditOrderVM.CurrentCustomer = CurrentCustomer;
-            addEditOrderVM.CurrentViewMode = ViewMode.EditMode; 
             bool? result = uiVisualizerService.ShowDialog("AddEditOrderPopup", addEditOrderVM);
-                       
+
+            if (result.HasValue && result.Value)
+            {
+                CloseActivePopUpCommand.Execute(null);
+            }
             EditOrderCommand.CommandSucceeded = true;
         }
         #endregion
@@ -691,7 +661,7 @@ namespace MVVM.ViewModels
                 }
                 catch
                 {
-                  messageBoxService.ShowError("There was a problem revoming the Order");
+                    messageBoxService.ShowError("There was a problem revoming the Order");
                 }
             }
             DeleteOrderCommand.CommandSucceeded = true;

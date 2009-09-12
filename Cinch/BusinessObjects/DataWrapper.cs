@@ -4,54 +4,44 @@ using System.Diagnostics;
 using System.Linq;
 using System.ComponentModel;
 
+using System.Collections.Generic;
+
 namespace Cinch
 {
     /// <summary>
-    /// Provides a wrapper around a single peice of data
-    /// such that the ViewModel can put the data item
-    /// into a editable state and the View can bind to
-    /// both the DataValue for the actual Value, and to 
-    /// the IsEditable to determine if the control which
-    /// has the data is allowed to be used for entering data.
-    /// 
-    /// The Viewmodel is expected to set the state of the
-    /// IsEditable property for all DataWrappers in a given Model
+    /// Abstract base class for DataWrapper - allows easier access to
+    /// methods for the DataWrapperHelper.
     /// </summary>
-    /// <typeparam name="T">The type of the Data</typeparam>
-    public class DataWrapper<T> : EditableValidatingObject
+    public abstract class DataWrapperBase : EditableValidatingObject
     {
         #region Data
-        private T dataValue = default(T);
         private Boolean isEditable = false;
 
         private IParentablePropertyExposer parent = null;
         private PropertyChangedEventArgs parentPropertyChangeArgs = null;
-
         #endregion
 
         #region Ctors
-        public DataWrapper()
+        public DataWrapperBase()
         {
         }
 
-        public DataWrapper(IParentablePropertyExposer parent, 
+        public DataWrapperBase(IParentablePropertyExposer parent,
             PropertyChangedEventArgs parentPropertyChangeArgs)
         {
             this.parent = parent;
             this.parentPropertyChangeArgs = parentPropertyChangeArgs;
         }
-
-
         #endregion
 
-        #region Private Methods
+        #region Protected Methods
 
         /// <summary>
         /// Notifies all the parent (INPC) objects INotifyPropertyChanged.PropertyChanged subscribed delegates
         /// that an internal DataWrapper property value has changed, which in turn raises the appropriate
         /// INotifyPropertyChanged.PropertyChanged event on the parent (INPC) object
         /// </summary>
-        private void NotifyParentPropertyChanged()
+        protected internal void NotifyParentPropertyChanged()
         {
             if (parent == null || parentPropertyChangeArgs == null)
                 return;
@@ -68,7 +58,98 @@ namespace Cinch
             }
         }
 
+        #endregion
 
+        #region Public Properties
+
+        /// <summary>
+        /// The editable state of the data, the View
+        /// is expected to use this to enable/disable
+        /// data entry. The ViewModel would set this
+        /// property
+        /// </summary>
+        static PropertyChangedEventArgs isEditableChangeArgs =
+            ObservableHelper.CreateArgs<DataWrapperBase>(x => x.IsEditable);
+
+        public Boolean IsEditable
+        {
+            get { return isEditable; }
+            set
+            {
+                if (isEditable != value)
+                {
+                    isEditable = value;
+                    NotifyPropertyChanged(isEditableChangeArgs);
+                    NotifyParentPropertyChanged();
+                }
+            }
+
+        }
+        #endregion
+    }
+
+    /// <summary>
+    /// This interface is here so to ensure that both DataWrapper of T
+    /// and DataWrapperExt of T have a commonly named property for
+    /// the data (DataValue) and that we can safely retrieve this
+    /// name elsewhere via static reflection.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public interface IDataWrapper<T>
+    {
+        T DataValue { get; set; }
+    }
+
+
+    /// <summary>
+    /// This interface is implemented by both the 
+    /// <see cref="ValidatingObject">ValidatingObject</see> and the
+    /// <see cref="ViewModelBase">ViewModelBase</see> classes, and is used
+    /// to expose the list of delegates that are currently listening to the
+    /// <see cref="System.ComponentModel.INotifyPropertyChanged">INotifyPropertyChanged</see>
+    /// PropertyChanged event. This is done so that the internal 
+    /// <see cref="DataWrapper">DataWrapper</see> classes can notify their parent object
+    /// when an internal <see cref="DataWrapper">DataWrapper</see> property changes
+    /// </summary>
+    public interface IParentablePropertyExposer
+    {
+        Delegate[] GetINPCSubscribers();
+    }
+
+
+    /// <summary>
+    /// Provides a wrapper around a single piece of data
+    /// such that the ViewModel can put the data item
+    /// into a editable state and the View can bind to
+    /// both the DataValue for the actual Value, and to 
+    /// the IsEditable to determine if the control which
+    /// has the data is allowed to be used for entering data.
+    /// 
+    /// The Viewmodel is expected to set the state of the
+    /// IsEditable property for all DataWrappers in a given Model
+    /// </summary>
+    /// <typeparam name="T">The type of the Data</typeparam>
+    public class DataWrapper<T> : DataWrapperBase, IDataWrapper<T>
+    {
+        #region Data
+        private T dataValue = default(T);
+        #endregion
+
+        #region Ctors
+        public DataWrapper()
+        {
+        }
+
+        public DataWrapper(T initialValue)
+        {
+            dataValue = initialValue;
+        }
+
+        public DataWrapper(IParentablePropertyExposer parent,
+            PropertyChangedEventArgs parentPropertyChangeArgs)
+            : base(parent, parentPropertyChangeArgs)
+        {
+        }
         #endregion
 
         #region Public Properties
@@ -89,31 +170,6 @@ namespace Cinch
                 NotifyParentPropertyChanged();
             }
         }
-
-
-        /// <summary>
-        /// The editable state of the data, the View
-        /// is expected to use this to enable/disable
-        /// data entry. The ViewModel would set this
-        /// property
-        /// </summary>
-        static PropertyChangedEventArgs isEditableChangeArgs =
-            ObservableHelper.CreateArgs<DataWrapper<T>>(x => x.IsEditable);
-
-        public Boolean IsEditable
-        {
-            get { return isEditable; }
-            set
-            {
-                if (isEditable != value)
-                {
-                    isEditable = value;
-                    NotifyPropertyChanged(isEditableChangeArgs);
-                    NotifyParentPropertyChanged();
-                }
-            }
-
-        }
         #endregion
     }
 
@@ -124,37 +180,29 @@ namespace Cinch
     /// </summary>
     public class DataWrapperHelper
     {
-        #region Static Methods
-
         #region Public Methods
+        // The following functions may be used when dealing with model/viewmodel objects
+        // whose entire set of DataWrapper properties are immutable (only have a getter
+        // for the property).  They avoid having to do reflection to retrieve the list
+        // of wrapper properties every time a mode change, edit state change
+
         /// <summary>
-        /// Loops through a source object (UI Model class is expected really) and attempts
-        /// to set all Cinch.DataWrapper fields to have the correct Cinch.DataWrapper.IsEditable 
+        /// Set all Cinch.DataWrapper properties to have the correct Cinch.DataWrapper.IsEditable 
         /// to the correct state based on the current ViewMode 
         /// </summary>
-        /// <typeparam name="T">The type which has the DataWrappers on it</typeparam>
-        /// <param name="objectToSetModeOn">The source object to alter the 
-        /// Cinch.DataWrapper on</param>
+        /// <param name="wrapperProperties">The properties on which to change the mode</param>
         /// <param name="currentViewMode">The current ViewMode</param
-        public static void SetModeForObject<T>(T objectToSetModeOn, ViewMode currentViewMode)
+        public static void SetMode(IEnumerable<DataWrapperBase> wrapperProperties,
+            ViewMode currentViewMode)
         {
-            if (objectToSetModeOn == null)
-                return;
-
             bool isEditable = currentViewMode ==
                     ViewMode.EditMode || currentViewMode == ViewMode.AddMode;
 
-            foreach (var item in objectToSetModeOn.GetType().GetFields(
-                BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
+            foreach (var wrapperProperty in wrapperProperties)
             {
                 try
                 {
-                    var fieldType = item.GetValue(objectToSetModeOn).GetType();
-                    if (fieldType.GetGenericTypeDefinition() == typeof(Cinch.DataWrapper<>))
-                    {
-                        fieldType.GetProperty("IsEditable").SetValue(
-                            item.GetValue(objectToSetModeOn), isEditable, null);
-                    }
+                    wrapperProperty.IsEditable = isEditable;
                 }
                 catch (Exception)
                 {
@@ -163,117 +211,137 @@ namespace Cinch
             }
         }
 
-
         /// <summary>
         /// Loops through a source object (UI Model class is expected really) and attempts
         /// to call the BeginEdit() method of all the  Cinch.DataWrapper fields
         /// </summary>
-        /// <typeparam name="T">The type which has the DataWrappers on it</typeparam>
-        /// <param name="objectToSetModeOn">The source object to alter the 
-        /// Cinch.DataWrapper on</param>
-        public static void SetBeginEdit<T>(T objectToSetModeOn)
+        /// <param name="wrapperProperties">The DataWrapperBase objects</param>
+        public static void SetBeginEdit(IEnumerable<DataWrapperBase> wrapperProperties)
         {
-            if (objectToSetModeOn == null)
-                return;
-
-            SetBeginEndOrCancel<T>(objectToSetModeOn, "BeginEdit");
+            foreach (var wrapperProperty in wrapperProperties)
+            {
+                try
+                {
+                    wrapperProperty.BeginEdit();
+                    wrapperProperty.NotifyParentPropertyChanged();
+                }
+                catch (Exception)
+                {
+                    Debug.WriteLine("There was a problem calling the BeginEdit method for the current DataWrapper");
+                }
+            }
         }
 
         /// <summary>
         /// Loops through a source object (UI Model class is expected really) and attempts
         /// to call the CancelEdit() method of all the  Cinch.DataWrapper fields
         /// </summary>
-        /// <typeparam name="T">The type which has the DataWrappers on it</typeparam>
-        /// <param name="objectToSetModeOn">The source object to alter the 
-        /// Cinch.DataWrapper on</param>
-        public static void SetCancelEdit<T>(T objectToSetModeOn)
+        /// <param name="wrapperProperties">The DataWrapperBase objects</param>
+        public static void SetCancelEdit(IEnumerable<DataWrapperBase> wrapperProperties)
         {
-            if (objectToSetModeOn == null)
-                return;
-
-            SetBeginEndOrCancel<T>(objectToSetModeOn, "CancelEdit");
+            foreach (var wrapperProperty in wrapperProperties)
+            {
+                try
+                {
+                    wrapperProperty.CancelEdit();
+                    wrapperProperty.NotifyParentPropertyChanged();
+                }
+                catch (Exception)
+                {
+                    Debug.WriteLine("There was a problem calling the CancelEdit method for the current DataWrapper");
+                }
+            }
         }
 
         /// <summary>
         /// Loops through a source object (UI Model class is expected really) and attempts
         /// to call the EditEdit() method of all the  Cinch.DataWrapper fields
         /// </summary>
-        /// <typeparam name="T">The type which has the DataWrappers on it</typeparam>
-        /// <param name="objectToSetModeOn">The source object to alter the 
-        /// Cinch.DataWrapper on</param>
-        public static void SetEndEdit<T>(T objectToSetModeOn)
+        /// <param name="wrapperProperties">The DataWrapperBase objects</param>
+        public static void SetEndEdit(IEnumerable<DataWrapperBase> wrapperProperties)
         {
-            if (objectToSetModeOn == null)
-                return;
-
-            SetBeginEndOrCancel<T>(objectToSetModeOn, "EndEdit");
-        }
-
-
-        #endregion
-
-        #region Private Methods
-        /// <summary>
-        /// Loops through a source object (UI Model class is expected really) and attempts
-        /// to call the BeginEdit or CancelEdit() method of all the  Cinch.DataWrapper fields
-        /// </summary>
-        /// <typeparam name="T">The type which has the DataWrappers on it</typeparam>
-        /// <param name="objectToSetModeOn">The source object to alter the 
-        /// Cinch.DataWrapper on</param>
-        /// <param name="editMethodNameString">The name of the method to call, should be
-        /// either "BeginEdit" or "EndEdit" or "CancelEdit" ONLY</param>
-        private static void SetBeginEndOrCancel<T>(T objectToSetModeOn, String editMethodNameString)
-        {
-            foreach (var propItem in objectToSetModeOn.GetType().GetProperties(
-                           BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
+            foreach (var wrapperProperty in wrapperProperties)
             {
                 try
                 {
-                    if (propItem.CanRead)
-                    {
-                        var fieldType = propItem.GetValue(objectToSetModeOn, null).GetType();
-
-                        if (fieldType.GetGenericTypeDefinition() == typeof(Cinch.DataWrapper<>))
-                        {
-                            MethodInfo miEditMethod = fieldType.GetGenericTypeDefinition()
-                                .GetMethod(editMethodNameString);
-                            miEditMethod.Invoke(propItem.GetValue(objectToSetModeOn,null), null);
-
-                            //now call the INotifyPropertyChanged in the parent object
-                            //so it can notify the Bindings that are bound to a nested
-                            //DataWrapper<T> object, that may have changed due to a 
-                            //BeginEdit/CancelEdit method call on the DataWrapper<T>
-                            MethodInfo miOnPropertyChanged =
-                                objectToSetModeOn.GetType().GetMethod("OnPropertyChanged");
-
-                            miOnPropertyChanged.Invoke(objectToSetModeOn, new Object[] { propItem.Name });
-                        }
-                    }
+                    wrapperProperty.EndEdit();
+                    wrapperProperty.NotifyParentPropertyChanged();
                 }
                 catch (Exception)
                 {
-                    Debug.WriteLine("There was a problem calling the Edit method for the current DataWrapper");
+                    Debug.WriteLine("There was a problem calling the EndEdit method for the current DataWrapper");
                 }
             }
         }
-        #endregion
 
+
+        /// <summary>
+        /// Loops through a source object (UI Model class is expected really) and attempts
+        /// to call the EditEdit() method of all the  Cinch.DataWrapper fields
+        /// </summary>
+        /// <param name="wrapperProperties">The DataWrapperBase objects</param>
+        public static Boolean AllValid(IEnumerable<DataWrapperBase> wrapperProperties)
+        {
+
+            Boolean allValid = true;
+
+            foreach (var wrapperProperty in wrapperProperties)
+            {
+                try
+                {
+                    allValid &= wrapperProperty.IsValid;
+                }
+                catch (Exception)
+                {
+                    allValid = false;
+                    Debug.WriteLine("There was a problem calling the IsValid method for the current DataWrapper");
+                }
+            }
+
+            return allValid;
+        }
+
+
+
+        /// <summary>
+        /// Get a list of the wrapper properties on the parent object.
+        /// </summary>
+        /// <typeparam name="T">The type of object</typeparam>
+        /// <param name="parentObject">The parent object to examine</param>
+        /// <returns>A IEnumerable of DataWrapperBase</returns>
+        public static IEnumerable<DataWrapperBase> GetWrapperProperties<T>(T parentObject)
+        {
+            var properties = parentObject.GetType().GetProperties(
+                BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+
+            List<DataWrapperBase> wrapperProperties = new List<DataWrapperBase>();
+
+            foreach (var propItem in parentObject.GetType().GetProperties(
+                           BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
+            {
+                // check make sure can read and that the property is not an indexed property
+                if (propItem.CanRead && propItem.GetIndexParameters().Count() == 0)
+                {
+                    // we ignore any property whose type CANNOT store a DataWrapper;
+                    // this means any property whose type is not in the inheritance hierarchy
+                    // of DataWrapper.  For example a property of type Object could potentially
+                    // store a DataWrapper since Object is in DataWrapper's inheritance tree.
+                    // However, a boolean property CANNOT since it's not in the wrapper's
+                    // inheritance tree.
+                    if (typeof(DataWrapperBase).IsAssignableFrom(propItem.PropertyType) == false)
+                        continue;
+
+                    // make sure properties value is not null ref
+                    var propertyValue = propItem.GetValue(parentObject, null);
+                    if (propertyValue != null && propertyValue is DataWrapperBase)
+                    {
+                        wrapperProperties.Add((DataWrapperBase)propertyValue);
+                    }
+                }
+            }
+
+            return wrapperProperties;
+        }
         #endregion
     }
-
-    /// <summary>
-    /// This interface is implemented by both the 
-    /// <see cref="ValidatingObject">ValidatingObject</see> and the
-    /// <see cref="ViewModelBase">ViewModelBase</see> classes, and is used
-    /// to expose the list of delegates that are currently listening to the
-    /// <see cref="System.ComponentModel.INotifyPropertyChanged">INotifyPropertyChanged</see>
-    /// PropertyChanged event. This is done so that the internal 
-    /// <see cref="DataWrapper">DataWrapper</see> classes can notify their parent object
-    /// when an internal <see cref="DataWrapper">DataWrapper</see> property changes
-    /// </summary>
-    public interface IParentablePropertyExposer
-    {
-        Delegate[] GetINPCSubscribers();
-    }
-
 }
