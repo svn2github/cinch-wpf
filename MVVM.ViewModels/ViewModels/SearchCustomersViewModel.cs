@@ -569,7 +569,7 @@ namespace MVVM.ViewModels
                 MatchedCustomers = customers.ConvertAll(
                     new Converter<Customer, CustomerModel>(CustomerModel.CustomerToCustomerModel));
             }
-            catch(Exception ex)
+            catch
             {
                 messageBoxService.ShowError("There was a problem fetching the Customers");
             }
