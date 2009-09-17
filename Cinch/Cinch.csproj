@@ -66,9 +66,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttachedBehaviours\BindableInput.cs" />
+    <Compile Include="AttachedBehaviours\SelectorDoubleClickCommandBehavior.cs" />
     <Compile Include="AttachedBehaviours\UserControlLifetimeEvent.cs" />
     <Compile Include="AttachedBehaviours\NumericTextBoxBehavior.cs" />
     <Compile Include="BusinessObjects\Bases\ObservableHelper.cs" />
+    <Compile Include="BusinessObjects\PropertyObserver.cs" />
     <Compile Include="Commanding\AttachedCommands\EventCommander.cs" />
     <Compile Include="Commanding\AttachedCommands\SingleEventCommand.cs" />
     <Compile Include="Commanding\SimpleCommand.cs" />

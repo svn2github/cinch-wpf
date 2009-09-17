@@ -207,7 +207,7 @@ namespace MVVM.Models
         protected override void OnBeginEdit()
         {
             base.OnBeginEdit();
-            //Now walk the list of properties in the CustomerModel
+            //Now walk the list of properties in the OrderModel
             //and call BeginEdit() on all Cinch.DataWrapper<T>s.
             //we can use the Cinch.DataWrapperHelper class for this
             DataWrapperHelper.SetBeginEdit(cachedListOfDataWrappers);

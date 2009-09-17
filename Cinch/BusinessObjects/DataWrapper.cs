@@ -290,6 +290,8 @@ namespace Cinch
                 try
                 {
                     allValid &= wrapperProperty.IsValid;
+                    if (!allValid)
+                        break;
                 }
                 catch (Exception)
                 {
