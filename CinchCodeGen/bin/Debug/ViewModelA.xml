@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PesistentVM xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VMType>Standard</VMType>
+  <VMName>ViewModelA</VMName>
+  <VMNamespace>ViewModels</VMNamespace>
+  <VMProperties>
+    <PesistentVMSingleProperty>
+      <PropName>counter</PropName>
+      <PropertyType>Int32</PropertyType>
+      <UseDataWrapper>false</UseDataWrapper>
+      <ParentViewModelName>ViewModelA</ParentViewModelName>
+    </PesistentVMSingleProperty>
+  </VMProperties>
+</PesistentVM>
