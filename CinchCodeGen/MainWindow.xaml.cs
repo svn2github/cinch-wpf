@@ -26,7 +26,6 @@ namespace CinchCodeGen
         #region Ctor
         public MainWindow()
 		{
-
             //register known windows
             IUIVisualizerService popupVisualizer = ViewModelBase.ServiceProvider.Resolve<IUIVisualizerService>();
             popupVisualizer.Register("PropertyListPopup", typeof(PropertyListPopup));

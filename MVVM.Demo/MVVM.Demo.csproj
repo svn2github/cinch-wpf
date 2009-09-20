@@ -170,9 +170,6 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="TODO.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\MVVM.DataAccess\MVVM.DataAccess.csproj">
       <Project>{8EC791D4-65EC-4FA8-ADDE-151F13A74554}</Project>
       <Name>MVVM.DataAccess</Name>

@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using System.Windows;
 
-using Cinch;
-
-namespace MVVM.Demo
+namespace Cinch
 {
     /// <summary>
     /// This class implements the IUIVisualizerService for WPF purposes.
-    /// This implementation HAD TO be in the Main interface project, as
-    /// it needs to know about Popup windows that are not known about in 
-    /// the ViewModel or Cinch projects.
+    /// This implementation HAD TO be in the Main project, as
+    /// it needs to know about Popup windows that is not known about in 
+    /// the Cinch project.
     /// </summary>
-    public class WPFUIVisualizerService : Cinch.IUIVisualizerService
+    public class WPFUIVisualizerService : IUIVisualizerService
     {
         #region Data
         private readonly Dictionary<string, Type> _registeredWindows;
@@ -26,8 +24,7 @@ namespace MVVM.Demo
         {
             _registeredWindows = new Dictionary<string, Type>();
 
-            //register known windows
-            Register("AddEditOrderPopup", typeof(AddEditOrderPopup));
+
         }
         #endregion
 
@@ -86,7 +83,7 @@ namespace MVVM.Demo
         /// <param name="setOwner">Set the owner of the window</param>
         /// <param name="completedProc">Callback used when UI closes (may be null)</param>
         /// <returns>True/False if UI is displayed</returns>
-        public bool Show(string key, object state, bool setOwner, 
+        public bool Show(string key, object state, bool setOwner,
             EventHandler<UICompletedEventArgs> completedProc)
         {
             Window win = CreateWindow(key, state, setOwner, completedProc, false);
@@ -124,7 +121,7 @@ namespace MVVM.Demo
         /// <param name="completedProc">Callback</param>
         /// <param name="isModal">True if this is a ShowDialog request</param>
         /// <returns>Success code</returns>
-        private Window CreateWindow(string key, object dataContext, bool setOwner, 
+        private Window CreateWindow(string key, object dataContext, bool setOwner,
             EventHandler<UICompletedEventArgs> completedProc, bool isModal)
         {
             if (string.IsNullOrEmpty(key))
@@ -174,10 +171,11 @@ namespace MVVM.Demo
                 win.Closed +=
                     (s, e) =>
                         completedProc
-                        (this,new UICompletedEventArgs 
-                            {   State = dataContext, 
-                                Result = (isModal) ? win.DialogResult : null 
-                            }
+                        (this, new UICompletedEventArgs
+                        {
+                            State = dataContext,
+                            Result = (isModal) ? win.DialogResult : null
+                        }
                         );
 
             }
