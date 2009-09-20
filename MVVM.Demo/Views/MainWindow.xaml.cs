@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Windows.Markup;
 
 using MVVM.ViewModels;
+using Cinch;
 
 namespace MVVM.Demo
 {
@@ -24,6 +25,9 @@ namespace MVVM.Demo
     {
         public MainWindow()
         {
+            //register known windows
+            IUIVisualizerService popupVisualizer = ViewModelBase.ServiceProvider.Resolve<IUIVisualizerService>();
+            popupVisualizer.Register("AddEditOrderPopup", typeof(AddEditOrderPopup));
             this.DataContext = new MainWindowViewModel();
             InitializeComponent();
         }

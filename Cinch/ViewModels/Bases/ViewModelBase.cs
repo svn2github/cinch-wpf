@@ -145,7 +145,10 @@ namespace Cinch
                 //in the config that override the defaults just setup
                 UnityConfigurationSection section = (UnityConfigurationSection)
                                ConfigurationManager.GetSection("unity");
-                section.Containers.Default.Configure(UnitySingleton.Instance.Container);
+                if (section != null && section.Containers.Count > 0)
+                {
+                    section.Containers.Default.Configure(UnitySingleton.Instance.Container);
+                }
                 
                 //fetch the core service
                 FetchCoreServiceTypes();
@@ -438,6 +441,10 @@ namespace Cinch
             //section entry
             try
             {
+                //IUIVisualizerService : Register a default WPFUIVisualizerService
+                UnitySingleton.Instance.Container.RegisterInstance(
+                    typeof(IUIVisualizerService), new WPFUIVisualizerService());
+
                 //IMessageBoxService : Register a default WPFMessageBoxService
                 UnitySingleton.Instance.Container.RegisterInstance(
                     typeof(IMessageBoxService), new WPFMessageBoxService());

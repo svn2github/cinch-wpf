@@ -16,33 +16,33 @@ namespace ViewModels
 	public partial class ViewModelA : Cinch.ViewModelBase
 	{
 		#region Data
-		private Int32 counter;
+		private Int64 counters;
 		//callbacks to allow auto generated part to notify custom part, when property changes
 		private Dictionary<String, Action> autoPartPropertyCallBacks = new Dictionary<String, Action>();
 		#endregion
 
 
 		#region Public Properties
-		#region Counter
+		#region Counters
 		/// <summary>
-		/// Counter
+		/// Counters
 		/// </summary>
-		static PropertyChangedEventArgs counterChangeArgs =
-			ObservableHelper.CreateArgs<ViewModelA>(x => x.Counter);
+		static PropertyChangedEventArgs countersChangeArgs =
+			ObservableHelper.CreateArgs<ViewModelA>(x => x.Counters);
 
 
-		public Int32 Counter
+		public Int64 Counters
 		{
-			get { return counter; }
+			get { return counters; }
 			set
 			{
-				counter = value;
-				NotifyPropertyChanged(counterChangeArgs);
+				counters = value;
+				NotifyPropertyChanged(countersChangeArgs);
 				//Use callback to provide non auto generated part of partial
 				//class with notification, when an auto generated property value changes
 				Action callback = null;
 				if (autoPartPropertyCallBacks.TryGetValue(
-				    counterChangeArgs.PropertyName, out callback))
+				    countersChangeArgs.PropertyName, out callback))
 				{
 				    callback();
 				}

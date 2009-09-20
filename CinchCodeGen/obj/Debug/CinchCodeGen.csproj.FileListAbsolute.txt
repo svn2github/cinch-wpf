@@ -250,7 +250,6 @@ C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen
 C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
 C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
 C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
-C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.exe
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\Cinch.dll

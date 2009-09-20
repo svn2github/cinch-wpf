@@ -5,8 +5,8 @@
   <VMNamespace>ViewModels</VMNamespace>
   <VMProperties>
     <PesistentVMSingleProperty>
-      <PropName>counter</PropName>
-      <PropertyType>Int32</PropertyType>
+      <PropName>counters</PropName>
+      <PropertyType>Int64</PropertyType>
       <UseDataWrapper>false</UseDataWrapper>
       <ParentViewModelName>ViewModelA</ParentViewModelName>
     </PesistentVMSingleProperty>

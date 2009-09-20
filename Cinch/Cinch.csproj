@@ -77,6 +77,7 @@
     <Compile Include="AttachedBehaviours\LifetimeEvent.cs" />
     <Compile Include="Events\EventArgs\CloseRequestEventArgs.cs" />
     <Compile Include="Events\EventArgs\UICompletedEventArgs.cs" />
+    <Compile Include="Services\Default_Service_Implementations\WPF\WPFUIVisualizerService.cs" />
     <Compile Include="Threading\BackgroundTaskManager.cs" />
     <Compile Include="Threading\AddRangeObservableCollection.cs" />
     <Compile Include="Threading\DispatcherNotifiedObservableCollection.cs" />

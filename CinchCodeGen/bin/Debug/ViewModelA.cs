@@ -34,8 +34,8 @@ namespace ViewModels
 			#region Create Auto Generated Property Callbacks
 			//Create callbacks for auto generated properties in auto generated partial class part
 			//Which allows this part to know when a property in the generated part changes
-			Action counterCallback = new Action(CounterChanged);
-			autoPartPropertyCallBacks.Add(counterChangeArgs.PropertyName,counterCallback);
+			Action countersCallback = new Action(CountersChanged);
+			autoPartPropertyCallBacks.Add(countersChangeArgs.PropertyName,countersCallback);
 
 			#endregion
 		}
@@ -44,9 +44,9 @@ namespace ViewModels
 		#region Auto Generated Property Changed CallBacks
 		//Callbacks which are called whenever an auto generated property in auto generated partial class part changes
 		//Which allows this part to know when a property in the generated part changes
-		private void CounterChanged()
+		private void CountersChanged()
 		{
-		      //You can insert code here that needs to run when the Counter property changes
+		      //You can insert code here that needs to run when the Counters property changes
 		}
 
 		#endregion

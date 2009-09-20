@@ -325,7 +325,6 @@ C:\Users\sacha\Desktop\Cinch\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
 C:\Users\sacha\Desktop\Cinch\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
 C:\Users\sacha\Desktop\Cinch\MVVM.Demo\obj\Debug\MVVM.Demo.exe
 C:\Users\sacha\Desktop\Cinch\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
-C:\Users\sacha\Desktop\Cinch\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
 C:\Users\sacha\Desktop\Cinch\MVVM.Demo\bin\Debug\MVVM.Demo.exe
 C:\Users\sacha\Desktop\Cinch\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
 C:\Users\sacha\Desktop\Cinch\MVVM.Demo\bin\Debug\Cinch.dll
