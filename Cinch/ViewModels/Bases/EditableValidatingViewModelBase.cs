@@ -49,6 +49,7 @@ namespace Cinch
         {
             OnCancelEdit();
             RestoreFieldValues(_savedState);
+            _savedState = null;
         }
 
         /// <summary>

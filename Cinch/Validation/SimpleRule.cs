@@ -12,7 +12,7 @@ namespace Cinch
     /// <summary>
     /// A simple type of domain object rule that uses a delegate for validation. 
     /// </summary>
-    /// <returns>True if the rule has been followed, or false if it has been broken.</returns>
+    /// <returns>False if the rule has been followed, or true if it has been broken.</returns>
     /// <remarks>
     /// Usage:
     /// <code>

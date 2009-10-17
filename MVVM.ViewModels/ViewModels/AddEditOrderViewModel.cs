@@ -319,7 +319,6 @@ namespace MVVM.ViewModels
                         //Use the Mediator to send a Message to AddEditCustomerViewModel to tell it a new
                         //or editable Order needs actioning
                         Mediator.NotifyColleagues<Boolean>("AddedOrderSuccessfullyMessage", true);
-                        //CloseActivePopUpCommand.Execute(null);
                         break;
                     #endregion
                     #region EditMode
@@ -344,7 +343,6 @@ namespace MVVM.ViewModels
                         //Use the Mediator to send a Message to AddEditCustomerViewModel to tell it a new
                         //or editable Order needs actioning
                         Mediator.NotifyColleagues<Boolean>("AddedOrderSuccessfullyMessage", true);
-                        //CloseActivePopUpCommand.Execute(null);
                         break;
                     #endregion
                 }
@@ -383,7 +381,7 @@ namespace MVVM.ViewModels
             {
                 case ViewMode.EditMode:
                     this.CurrentCustomerOrder.CancelEdit();
-                    CloseActivePopUpCommand.Execute(null);
+                    CloseActivePopUpCommand.Execute(false);
                     CancelOrderCommand.CommandSucceeded = true;
                     break;
                 default:

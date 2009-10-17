@@ -120,7 +120,8 @@
                             Width="30" Height="30"  HorizontalAlignment="Left"
                             Style="{StaticResource imageButtons}" Margin="20,10,10,10"
                             ToolTip="Ok : Accept the current available property list"
-                            Command="{Binding CloseActivePopUpCommand}"/>
+                            Command="{Binding CloseActivePopUpCommand}"
+                            CommandParameter="True"/>
 
                         <Button Tag="../Images/cancel.png"  IsCancel="True"
                             Width="30" Height="30"  HorizontalAlignment="Left"

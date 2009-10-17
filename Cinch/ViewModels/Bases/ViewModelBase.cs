@@ -122,7 +122,7 @@ namespace Cinch
             closeActivePopUpCommand = new SimpleCommand
             {
                 CanExecuteDelegate = x => true,
-                ExecuteDelegate = x => OnCloseActivePopUp()
+                ExecuteDelegate = x => OnCloseActivePopUp(x)
             };	
         }
 
@@ -513,12 +513,30 @@ namespace Cinch
         }
 
         /// <summary>
-        /// Raises RaiseCloseRequest event, passing back True
+        /// Raises RaiseCloseRequest event, passing back correct DialogResult
         /// </summary>
-        private void OnCloseActivePopUp()
+        private void OnCloseActivePopUp(Object param)
         {
-            // Close the dialog - pass back true
-            RaiseCloseRequest(true);
+            if (param is Boolean)
+            {
+                // Close the dialog using DialogResult requested
+                RaiseCloseRequest((bool)param);
+                return;
+            }
+
+            //param is not a bool so try and parse it to a Bool
+            Boolean popupAction=true;
+            Boolean result = Boolean.TryParse(param.ToString(), out popupAction);
+            if (result)
+            {
+                // Close the dialog using DialogResult requested
+                RaiseCloseRequest(popupAction);
+            }
+            else
+            {
+                // Close the dialog passing back true
+                RaiseCloseRequest(true);
+            }
         }
 
         /// <summary>

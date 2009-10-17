@@ -407,7 +407,7 @@ namespace MVVM.ViewModels
         [MediatorMessageSink("AddedOrderSuccessfullyMessage", ParameterType = typeof(Boolean))]
         private void AddedOrderSuccessfullyMessageSink(Boolean dummy)
         {
-            addEditOrderVM.CloseActivePopUpCommand.Execute(null);
+            addEditOrderVM.CloseActivePopUpCommand.Execute(true);
             LazyFetchOrdersForCustomer();
         }
         #endregion
@@ -590,7 +590,7 @@ namespace MVVM.ViewModels
 
             if (result.HasValue && result.Value)
             {
-                CloseActivePopUpCommand.Execute(null);
+                CloseActivePopUpCommand.Execute(true);
             }
             AddOrderCommand.CommandSucceeded = true;
         }
@@ -622,7 +622,7 @@ namespace MVVM.ViewModels
 
             if (result.HasValue && result.Value)
             {
-                CloseActivePopUpCommand.Execute(null);
+                CloseActivePopUpCommand.Execute(true);
             }
             EditOrderCommand.CommandSucceeded = true;
         }
