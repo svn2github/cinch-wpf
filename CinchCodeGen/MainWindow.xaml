@@ -32,29 +32,11 @@
             </AdornerDecorator>
         </DataTemplate>
 
-        <!-- GeneratedCodeViewModel (for those with AqiStar license) : 
-            
-            NOTES :
-                
-            1. Delete this if you want to edit/run this code at home 
-            2. Remove the Reference to AqiStar.TextBox.dll
-            3. Uncomment commented section below
-        -->
         <DataTemplate DataType="{x:Type local:GeneratedCodeViewModel}">
             <local:GeneratedCodeView />
         </DataTemplate>
 
-        <!-- GeneratedCodeViewModel (for those with NO AqiStar license) : 
-            
-            NOTES :
-                
-            1. UnComment this if you want to edit/run this code at home 
-            2. Remove the Reference to AqiStar.TextBox.dll
-            3. Delete uncommented section above
-        -->
-        <!--<DataTemplate DataType="{x:Type local:GeneratedCodeViewModel}">
-            <local:GeneratedCodeViewNoLicense />
-        </DataTemplate>-->
+
 
     </Window.Resources>
 

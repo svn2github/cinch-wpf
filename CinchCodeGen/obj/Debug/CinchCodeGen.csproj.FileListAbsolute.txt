@@ -258,7 +258,6 @@ C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Co
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\Cinch.pdb
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Resources\LanguageDefinitions\CSharpVSNET.baml
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\App.baml
@@ -266,7 +265,6 @@ C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesP
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\MainWindow.g.cs
-C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.g.cs
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
@@ -279,10 +277,10 @@ C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\MainWindow.baml
-C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.baml
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.exe
 C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\ICSharpCode.AvalonEdit.dll

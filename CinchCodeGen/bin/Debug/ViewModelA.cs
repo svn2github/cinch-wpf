@@ -7,7 +7,7 @@ using System.Windows.Data;
 using System.Collections.Specialized;
 using Cinch;
 
-namespace ViewModels
+namespace viewmodels
 {
 	/// <summary>
 	///You may edit this code by hand, but there is DataWrapper code
@@ -24,18 +24,33 @@ namespace ViewModels
 	///          DataWrapperHelper.AllValid(cachedListOfDataWrappers);
 	///</pre>
 	/// </summary>
-	public partial class ViewModelA
+	public partial class sameVM
 	{
+		#region Data
+		private IEnumerable<DataWrapperBase> cachedListOfDataWrappers;
+		private ViewMode currentViewMode = ViewMode.AddMode;
+		#endregion
 
 		#region Ctor
-		public ViewModelA()
+		public sameVM()
 		{
+			#region Create DataWrappers
+			PersonA = new Cinch.DataWrapper<Decimal>(this,personAChangeArgs);
+			PersonB = new Cinch.DataWrapper<Int32>(this,personBChangeArgs);
+			//fetch list of all DataWrappers, so they can be used again later without the
+			//need for reflection
+			cachedListOfDataWrappers =
+			    DataWrapperHelper.GetWrapperProperties<sameVM>(this);
+			#endregion
 
 			#region Create Auto Generated Property Callbacks
 			//Create callbacks for auto generated properties in auto generated partial class part
 			//Which allows this part to know when a property in the generated part changes
-			Action countersCallback = new Action(CountersChanged);
-			autoPartPropertyCallBacks.Add(countersChangeArgs.PropertyName,countersCallback);
+			Action personACallback = new Action(PersonAChanged);
+			autoPartPropertyCallBacks.Add(personAChangeArgs.PropertyName,personACallback);
+
+			Action personBCallback = new Action(PersonBChanged);
+			autoPartPropertyCallBacks.Add(personBChangeArgs.PropertyName,personBCallback);
 
 			#endregion
 		}
@@ -44,11 +59,41 @@ namespace ViewModels
 		#region Auto Generated Property Changed CallBacks
 		//Callbacks which are called whenever an auto generated property in auto generated partial class part changes
 		//Which allows this part to know when a property in the generated part changes
-		private void CountersChanged()
+		private void PersonAChanged()
 		{
-		      //You can insert code here that needs to run when the Counters property changes
+		      //You can insert code here that needs to run when the PersonA property changes
+		}
+
+		private void PersonBChanged()
+		{
+		      //You can insert code here that needs to run when the PersonB property changes
 		}
 
 		#endregion
+		/// <summary>
+		/// The current ViewMode, when changed will loop
+		/// through all nested DataWrapper objects and change
+		/// their state also
+		/// </summary>
+		static PropertyChangedEventArgs currentViewModeChangeArgs =
+		    ObservableHelper.CreateArgs<sameVM>(x => x.CurrentViewMode);
+
+		public ViewMode CurrentViewMode
+		{
+		    get { return currentViewMode; }
+		    set
+		    {
+		        currentViewMode = value;
+		        //Now change all the cachedListOfDataWrappers
+		        //Which sets all the Cinch.DataWrapper<T>s to the correct IsEditable
+		        //state based on the new ViewMode applied to the ViewModel
+		        //we can use the Cinch.DataWrapperHelper class for this
+		        DataWrapperHelper.SetMode(
+		            cachedListOfDataWrappers,
+		            currentViewMode);
+
+		        NotifyPropertyChanged(currentViewModeChangeArgs);
+		    }
+		}
 	}
 }

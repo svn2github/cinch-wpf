@@ -9,7 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using AqiStar;
 using CinchCodeGen;
 using System;
 using System.Diagnostics;

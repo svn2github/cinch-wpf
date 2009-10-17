@@ -34,9 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AqiStar.TextBox, Version=1.0.4758.0, Culture=neutral, PublicKeyToken=a73079b1a9f5484a, processorArchitecture=x86">
+    <Reference Include="ICSharpCode.AvalonEdit, Version=4.0.0.5048, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\AqiStar\AqiStar.TextBox.dll</HintPath>
+      <HintPath>Lib\AvalonEdit\ICSharpCode.AvalonEdit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -97,10 +97,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\LanguageDefinitions\CSharpVSNET.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Popups\StringEntryPopup.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -114,10 +110,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\GeneratedCodeViewNoLicense.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -170,16 +162,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="UserControls\CSharpSyntaxChecker.cs" />
-    <Compile Include="UserControls\ISyntaxChecker.cs" />
-    <Compile Include="UserControls\SyntaxRichTextBox.cs" />
+    <Compile Include="UserControls\BraceFoldingStrategy.cs" />
     <Compile Include="ViewModels\ReferencedAssembliesViewModel.cs" />
     <Compile Include="ViewModels\GeneratedCodeViewModel.cs" />
     <Compile Include="ViewModels\TextEntryViewModel.cs" />
     <Compile Include="ViewModels\PropertyTypesViewModel.cs" />
-    <Compile Include="Views\GeneratedCodeViewNoLicense.xaml.cs">
-      <DependentUpon>GeneratedCodeViewNoLicense.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\GeneratedCodeView.xaml.cs">
       <DependentUpon>GeneratedCodeView.xaml</DependentUpon>
     </Compile>
@@ -204,6 +191,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <EmbeddedResource Include="UserControls\CustomHighlighting.xshd" />
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
