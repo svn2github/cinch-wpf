@@ -30,6 +30,7 @@ namespace MVVM.Demo
         {
             // this is necessary so that we get the initial databound selected item
             this.ItemContainerGenerator.StatusChanged += ItemContainerGenerator_StatusChanged;
+            this.Loaded += TabControlEx_Loaded;
         }
         #endregion
 
@@ -119,6 +120,18 @@ namespace MVVM.Demo
         #endregion
 
         #region Private Methods
+
+        /// <summary>
+        /// in some scenarios we need to update when loaded in case the 
+        /// ApplyTemplate happens before the databind.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TabControlEx_Loaded(object sender, RoutedEventArgs e)
+        {
+            UpdateSelectedItem();
+        }
+
         /// <summary>
         /// if containers are done, generate the selected item
         /// </summary>
