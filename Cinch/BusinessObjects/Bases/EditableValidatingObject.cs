@@ -21,7 +21,7 @@ namespace Cinch
         /// If it is non-null, then we are in the middle of an 
         /// editable operation.
         /// </summary>
-        private Dictionary<string, object> _savedState;
+        protected Dictionary<string, object> _savedState;
         #endregion
 
         #region Public/Protected Methods

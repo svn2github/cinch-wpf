@@ -9,6 +9,36 @@ using System.Windows.Media;
 
 namespace Cinch
 {
+    #region SCommandArgs Class
+    /// <summary>
+    /// Allows a CommandParameter to be associated with a SingleEventCommand
+    /// </summary>
+    public class SCommandArgs
+    {
+        #region Data
+        public object Sender { get; set; }
+        public object EventArgs { get; set; }
+        public object CommandParameter { get; set; }
+        #endregion
+
+        #region Ctor
+        public SCommandArgs()
+        {
+        }
+
+        public SCommandArgs(object sender, object eventArgs, object commandParameter)
+        {
+            Sender = sender;
+            EventArgs = eventArgs;
+            CommandParameter = commandParameter;
+        }
+        #endregion
+    }
+    #endregion
+
+
+
+
     #region SingleEventCommand Class
     /// <summary>
     /// This class allows a single command to event mappings.  
@@ -18,10 +48,11 @@ namespace Cinch
     /// <example>
     /// <![CDATA[
     /// 
-    /// <Grid Background="WhiteSmoke"
-    ///    Cinch:SingleEventCommand.RoutedEventName="MouseDown"
-    ///      Cinch:SingleEventCommand.TheCommandToRun=
-    ///       "{Binding Path=ShowWindowCommand}"/>
+    /// <ListBox ...     
+    /// Cinch:SingleEventCommand.RoutedEventName="SelectionChanged"     
+    /// Cinch:SingleEventCommand.TheCommandToRun="{Binding Path=BoxEditCommand}"     
+    /// Cinch:SingleEventCommand.CommandParameter="{Binding ElementName=ListBoxVehicle, Path=SelectedItem}">
+    /// </ListBox>
     /// 
     /// ]]>
     /// </example>
@@ -33,7 +64,7 @@ namespace Cinch
         /// TheCommandToRun : The actual ICommand to run
         /// </summary>
         public static readonly DependencyProperty TheCommandToRunProperty =
-            DependencyProperty.RegisterAttached("TheCommandToRun", 
+            DependencyProperty.RegisterAttached("TheCommandToRun",
                 typeof(ICommand),
                 typeof(SingleEventCommand),
                 new FrameworkPropertyMetadata((ICommand)null));
@@ -88,7 +119,7 @@ namespace Cinch
         /// <see cref="EventHooker">EventHooker</see> class) that when
         /// run will run the associated ICommand
         /// </summary>
-        private static void OnRoutedEventNameChanged(DependencyObject d, 
+        private static void OnRoutedEventNameChanged(DependencyObject d,
             DependencyPropertyChangedEventArgs e)
         {
             String routedEvent = (String)e.NewValue;
@@ -96,14 +127,14 @@ namespace Cinch
             if (d == null || String.IsNullOrEmpty(routedEvent))
                 return;
 
-            
+
             //If the RoutedEvent string is not null, create a new
             //dynamically created EventHandler that when run will execute
             //the actual bound ICommand instance (usually in the ViewModel)
             EventHooker eventHooker = new EventHooker();
             eventHooker.ObjectWithAttachedCommand = d;
 
-            EventInfo eventInfo = d.GetType().GetEvent(routedEvent, 
+            EventInfo eventInfo = d.GetType().GetEvent(routedEvent,
                 BindingFlags.Public | BindingFlags.Instance);
 
             //Hook up Dynamically created event handler
@@ -118,6 +149,30 @@ namespace Cinch
 
         }
         #endregion
+
+        #region CommandParameter
+        public static readonly DependencyProperty CommandParameterProperty =
+            DependencyProperty.RegisterAttached("CommandParameter", typeof(object),
+            typeof(SingleEventCommand), new UIPropertyMetadata(null));
+
+        /// <summary>        
+        /// Gets the CommandParameter property.          
+        /// </summary>        
+        public static object GetCommandParameter(DependencyObject obj)
+        {
+            return (object)obj.GetValue(CommandParameterProperty);
+        }
+
+
+        /// <summary>        
+        /// Sets the CommandParameter property.          
+        /// </summary>        
+        public static void SetCommandParameter(DependencyObject obj, object value)
+        {
+            obj.SetValue(CommandParameterProperty, value);
+        }
+        #endregion
+
     }
     #endregion
 
@@ -155,7 +210,7 @@ namespace Cinch
             if (del == null)
                 del = Delegate.CreateDelegate(eventInfo.EventHandlerType, this,
                       GetType().GetMethod("OnEventRaised",
-                        BindingFlags.NonPublic | 
+                        BindingFlags.NonPublic |
                         BindingFlags.Instance));
 
             return del;
@@ -172,10 +227,13 @@ namespace Cinch
             ICommand command = (ICommand)(sender as DependencyObject).
                 GetValue(SingleEventCommand.TheCommandToRunProperty);
 
+            object commandParameter = (sender as DependencyObject).
+                GetValue(SingleEventCommand.CommandParameterProperty);
+
+            SCommandArgs commandArgs = new SCommandArgs(sender, e, commandParameter);
             if (command != null)
-            {
-                command.Execute(null);
-            }
+                command.Execute(commandArgs);
+
         }
         #endregion
     }

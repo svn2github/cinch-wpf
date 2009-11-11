@@ -8,11 +8,58 @@ using System.Collections.Generic;
 
 namespace Cinch
 {
+
+    /// <summary>
+    /// Abstract base class for DataWrapper which will support IsDirty. So in your ViewModel
+    /// you could do something like
+    /// 
+    /// <example>
+    /// <![CDATA[
+    /// 
+    ///public bool IsDirty
+    ///{
+    ///   get
+    ///   {
+    ///     return cachedListOfDataWrappers.Where(x => (x is IChangeIndicator)
+    ///     &&  ((IChangeIndicator)x).IsDirty).Count() > 0;
+    ///   }
+    ///
+    /// } 
+    /// ]]>
+    /// </example>
+    /// </summary>
+    public abstract class DataWrapperDirtySupportingBase : EditableValidatingObject
+    {
+        #region Public Properties
+        /// <summary>
+        /// Deteremines if a property has changes since is was put into edit mode
+        /// </summary>
+        /// <param name="propertyName">The property name</param>
+        /// <returns>True if the property has changes since is was put into edit mode</returns>
+        public bool HasPropertyChanged(string propertyName)
+        {
+            if (_savedState == null)
+                return false;
+
+            object saveValue;
+            object currentValue;
+            if (!_savedState.TryGetValue(propertyName, out saveValue) ||
+                  !this.GetFieldValues().TryGetValue(propertyName, out currentValue))
+                return false;
+            if (saveValue == null || currentValue == null)
+                return saveValue != currentValue;
+
+            return !saveValue.Equals(currentValue);
+        }
+        #endregion
+
+    }
+
     /// <summary>
     /// Abstract base class for DataWrapper - allows easier access to
     /// methods for the DataWrapperHelper.
     /// </summary>
-    public abstract class DataWrapperBase : EditableValidatingObject
+    public abstract class DataWrapperBase : DataWrapperDirtySupportingBase
     {
         #region Data
         private Boolean isEditable = false;
@@ -100,6 +147,14 @@ namespace Cinch
         T DataValue { get; set; }
     }
 
+    /// <summary>
+    /// Allows IsDierty to be determined for a cached list of DataWrappers
+    /// </summary>
+    public interface IChangeIndicator
+    {
+        bool IsDirty { get; }
+    }
+
 
     /// <summary>
     /// This interface is implemented by both the 
@@ -129,7 +184,7 @@ namespace Cinch
     /// IsEditable property for all DataWrappers in a given Model
     /// </summary>
     /// <typeparam name="T">The type of the Data</typeparam>
-    public class DataWrapper<T> : DataWrapperBase, IDataWrapper<T>
+    public class DataWrapper<T> : DataWrapperBase, IDataWrapper<T>, IChangeIndicator
     {
         #region Data
         private T dataValue = default(T);
@@ -170,6 +225,12 @@ namespace Cinch
                 NotifyParentPropertyChanged();
             }
         }
+
+        public bool IsDirty
+        {
+            get { return this.HasPropertyChanged(dataValueChangeArgs.PropertyName); }
+        }
+
         #endregion
     }
 
