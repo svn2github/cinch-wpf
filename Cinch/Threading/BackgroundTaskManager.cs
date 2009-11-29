@@ -5,6 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Diagnostics;
 
 namespace Cinch
 {
@@ -115,6 +116,7 @@ namespace Cinch
         /// Allows the Unit test to be notified on Task completion
         /// </summary>
         public AutoResetEvent CompletionWaitHandle { get; set; }
+
         #endregion
         
         #region Public Methods
@@ -132,6 +134,7 @@ namespace Cinch
             {
                 e.Result = TaskFunc();
             };
+
 
             // Attach to its RunWorkerCompleted event to run the completion action
             backgroundWorker.RunWorkerCompleted += 

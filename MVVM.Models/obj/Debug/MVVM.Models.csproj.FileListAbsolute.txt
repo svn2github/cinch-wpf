@@ -92,7 +92,6 @@ C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_
 C:\Users\sacha\Desktop\cinch\MVVM.Models\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\sacha\Desktop\cinch\MVVM.Models\bin\Debug\MVVM.Models.dll
 C:\Users\sacha\Desktop\cinch\MVVM.Models\bin\Debug\MVVM.Models.pdb
-C:\Users\sacha\Desktop\cinch\MVVM.Models\bin\Debug\Cinch.dll
 C:\Users\sacha\Desktop\cinch\MVVM.Models\bin\Debug\MVVM.DataAccess.dll
 C:\Users\sacha\Desktop\cinch\MVVM.Models\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
 C:\Users\sacha\Desktop\cinch\MVVM.Models\bin\Debug\Microsoft.Practices.Unity.dll

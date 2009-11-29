@@ -15,6 +15,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinch", "Cinch\Cinch.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinchCodeGen", "CinchCodeGen\CinchCodeGen.csproj", "{EC6EBBCE-A7E3-4B99-8600-31F0F27D5A0A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snippets", "Snippets", "{BE0BD8EF-EE84-44DE-96B9-461540684898}"
+	ProjectSection(SolutionItems) = preProject
+		CodeSnippets\Cinch0.snippet = CodeSnippets\Cinch0.snippet
+		CodeSnippets\CinchBGWorker.snippet = CodeSnippets\CinchBGWorker.snippet
+		CodeSnippets\CinchC1.snippet = CodeSnippets\CinchC1.snippet
+		CodeSnippets\CinchP1.snippet = CodeSnippets\CinchP1.snippet
+		CodeSnippets\CinchP2.snippet = CodeSnippets\CinchP2.snippet
+		CodeSnippets\CinchP3.snippet = CodeSnippets\CinchP3.snippet
+		CodeSnippets\CinchP4.snippet = CodeSnippets\CinchP4.snippet
+		CodeSnippets\CinchP5.snippet = CodeSnippets\CinchP5.snippet
+		CodeSnippets\CinchP6.snippet = CodeSnippets\CinchP6.snippet
+		CodeSnippets\CinchSnippets.vscontent = CodeSnippets\CinchSnippets.vscontent
+		CodeSnippets\CinchViewMode.snippet = CodeSnippets\CinchViewMode.snippet
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
