@@ -446,6 +446,8 @@ namespace CinchCodeGen
                 sb.AppendLine("\t\t#region Data");
                 sb.AppendLine("\t\tprivate IEnumerable<DataWrapperBase> cachedListOfDataWrappers;");
                 sb.AppendLine("\t\tprivate ViewMode currentViewMode = ViewMode.AddMode;");
+                sb.AppendLine("\t\t//Example rule declaration : YOU WILL NEED TO DO THIS BIT");
+                sb.AppendLine("\t\t//private static SimpleRule quantityRule;");
                 sb.AppendLine("\t\t#endregion");
             }
             sb.AppendLine();
@@ -474,6 +476,8 @@ namespace CinchCodeGen
 
             }
 
+            sb.AppendLine("\t\t\t#endregion");
+
             //write out auto generated part callbacks
             sb.AppendLine();
             sb.AppendLine("\t\t\t#region Create Auto Generated Property Callbacks");
@@ -483,7 +487,6 @@ namespace CinchCodeGen
             {
                 sb.AppendLine(prop.CustomPartCtorCallBack);
             }
-            sb.AppendLine("\t\t\t#endregion");
 
 
             //write out example validation, if this ViewModel type supports them
@@ -491,17 +494,28 @@ namespace CinchCodeGen
             {
                 sb.AppendLine();
                 sb.AppendLine("\t\t\t//    #region TODO : You WILL need to create YOUR OWN validation rules");
-                sb.AppendLine("\t\t\t//    Here is an example of how to create a validation rule");
-                sb.AppendLine("\t\t\t//    you can use this as a guide to create your own validation rules");
-                sb.AppendLine("\t\t\t//    firstName.AddRule(new SimpleRule(\"DataValue\", \"Firstname can not be empty\",");
-                sb.AppendLine("\t\t\t//              delegate");
-                sb.AppendLine("\t\t\t//              {");
-                sb.AppendLine("\t\t\t//                  return String.IsNullOrEmpty(this.FirstName.DataValue);");
-                sb.AppendLine("\t\t\t//              }));");
+                sb.AppendLine("\t\t\t//    //Here is an example of how to create a validation rule");
+                sb.AppendLine("\t\t\t//    //you can use this as a guide to create your own validation rules");
+                sb.AppendLine("\t\t\t//    quantity.AddRule(quantityRule);");
                 sb.AppendLine("\t\t\t//    #endregion");
             }
 
             sb.AppendLine("\t\t}");
+
+
+
+            //write out static Constructor
+            sb.AppendLine();
+            sb.AppendLine(String.Format("\t\tstatic {0}()", vmToPersist.VMName));
+            sb.AppendLine("\t\t{");
+            sb.AppendLine("\t\t\t//quantityRule = new SimpleRule(\"DataValue\", \"Quantity can not be < 0\",");
+            sb.AppendLine("\t\t\t//          (Object domainObject)=>");
+            sb.AppendLine("\t\t\t//          {");
+            sb.AppendLine("\t\t\t//              DataWrapper<Int32> obj = (DataWrapper<Int32>)domainObject;");
+            sb.AppendLine("\t\t\t//              return obj.DataValue <= 0;");
+            sb.AppendLine("\t\t\t//          });");
+            sb.AppendLine("\t\t}");
+
             sb.AppendLine("\t\t#endregion");
             #endregion
 

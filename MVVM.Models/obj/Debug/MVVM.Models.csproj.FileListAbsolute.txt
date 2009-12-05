@@ -101,3 +101,4 @@ C:\Users\sacha\Desktop\cinch\MVVM.Models\bin\Debug\MVVM.DataAccess.pdb
 C:\Users\sacha\Desktop\cinch\MVVM.Models\bin\Debug\Cinch.pdb
 C:\Users\sacha\Desktop\cinch\MVVM.Models\obj\Debug\MVVM.Models.dll
 C:\Users\sacha\Desktop\cinch\MVVM.Models\obj\Debug\MVVM.Models.pdb
+C:\Users\sacha\Desktop\cinch\MVVM.Models\bin\Debug\Cinch.dll

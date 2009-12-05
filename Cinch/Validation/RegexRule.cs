@@ -17,7 +17,7 @@ namespace Cinch
     public class RegexRule : Rule
     {
         #region Data
-        private string _regex;
+        private string regex;
         #endregion
 
         #region Ctor
@@ -27,7 +27,7 @@ namespace Cinch
         public RegexRule(string propertyName, string description, string regex)
             : base(propertyName, description)
         {
-            _regex = regex;
+            this.regex = regex;
         }
         #endregion
 
@@ -38,7 +38,7 @@ namespace Cinch
             String value = pi.GetValue(domainObject, null) as String;
             if (!String.IsNullOrEmpty(value))
             {
-                Match m = Regex.Match(value, _regex);
+                Match m = Regex.Match(value, regex);
                 return !m.Success;
             }
             else

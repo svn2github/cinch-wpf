@@ -55,23 +55,23 @@
             {
                 $propfield$ = value;
                 NotifyPropertyChanged($propfield$ChangeArgs);
-                Has$property$s = $propfield$.Count > 0;
+                Has$property$ = $propfield$.Count > 0;
             }
         }
         
         
          /// <summary>
-        /// Has$property$s
+        /// Has$property$
         /// </summary>
-        static readonly PropertyChangedEventArgs has$property$sChangeArgs = ObservableHelper.CreateArgs<$ownerclass$>(x => x.Has$property$s);
-        private Boolean has$property$s;
-        public Boolean Has$property$s
+        static readonly PropertyChangedEventArgs Has$property$ChangeArgs = ObservableHelper.CreateArgs<$ownerclass$>(x => x.Has$property$);
+        private Boolean Has$property$;
+        public Boolean Has$property$
         {
-            get { return has$property$s; }
+            get { return Has$property$; }
             set
             {
-                has$property$s = value;
-                NotifyPropertyChanged(has$property$sChangeArgs);
+                Has$property$ = value;
+                NotifyPropertyChanged(Has$property$ChangeArgs);
             }
         }
         #endregion

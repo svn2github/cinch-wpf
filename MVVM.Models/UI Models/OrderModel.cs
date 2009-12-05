@@ -32,6 +32,10 @@ namespace MVVM.Models
         private Cinch.DataWrapper<Int32> quantity;
         private Cinch.DataWrapper<DateTime> deliveryDate;
         private IEnumerable<DataWrapperBase> cachedListOfDataWrappers;
+
+        //rules
+        private static SimpleRule quantityRule;
+
         #endregion
 
         #region Ctor
@@ -54,11 +58,7 @@ namespace MVVM.Models
 
             #region Create Validation Rules
 
-            quantity.AddRule(new SimpleRule("DataValue", "Quantity can not be empty",
-                      delegate
-                      {
-                          return this.Quantity.DataValue <= 0;
-                      }));
+            quantity.AddRule(quantityRule);
 
             #endregion
 
@@ -68,6 +68,19 @@ namespace MVVM.Models
             //fixed to DateTime.Now
             DeliveryDate.DataValue = DateTime.Now;
         }
+
+        static OrderModel()
+        {
+
+            quantityRule = new SimpleRule("DataValue", "Quantity can not be < 0",
+                      (Object domainObject)=>
+                      {
+                          DataWrapper<Int32> obj = (DataWrapper<Int32>)domainObject;
+                          return obj.DataValue <= 0;
+                      });
+        }
+
+
         #endregion
 
         #region Public Properties

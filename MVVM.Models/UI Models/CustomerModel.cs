@@ -43,6 +43,16 @@ namespace MVVM.Models
         private Cinch.DispatcherNotifiedObservableCollection<OrderModel> orders =
             new Cinch.DispatcherNotifiedObservableCollection<OrderModel>();
         private Boolean hasOrders = false;
+
+        //rules
+        private static SimpleRule firstNameRule;
+        private static SimpleRule lastNameRule;
+        private static SimpleRule emailRule;
+        private static SimpleRule homePhoneNumberRule;
+        private static SimpleRule address1Rule;
+        private static SimpleRule address2Rule;
+        private static SimpleRule address3Rule;
+
         #endregion
 
         #region Ctor
@@ -69,43 +79,65 @@ namespace MVVM.Models
 
             #region Create Validation Rules
 
-            firstName.AddRule(new SimpleRule("DataValue", "Firstname can not be empty",
-                      delegate
-                      {
-                          return String.IsNullOrEmpty(this.FirstName.DataValue);
-                      }));
-            lastName.AddRule(new SimpleRule("DataValue", "LastName can not be empty",
-                      delegate
-                      {
-                          return String.IsNullOrEmpty(this.LastName.DataValue);
-                      }));
-            email.AddRule(new SimpleRule("DataValue", "Email can not be empty",
-                      delegate
-                      {
-                          return String.IsNullOrEmpty(this.Email.DataValue);
-                      }));
-            homePhoneNumber.AddRule(new SimpleRule("DataValue", "HomePhoneNumber can not be empty",
-                      delegate
-                      {
-                          return String.IsNullOrEmpty(this.HomePhoneNumber.DataValue);
-                      }));
-            address1.AddRule(new SimpleRule("DataValue", "Address1 can not be empty",
-                      delegate
-                      {
-                          return String.IsNullOrEmpty(this.address1.DataValue);
-                      }));
-            address2.AddRule(new SimpleRule("DataValue", "Address2 can not be empty",
-                      delegate
-                      {
-                          return String.IsNullOrEmpty(this.address2.DataValue);
-                      }));
-            address3.AddRule(new SimpleRule("DataValue", "Address3 can not be empty",
-                      delegate
-                      {
-                          return String.IsNullOrEmpty(this.address3.DataValue);
-                      }));
+            firstName.AddRule(firstNameRule);
+            lastName.AddRule(lastNameRule);
+            email.AddRule(emailRule);
+            homePhoneNumber.AddRule(homePhoneNumberRule);
+            address1.AddRule(address1Rule);
+            address2.AddRule(address2Rule);
+            address3.AddRule(address3Rule);
             #endregion
         }
+
+
+        static CustomerModel()
+        {
+
+            firstNameRule = new SimpleRule("DataValue", "Firstname can not be empty",
+                      (Object domainObject)=>
+                      {
+                          DataWrapper<String> obj = (DataWrapper<String>)domainObject;
+                          return String.IsNullOrEmpty(obj.DataValue);
+                      });
+            lastNameRule = new SimpleRule("DataValue", "Lastname can not be empty",
+                      (Object domainObject) =>
+                      {
+                          DataWrapper<String> obj = (DataWrapper<String>)domainObject;
+                          return String.IsNullOrEmpty(obj.DataValue);
+                      });
+            emailRule = new SimpleRule("DataValue", "Email can not be empty",
+                      (Object domainObject) =>
+                      {
+                          DataWrapper<String> obj = (DataWrapper<String>)domainObject;
+                          return String.IsNullOrEmpty(obj.DataValue);
+                      });
+            homePhoneNumberRule = new SimpleRule("DataValue", "HomePhoneNumber can not be empty",
+                      (Object domainObject) =>
+                      {
+                          DataWrapper<String> obj = (DataWrapper<String>)domainObject;
+                          return String.IsNullOrEmpty(obj.DataValue);
+                      });
+            address1Rule = new SimpleRule("DataValue", "Address1 can not be empty",
+                      (Object domainObject) =>
+                      {
+                          DataWrapper<String> obj = (DataWrapper<String>)domainObject;
+                          return String.IsNullOrEmpty(obj.DataValue);
+                      });
+            address2Rule = new SimpleRule("DataValue", "Address2 can not be empty",
+                      (Object domainObject) =>
+                      {
+                          DataWrapper<String> obj = (DataWrapper<String>)domainObject;
+                          return String.IsNullOrEmpty(obj.DataValue);
+                      });
+            address3Rule = new SimpleRule("DataValue", "Address3 can not be empty",
+                      (Object domainObject) =>
+                      {
+                          DataWrapper<String> obj = (DataWrapper<String>)domainObject;
+                          return String.IsNullOrEmpty(obj.DataValue);
+                      });
+
+        }
+
         #endregion
 
         #region Public Properties

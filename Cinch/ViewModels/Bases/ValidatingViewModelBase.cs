@@ -18,14 +18,34 @@ namespace Cinch
     /// method, such as
     /// </summary>
     /// <example>
-    /// <![CDATA[
-    /// 
-    /// AddRule(new SimpleRule("FirstName", "Firstname can not be SAM.",
-    ///          delegate
-    ///          {
-    ///            return this.FirstName.ToString() == "SAM";
-    ///          }));
-    /// ]]>
+    /// <code>
+    ///     //STEP 1:
+    ///     //Declare a static field for the rule, so it is shared for all instance of the
+    ///     //same type
+    ///     private static SimpleRule quantityRule;
+    ///     
+    ///     //STEP 2:
+    ///     //Set the rule up in the static constructor
+    ///     static OrderModel()
+    ///     {
+    ///
+    ///        quantityRule = new SimpleRule("DataValue", "Quantity can not be &lt; 0",
+    ///                  (Object domainObject)=>
+    ///                  {
+    ///                      DataWrapper<Int32> obj = (DataWrapper<Int32>)domainObject;
+    ///                      return obj.DataValue &lt;= 0;
+    ///                  });
+    ///     }
+    ///     
+    ///     //STEP 3:
+    ///     //Add the rule in the instance constructor for the field you want to validate
+    ///     public OrderModel()
+    ///     {
+    ///         Quantity = new DataWrapper<Int32>(this, quantityChangeArgs);
+    ///         //declare the rules
+    ///         quantity.AddRule(quantityRule);
+    ///     }  
+    /// </code>
     /// </example>
     public class ValidatingViewModelBase : ViewModelBase, IDataErrorInfo
     {

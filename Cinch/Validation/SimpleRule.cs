@@ -10,24 +10,43 @@ using System.Text;
 namespace Cinch
 {
     /// <summary>
-    /// A simple type of domain object rule that uses a delegate for validation. 
+    ///  A class to define a simple rule, using a delegate for validation.
     /// </summary>
-    /// <returns>False if the rule has been followed, or true if it has been broken.</returns>
     /// <remarks>
-    /// Usage:
+    /// Recommended usage:
     /// <code>
-    ///     this.Rules.Add(new SimpleRule("Name", "The customer name must be at least 5 letters long.", delegate { return this.Name &gt; 5; } ));
+    ///     //STEP 1:
+    ///     //Declare a static field for the rule, so it is shared for all instance of the
+    ///     //same type
+    ///     private static SimpleRule quantityRule;
+    ///     
+    ///     //STEP 2:
+    ///     //Set the rule up in the static constructor
+    ///     static OrderModel()
+    ///     {
+    ///
+    ///        quantityRule = new SimpleRule("DataValue", "Quantity can not be &lt; 0",
+    ///                  (Object domainObject)=>
+    ///                  {
+    ///                      DataWrapper<Int32> obj = (DataWrapper<Int32>)domainObject;
+    ///                      return obj.DataValue &lt;= 0;
+    ///                  });
+    ///     }
+    ///     
+    ///     //STEP 3:
+    ///     //Add the rule in the instance constructor for the field you want to validate
+    ///     public OrderModel()
+    ///     {
+    ///         Quantity = new DataWrapper<Int32>(this, quantityChangeArgs);
+    ///         //declare the rules
+    ///         quantity.AddRule(quantityRule);
+    ///     }  
     /// </code>
     /// </remarks>
-    public delegate bool SimpleRuleDelegate();
-
-    /// <summary>
-    /// A class to define a simple rule, using a delegate for validation.
-    /// </summary>
     public class SimpleRule : Rule
     {
         #region Data
-        private SimpleRuleDelegate _ruleDelegate;
+        private Func<Object,Boolean> ruleDelegate;
         #endregion
 
         #region Ctor
@@ -36,8 +55,8 @@ namespace Cinch
         /// </summary>
         /// <param name="propertyName">The name of the property this rule validates for. This may be blank.</param>
         /// <param name="brokenDescription">A description message to show if the rule has been broken.</param>
-        /// <param name="ruleDelegate">A delegate that takes no parameters and returns a boolean value, used to validate the rule.</param>
-        public SimpleRule(string propertyName, string brokenDescription, SimpleRuleDelegate ruleDelegate) :
+        /// <param name="ruleDelegate">A delegate that takes an Object parameter and returns a boolean value, used to validate the rule.</param>
+        public SimpleRule(string propertyName, string brokenDescription, Func<Object, Boolean> ruleDelegate) :
             base(propertyName, brokenDescription)
         {
             this.RuleDelegate = ruleDelegate;
@@ -48,10 +67,10 @@ namespace Cinch
         /// <summary>
         /// Gets or sets the delegate used to validate this rule.
         /// </summary>
-        protected virtual SimpleRuleDelegate RuleDelegate
+        protected virtual Func<Object, Boolean> RuleDelegate
         {
-            get { return _ruleDelegate; }
-            set { _ruleDelegate = value; }
+            get { return ruleDelegate; }
+            set { ruleDelegate = value; }
         }
         #endregion
 
@@ -63,7 +82,7 @@ namespace Cinch
         /// <returns>True if the rule has not been broken, or false if it has.</returns>
         public override bool ValidateRule(Object domainObject)
         {
-            return RuleDelegate();
+            return RuleDelegate(domainObject);
         }
         #endregion
     }
