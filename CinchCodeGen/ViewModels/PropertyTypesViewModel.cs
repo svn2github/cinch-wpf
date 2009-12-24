@@ -63,7 +63,7 @@ namespace CinchCodeGen
             }
             catch
             {
-                Logger.Log(LogType.Error, "Error resolving services");
+                Logger.Error( "Error resolving services");
                 throw new ApplicationException("Error resolving services");
             }
             #endregion

@@ -12,6 +12,7 @@ using System.Windows.Input;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 using System.Linq.Expressions;
+using Slf;
 
 namespace Cinch
 {
@@ -36,7 +37,7 @@ namespace Cinch
         private SimpleCommand loadedCommand;
         private SimpleCommand unloadedCommand;
         private SimpleCommand closeCommand;
-        static ILoggerService logger = null;
+        static ILogger logger = null;
 
         //workspace data
         private SimpleCommand closeWorkSpaceCommand;
@@ -286,9 +287,9 @@ namespace Cinch
         }
 
         /// <summary>
-        /// Logger : The ILoggerService implementation in use
+        /// Logger : The ILogger implementation in use
         /// </summary>
-        public ILoggerService Logger
+        public ILogger Logger
         {
             get { return logger; }
         }
@@ -401,7 +402,7 @@ namespace Cinch
                 }
                 catch
                 {
-                    Logger.Log(LogType.Error, "Error firing CloseWorkSpace event");
+                    logger.Error("Error firing CloseWorkSpace event");
                 }
             }
 
@@ -418,21 +419,16 @@ namespace Cinch
             //try and add Logger if there is one available
             try
             {
-                UnitySingleton.Instance.Container.RegisterInstance(
-                    typeof(ILoggerService), 
-                    new WPFLoggerService());
-
-                logger = (ILoggerService)UnitySingleton.Instance.Container.Resolve(
-                    typeof(ILoggerService));
+                logger = LoggerService.GetLogger();
 
                 //Although the ILoggerService is exposed as a regular property, we can
                 //also add it, in case user want to get it using Resolve<T> method as
                 //they do for resolving other services
-                ServiceProvider.Add(typeof(ILoggerService), logger);
+                ServiceProvider.Add(typeof(ILogger), logger);
             }
             catch
             {
-                throw new ApplicationException("There is a problem registering the Default Cinch services");
+                throw new ApplicationException("There is a problem registering the Default ILogger service");
             }
 
 
@@ -548,7 +544,7 @@ namespace Cinch
         private static void LogExceptionIfLoggerAvailable(Exception ex)
         {
             if (logger != null)
-                logger.Log(LogType.Error, ex);
+                logger.Error(ex);
 
             throw new ApplicationException(ex.Message);
         }

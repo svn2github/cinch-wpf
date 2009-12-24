@@ -3,6 +3,8 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System;
 using System.Linq;
+using System.Windows.Controls;
+using System.Text.RegularExpressions;
 
 
 /// <summary>
@@ -24,7 +26,7 @@ namespace Cinch
         /// Dependency Property for turning on numeric behavior in a TextBox.
         /// </summary>
         public static readonly DependencyProperty IsEnabledProperty =
-            DependencyProperty.RegisterAttached("IsEnabled", 
+            DependencyProperty.RegisterAttached("IsEnabled",
                 typeof(bool), typeof(NumericTextBoxBehavior),
                     new UIPropertyMetadata(false, OnEnabledStateChanged));
 
@@ -53,24 +55,25 @@ namespace Cinch
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private static void OnEnabledStateChanged(DependencyObject sender, 
+        private static void OnEnabledStateChanged(DependencyObject sender,
             DependencyPropertyChangedEventArgs e)
         {
-            TextBoxBase tbb = sender as TextBoxBase;
-            if (tbb == null)
+            TextBox tb = sender as TextBox;
+            if (tb == null)
                 return;
 
-            tbb.PreviewKeyDown -= OnKeyDown;
-            DataObject.RemovePastingHandler(tbb, OnClipboardPaste);
+            tb.PreviewTextInput -= tbb_PreviewTextInput;
+            DataObject.RemovePastingHandler(tb, OnClipboardPaste);
 
-            bool b = ((e.NewValue != null && e.NewValue.GetType() == typeof(bool))) ? 
+            bool b = ((e.NewValue != null && e.NewValue.GetType() == typeof(bool))) ?
                 (bool)e.NewValue : false;
             if (b)
             {
-                tbb.PreviewKeyDown += OnKeyDown;
-                DataObject.AddPastingHandler(tbb, OnClipboardPaste);
+                tb.PreviewTextInput += tbb_PreviewTextInput;
+                DataObject.AddPastingHandler(tb, OnClipboardPaste);
             }
         }
+
         #endregion
 
         #region Private Methods
@@ -83,29 +86,48 @@ namespace Cinch
         /// <param name="e">EventArgs</param>
         private static void OnClipboardPaste(object sender, DataObjectPastingEventArgs e)
         {
+            TextBox tb = sender as TextBox;
             string text = e.SourceDataObject.GetData(e.FormatToApply) as string;
-            if (!string.IsNullOrEmpty(text))
-            {
-                if (text.Count(ch => !Char.IsNumber(ch)) == 0)
-                    return;
-            }
-            e.CancelCommand();
+
+            if (tb != null && !string.IsNullOrEmpty(text) && !Validate(tb, text))
+                e.CancelCommand();
         }
 
         /// <summary>
-        /// This checks the PreviewKeyDown on the TextBox and 
-        /// constrains it to a numeric value.
+        /// This checks if the resulting string will match the regex expression
         /// </summary>
-        private static void OnKeyDown(object sender, KeyEventArgs e)
+        static void tbb_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            if ((e.Key >= Key.D0 && e.Key <= Key.D9) ||
-                e.Key == Key.Back || e.Key == Key.Delete ||
-                e.Key == Key.Left || e.Key == Key.Right || e.Key == Key.Tab ||
-                (e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9))
-                return;
+            TextBox tb = sender as TextBox;
 
-            e.Handled = true;
+            if (tb != null && !Validate(tb, e.Text))
+                e.Handled = true;
         }
+
         #endregion
+
+        private static bool Validate(TextBox tb, string newContent)
+        {
+            string testString = string.Empty;
+            // replace selection with new text.
+            if (!string.IsNullOrEmpty(tb.SelectedText))
+            {
+                string pre = tb.Text.Substring(0, tb.SelectionStart);
+                string after = tb.Text.Substring(tb.SelectionStart + tb.SelectionLength, tb.Text.Length - (tb.SelectionStart + tb.SelectionLength));
+                testString = pre + newContent + after;
+            }
+            else
+            {
+                string pre = tb.Text.Substring(0, tb.CaretIndex);
+                string after = tb.Text.Substring(tb.CaretIndex, tb.Text.Length - tb.CaretIndex);
+                testString = pre + newContent + after;
+            }
+
+            Regex regExpr = new Regex(@"^([-+]?)(\d*)([,.]?)(\d*)$");
+            if (regExpr.IsMatch(testString))
+                return true;
+
+            return false;
+        }
     }
 }

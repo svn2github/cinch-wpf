@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\SLF\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\Unity\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
@@ -46,6 +50,14 @@
     <Reference Include="Microsoft.Practices.Unity.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\Unity\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="SLF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\SLF\SLF.dll</HintPath>
+    </Reference>
+    <Reference Include="SLF.Log4netFacade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\SLF\SLF.Log4netFacade.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -94,10 +106,8 @@
     <Compile Include="Services\Default_Service_Implementations\WPF\WPFSaveFileService.cs" />
     <Compile Include="Services\Default_Service_Implementations\WPF\WPFOpenFileService.cs" />
     <Compile Include="Services\IOC\UnitySingleton.cs" />
-    <Compile Include="Services\Default_Service_Implementations\WPF\WPFLoggerService.cs" />
     <Compile Include="Services\Service Interfaces\ISaveFileService.cs" />
     <Compile Include="Services\Service Interfaces\IOpenFileService.cs" />
-    <Compile Include="Services\Service Interfaces\ILoggerService.cs" />
     <Compile Include="Services\Default_Service_Implementations\WPF\WPFMessageBoxService.cs" />
     <Compile Include="UI\WaitCursor.cs" />
     <Compile Include="Events\WeakEvents\WeakEvent.cs" />

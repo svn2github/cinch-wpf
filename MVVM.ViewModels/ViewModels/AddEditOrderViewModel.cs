@@ -46,7 +46,7 @@ namespace MVVM.ViewModels
             }
             catch
             {
-                Logger.Log(LogType.Error, "Error resolving services");
+                Logger.Error("Error resolving services");
                 throw new ApplicationException("Error resolving services");
             }
             #endregion
@@ -349,7 +349,7 @@ namespace MVVM.ViewModels
             }
             catch (Exception ex)
             {
-                Logger.Log(LogType.Error, ex);
+                Logger.Error( ex);
                 messageBoxService.ShowError(
                     "There was a problem saving the order");
             }
