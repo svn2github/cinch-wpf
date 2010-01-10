@@ -89,4 +89,3 @@ C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_
 C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Models\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Models\obj\Debug\MVVM.Models.dll
 C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Models\obj\Debug\MVVM.Models.pdb
-C:\Users\sacha\Desktop\cinch\MVVM.Models\obj\Debug\ResolveAssemblyReference.cache

@@ -306,21 +306,3 @@ C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_
 C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
 C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
 C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Resources\Brushes.baml
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\App.baml
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\App.g.cs
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
-C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref

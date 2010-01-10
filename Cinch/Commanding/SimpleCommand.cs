@@ -63,7 +63,6 @@ namespace Cinch
             if (ExecuteDelegate != null)
             {
                 ExecuteDelegate(parameter);
-                CommandSucceeded = true;
             }
         }
 
