@@ -228,7 +228,7 @@ namespace Cinch
 
         public bool IsDirty
         {
-            get { return this.HasPropertyChanged(dataValueChangeArgs.PropertyName); }
+            get { return this.HasPropertyChanged("dataValue"); }
         }
 
         #endregion
