@@ -29,6 +29,11 @@ namespace Cinch
         /// The passed EventArgs for the event.
         /// </summary>
         public EventArgs EventArgs { get; set; }
+
+        /// <summary>
+        /// The Command Parameter
+        /// </summary>
+        public object CommandParameter { get; set; }
         #endregion
 
         #region Ctor
@@ -37,10 +42,11 @@ namespace Cinch
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        internal EventParameters(object sender, EventArgs e)
+        internal EventParameters(object sender, EventArgs e, Object commandParameter)
         {
             Sender = sender;
             EventArgs = e;
+            CommandParameter = commandParameter;
         }
         #endregion
     }
@@ -59,9 +65,9 @@ namespace Cinch
         /// <summary>
         /// Command Property Dependency Property
         /// </summary>
-        public static readonly DependencyProperty CommandProperty = 
-            DependencyProperty.Register("Command", typeof (ICommand), 
-            typeof (CommandEvent), new UIPropertyMetadata(null));
+        public static readonly DependencyProperty CommandProperty =
+            DependencyProperty.Register("Command", typeof(ICommand),
+            typeof(CommandEvent), new UIPropertyMetadata(null));
 
         /// <summary>
         /// Gets or sets the Command property. 
@@ -77,8 +83,8 @@ namespace Cinch
         /// <summary>
         /// Event Dependency Property
         /// </summary>
-        public static readonly DependencyProperty EventProperty = 
-            DependencyProperty.Register("Event", typeof(string), typeof(CommandEvent), 
+        public static readonly DependencyProperty EventProperty =
+            DependencyProperty.Register("Event", typeof(string), typeof(CommandEvent),
             new UIPropertyMetadata(string.Empty));
 
         /// <summary>
@@ -91,12 +97,30 @@ namespace Cinch
         }
         #endregion
 
+        #region CommandParameter DP
+        /// <summary>
+        /// CommandParameter Dependency Property
+        /// </summary>
+        public static readonly DependencyProperty CommandParameterProperty =
+            DependencyProperty.Register("CommandParameter", typeof(Object), typeof(CommandEvent),
+            new UIPropertyMetadata(null));
+
+        /// <summary>
+        /// Gets or sets the CommandParameter property.
+        /// </summary>
+        public string CommandParameter
+        {
+            get { return (string)GetValue(CommandParameterProperty); }
+            set { SetValue(CommandParameterProperty, value); }
+        }
+        #endregion
+
         #region DataContext DP
         /// <summary>
         /// DataContext for any bindings applied to this CommandEvent
         /// </summary>
-        public static readonly DependencyProperty DataContextProperty = 
-            FrameworkElement.DataContextProperty.AddOwner(typeof(CommandEvent), 
+        public static readonly DependencyProperty DataContextProperty =
+            FrameworkElement.DataContextProperty.AddOwner(typeof(CommandEvent),
             new FrameworkPropertyMetadata(null));
         #endregion
         #endregion
@@ -112,9 +136,9 @@ namespace Cinch
             {
                 BindingOperations.SetBinding(
                     this, FrameworkElement.DataContextProperty,
-                        new Binding("DataContext") {Source = target});
+                        new Binding("DataContext") { Source = target });
 
-                EventInfo ei = target.GetType().GetEvent(Event, 
+                EventInfo ei = target.GetType().GetEvent(Event,
                     BindingFlags.Public | BindingFlags.Instance);
                 if (ei != null)
                 {
@@ -132,7 +156,7 @@ namespace Cinch
         {
             if (target != null)
             {
-                EventInfo ei = target.GetType().GetEvent(Event, 
+                EventInfo ei = target.GetType().GetEvent(Event,
                     BindingFlags.Public | BindingFlags.Instance);
                 if (ei != null)
                     ei.RemoveEventHandler(target, GetEventMethod(ei));
@@ -164,7 +188,7 @@ namespace Cinch
         {
             if (Command != null)
             {
-                var ep = new EventParameters(sender, e);
+                var ep = new EventParameters(sender, e, CommandParameter);
                 if (Command.CanExecute(ep))
                     Command.Execute(ep);
             }
@@ -172,7 +196,7 @@ namespace Cinch
             else
             {
                 Debug.WriteLine(string.Format(
-                    "Missing Command on event handler, {0}: Sender={1}, EventArgs={2}", 
+                    "Missing Command on event handler, {0}: Sender={1}, EventArgs={2}",
                     Event, sender, e));
             }
 #endif
@@ -223,7 +247,7 @@ namespace Cinch
         internal void Subscribe(object target)
         {
             _target = target;
-            foreach(var item in this)
+            foreach (var item in this)
                 item.Subscribe(target);
         }
 
@@ -288,7 +312,7 @@ namespace Cinch
             if (item != null && _target != null)
             {
                 _currentList.Add(item);
-                item.Subscribe(_target);                
+                item.Subscribe(_target);
             }
         }
 
@@ -337,8 +361,8 @@ namespace Cinch
         #region InternalMappings DP
         // Make it internal so WPF ignores the property and always uses the 
         //public getter/setter.  This is per John Gossman blog post - 07/2008.
-        internal static readonly DependencyProperty MappingsProperty = 
-            DependencyProperty.RegisterAttached("InternalMappings", 
+        internal static readonly DependencyProperty MappingsProperty =
+            DependencyProperty.RegisterAttached("InternalMappings",
                             typeof(CommandEventCollection), typeof(EventCommander),
                             new UIPropertyMetadata(null, OnMappingsChanged));
 
@@ -374,7 +398,7 @@ namespace Cinch
         /// </summary>
         /// <param name="obj">Dependency Object</param>
         /// <param name="value">Mapping collection</param>
-        public static void SetMappings(DependencyObject obj, 
+        public static void SetMappings(DependencyObject obj,
             CommandEventCollection value)
         {
             obj.SetValue(MappingsProperty, value);
@@ -385,7 +409,7 @@ namespace Cinch
         /// </summary>
         /// <param name="target"></param>
         /// <param name="e"></param>
-        private static void OnMappingsChanged(DependencyObject target, 
+        private static void OnMappingsChanged(DependencyObject target,
             DependencyPropertyChangedEventArgs e)
         {
             if (e.OldValue != null)
