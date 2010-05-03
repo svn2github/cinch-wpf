@@ -11,6 +11,7 @@ using Cinch;
 using System.Threading;
 
 
+
 namespace MVVM.Test
 {
     /// <summary>

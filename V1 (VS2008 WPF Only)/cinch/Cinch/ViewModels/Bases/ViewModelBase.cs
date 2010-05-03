@@ -36,6 +36,10 @@ namespace Cinch
         private SimpleCommand loadedCommand;
         private SimpleCommand unloadedCommand;
         private SimpleCommand closeCommand;
+        private Boolean isUnloaded=false;
+        private Boolean isLoaded=false;
+        private Boolean isDeactivated=false;
+        private Boolean isActivated = false;
         private IIOCProvider iocProvider = null;
         private static ILogger logger;
         private static Boolean isInitialised = false;
@@ -230,34 +234,47 @@ namespace Cinch
 
         /// <summary>
         /// Allows Window.Activated hook
+        /// Can be overriden if required in inheritors
         /// </summary>
         protected virtual void OnWindowActivated()
         {
-            //Should be overriden if required in inheritors
+            //Will only work as long as people, call base.OnWindowUnloaded()
+            //when overriding
+            IsActivated = true; 
         }
 
         /// <summary>
         /// Allows Window.Deactivated hook
+        /// Can be overriden if required in inheritors
         /// </summary>
         protected virtual void OnWindowDeactivated()
         {
-            //Should be overriden if required in inheritors
+            //Will only work as long as people, call base.OnWindowUnloaded()
+            //when overriding
+            IsDeactivated = true; 
         }
 
         /// <summary>
         /// Allows Window.Loaded/UserControl.Loaded hook
+        /// Can be overriden if required in inheritors
         /// </summary>
         protected virtual void OnWindowLoaded()
         {
-            //Should be overriden if required in inheritors
+            //Will only work as long as people, call base.OnWindowUnloaded()
+            //when overriding
+            IsLoaded = true; 
         }
 
         /// <summary>
         /// Allows Window.Unloaded/UserControl.Unloaded hook
+        /// Can be overriden if required in inheritors
         /// </summary>
         protected virtual void OnWindowUnloaded()
         {
-            //Should be overriden if required in inheritors
+            //Will only work as long as people, call base.OnWindowUnloaded()
+            //when overriding
+            IsUnloaded = true; 
+            
         }
 
         /// <summary>
@@ -380,6 +397,87 @@ namespace Cinch
         /// </summary>
         public virtual string DisplayName { get; set; }
 
+
+        /// <summary>
+        /// View Is Activated
+        /// </summary>
+        static PropertyChangedEventArgs isActivatedChangeArgs =
+            ObservableHelper.CreateArgs<ViewModelBase>(x => x.IsActivated);
+
+        /// <summary>
+        /// Will only be reliable if users call base.OnWindowUnloaded()
+        /// when overriding virtual ViewModelBase.OnWindowUnloaded()
+        /// </summary>
+        public Boolean IsActivated
+        {
+            get { return isActivated; }
+            private set
+            {
+                isActivated = value;
+                NotifyPropertyChanged(isActivatedChangeArgs);
+            }
+        }
+
+
+        /// <summary>
+        /// View Is Deactivated
+        /// </summary>
+        static PropertyChangedEventArgs isDeactivatedChangeArgs =
+            ObservableHelper.CreateArgs<ViewModelBase>(x => x.IsDeactivated);
+
+        /// <summary>
+        /// Will only be reliable if users call base.OnWindowDeactivated()
+        /// when overriding virtual ViewModelBase.OnWindowDeactivated()
+        /// </summary>
+        public Boolean IsDeactivated
+        {
+            get { return isDeactivated; }
+            private set
+            {
+                isDeactivated = value;
+                NotifyPropertyChanged(isDeactivatedChangeArgs);
+            }
+        }
+
+        /// <summary>
+        /// View Is Loaded
+        /// </summary>
+        static PropertyChangedEventArgs isLoadedChangeArgs =
+            ObservableHelper.CreateArgs<ViewModelBase>(x => x.IsLoaded);
+
+        /// <summary>
+        /// Will only be reliable if users call base.OnWindowLoaded()
+        /// when overriding virtual ViewModelBase.OnWindowLoaded()
+        /// </summary>
+        public Boolean IsLoaded
+        {
+            get { return isLoaded; }
+            private set
+            {
+                isLoaded = value;
+                NotifyPropertyChanged(isLoadedChangeArgs);
+            }
+        }
+
+        /// <summary>
+        /// View Is Unloaded
+        /// </summary>
+        static PropertyChangedEventArgs isUnloadedChangeArgs =
+            ObservableHelper.CreateArgs<ViewModelBase>(x => x.IsUnloaded);
+
+        /// <summary>
+        /// Will only be reliable if users call base.OnWindowUnloaded()
+        /// when overriding virtual ViewModelBase.OnWindowUnloaded()
+        /// </summary>
+        public Boolean IsUnloaded
+        {
+            get { return isUnloaded; }
+            private set
+            {
+                isUnloaded = value;
+                NotifyPropertyChanged(isUnloadedChangeArgs);
+            }
+        }
 
         #endregion
 

@@ -136,7 +136,8 @@ namespace Cinch
 
             var win = (Window)Activator.CreateInstance(winType);
             win.DataContext = dataContext;
-            if (setOwner)
+
+            if (setOwner && Application.Current != null)
                 win.Owner = Application.Current.MainWindow;
 
             if (dataContext != null)

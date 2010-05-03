@@ -15,6 +15,7 @@ using System.Windows.Markup;
 
 using MVVM.ViewModels;
 using Cinch;
+using System.ComponentModel;
 
 namespace MVVM.Demo
 {
@@ -25,6 +26,7 @@ namespace MVVM.Demo
     {
         public MainWindow()
         {
+
             //register known windows via callback from ViewModelBase
             //when services are ready
             ViewModelBase.SetupVisualizer = (x) =>

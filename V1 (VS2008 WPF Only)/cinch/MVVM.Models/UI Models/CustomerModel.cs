@@ -87,6 +87,15 @@ namespace MVVM.Models
             address2.AddRule(address2Rule);
             address3.AddRule(address3Rule);
             #endregion
+
+
+
+
+            
+
+
+
+
         }
 
 

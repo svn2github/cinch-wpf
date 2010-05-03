@@ -188,6 +188,7 @@ namespace Cinch
     {
         #region Data
         private T dataValue = default(T);
+        private bool isDirty = false;
         #endregion
 
         #region Ctors
@@ -223,14 +224,27 @@ namespace Cinch
                 dataValue = value;
                 NotifyPropertyChanged(dataValueChangeArgs);
                 NotifyParentPropertyChanged();
+                IsDirty = this.HasPropertyChanged("dataValue"); 
             }
         }
 
+
+        /// <summary>
+        /// The IsDirty status of this DataWrapper
+        /// </summary>
+        static PropertyChangedEventArgs isDirtyChangeArgs =
+            ObservableHelper.CreateArgs<DataWrapper<T>>(x => x.IsDirty);
+
         public bool IsDirty
         {
-            get { return this.HasPropertyChanged("dataValue"); }
+            get { return isDirty; }
+            set
+            {
+                isDirty = value;
+                NotifyPropertyChanged(isDirtyChangeArgs);
+                NotifyParentPropertyChanged();
+            }
         }
-
         #endregion
     }
 
