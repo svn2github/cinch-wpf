@@ -377,7 +377,7 @@ namespace MVVM.ViewModels
         /// Mediator callback from MainWindowViewModel
         /// </summary>
         /// <param name="okToDeleteCustomer">True if its ok to delete Customer</param>
-        [MediatorMessageSink("OkToDeleteCustomerMessage", ParameterType = typeof(Boolean))]
+        [MediatorMessageSink("OkToDeleteCustomerMessage")]
         private void OkToDeleteCustomerMessageSink(Boolean okToDeleteCustomer)
         {
             if (okToDeleteCustomer)

@@ -147,7 +147,7 @@ namespace CinchCodeGen
         /// should be deleted from the ObservableCollection<SinglePropertyViewModel>
         /// </summary>
         /// <param name="propertyToRemove">SinglePropertyViewModel to be removed</param>
-        [MediatorMessageSink("RemovePropertyMessage", ParameterType = typeof(SinglePropertyViewModel))]
+        [MediatorMessageSink("RemovePropertyMessage")]
         private void RemovePropertyMessageSink(SinglePropertyViewModel propertyToRemove)
         {
             PropertyVMs.Remove(propertyToRemove);
@@ -160,7 +160,7 @@ namespace CinchCodeGen
         /// currently selected Property Name is not is use anywhere else.
         /// </summary>
         /// <param name="propertyToRemove">Property Type to be removed</param>
-        [MediatorMessageSink("DefinePropertyNameMessage", ParameterType = typeof(SinglePropertyViewModel))]
+        [MediatorMessageSink("DefinePropertyNameMessage")]
         private void DefinePropertyNameMessageSink(SinglePropertyViewModel currentPropVM)
         {
             if (currentPropVM.PropName == String.Empty)
@@ -184,7 +184,7 @@ namespace CinchCodeGen
         /// currently selected Property Type is not is use anywhere else.
         /// </summary>
         /// <param name="propertyToRemove">Property Type to be removed</param>
-        [MediatorMessageSink("RemovePropertyTypeMessage", ParameterType = typeof(String))]
+        [MediatorMessageSink("RemovePropertyTypeMessage")]
         private void RemovePropertyTypeMessageSink(String propertyToRemove)
         {
             Int32 existingProperties =

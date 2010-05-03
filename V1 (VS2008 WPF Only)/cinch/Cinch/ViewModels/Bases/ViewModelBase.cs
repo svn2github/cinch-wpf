@@ -29,7 +29,6 @@ namespace Cinch
     public abstract class ViewModelBase : INotifyPropertyChanged, IDisposable, IParentablePropertyExposer
     {
         #region Data
-        static readonly Mediator mediator = new Mediator();
         private SimpleCommand closeActivePopUpCommand;
         private SimpleCommand activatedCommand;
         private SimpleCommand deactivatedCommand;
@@ -103,7 +102,8 @@ namespace Cinch
             }
 
             //Register all decorated methods to the Mediator
-            Mediator.Register(this);
+            //Register all decorated methods to the Mediator
+            Mediator.Instance.Register(this);
 
             #region Wire up Window/UserControl based Lifetime commands
             activatedCommand = new SimpleCommand
@@ -300,9 +300,9 @@ namespace Cinch
         /// <summary>
         /// Mediator : Mediator = Messaging pattern
         /// </summary>
-        public Mediator Mediator
+        public static Mediator Mediator
         {
-            get { return mediator; }
+            get { return Mediator.Instance; }
         }
 
         /// <summary>
@@ -712,9 +712,13 @@ namespace Cinch
         /// <summary>
         /// Child classes can override this method to perform 
         /// clean-up logic, such as removing event handlers.
+        /// This method currently unregisters this object from the
+        /// Mediator.Instance
         /// </summary>
         protected virtual void OnDispose()
         {
+            //Register all decorated methods to the Mediator
+            Mediator.Instance.Unregister(this);
         }
 
 #if DEBUG

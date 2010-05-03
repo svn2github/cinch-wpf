@@ -391,7 +391,7 @@ namespace MVVM.ViewModels
         /// the user wants to abandon the changes made to the current Order
         /// </summary>
         /// <param name="dummy">Noy used, we simply need to know about the message</param>
-        [MediatorMessageSink("EditedOrderSuccessfullyMessage", ParameterType = typeof(Boolean))]
+        [MediatorMessageSink("EditedOrderSuccessfullyMessage")]
         private void EditedOrderSuccessfullyMessageSink(Boolean dummy)
         {
             CurrentCustomerOrder.EndEdit();
@@ -404,7 +404,7 @@ namespace MVVM.ViewModels
         /// the user wants to add a new Order
         /// </summary>
         /// <param name="dummy">Noy used, we simply need to know about the message</param>
-        [MediatorMessageSink("AddedOrderSuccessfullyMessage", ParameterType = typeof(Boolean))]
+        [MediatorMessageSink("AddedOrderSuccessfullyMessage")]
         private void AddedOrderSuccessfullyMessageSink(Boolean dummy)
         {
             addEditOrderVM.CloseActivePopUpCommand.Execute(true);

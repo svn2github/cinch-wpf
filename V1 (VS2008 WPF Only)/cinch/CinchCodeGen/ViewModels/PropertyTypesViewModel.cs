@@ -144,7 +144,7 @@ namespace CinchCodeGen
         /// currently selected Property Type is not is use anywhere else.
         /// </summary>
         /// <param name="propertyToRemove">Property Type to be removed</param>
-        [MediatorMessageSink("OkRemovePropertyTypeMessage", ParameterType = typeof(Boolean))]
+        [MediatorMessageSink("OkRemovePropertyTypeMessage")]
         private void OkRemovePropertyTypeMessageSink(Boolean OkToRemoveSelectedProperty)
         {
             if (OkToRemoveSelectedProperty)

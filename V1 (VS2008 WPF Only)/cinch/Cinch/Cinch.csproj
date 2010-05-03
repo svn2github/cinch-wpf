@@ -122,8 +122,6 @@
     <Compile Include="BusinessObjects\Bases\EditableValidatingObject.cs" />
     <Compile Include="Messaging\Mediator\Mediator.cs" />
     <Compile Include="Messaging\Mediator\MediatorMessageSinkAttribute.cs" />
-    <Compile Include="Messaging\Mediator\MessageToActionsMap.cs" />
-    <Compile Include="Messaging\Mediator\WeakAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

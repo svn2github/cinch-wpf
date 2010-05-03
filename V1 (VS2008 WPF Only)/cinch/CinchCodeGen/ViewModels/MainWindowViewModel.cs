@@ -141,7 +141,7 @@ namespace CinchCodeGen
         /// should check its valid flag again
         /// </summary>
         /// <param name="dummy">dummy data, not important</param>
-        [MediatorMessageSink("CheckInMemoryVMValidPart1", ParameterType = typeof(Boolean))]
+        [MediatorMessageSink("CheckInMemoryVMValidPart1")]
         private void CheckInMemoryVMValidPart1Sink(Boolean dummy)
         {
             IsValid = this.CurrentVM.IsValid;
@@ -152,7 +152,7 @@ namespace CinchCodeGen
         /// should check its valid flag again
         /// </summary>
         /// <param name="dummy">dummy data, not important</param>
-        [MediatorMessageSink("CheckInMemoryVMValidPart2", ParameterType = typeof(Boolean))]
+        [MediatorMessageSink("CheckInMemoryVMValidPart2")]
         private void CheckInMemoryVMValidPart2Sink(Boolean dummy)
         {
             IsValid = this.CurrentVM.IsValid;

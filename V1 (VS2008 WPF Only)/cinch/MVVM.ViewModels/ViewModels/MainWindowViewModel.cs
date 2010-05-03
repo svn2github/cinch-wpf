@@ -111,7 +111,7 @@ namespace MVVM.ViewModels
         /// Mediator callback from SearchCustomersViewModel
         /// </summary>
         /// <param name="editableCustomer">The Customer to edit</param>
-        [MediatorMessageSink("DeleteCustomerMessage", ParameterType = typeof(CustomerModel))]
+        [MediatorMessageSink("DeleteCustomerMessage")]
         private void DeleteCustomerMessageSink(CustomerModel customerToDelete)
         {
             bool okToDeleteCustomer = true;
@@ -137,7 +137,7 @@ namespace MVVM.ViewModels
         /// Mediator callback from StartPageViewModel
         /// </summary>
         /// <param name="dummy">Dummy not needed</param>
-        [MediatorMessageSink("AddCustomerMessage", ParameterType = typeof(Boolean))]
+        [MediatorMessageSink("AddCustomerMessage")]
         private void AddCustomerMessageSink(Boolean dummy)
         {
             AddCustomerCommand.Execute(null);
@@ -147,7 +147,7 @@ namespace MVVM.ViewModels
         /// Mediator callback from StartPageViewModel
         /// </summary>
         /// <param name="dummy">Dummy not needed</param>
-        [MediatorMessageSink("SearchCustomersMessage", ParameterType = typeof(Boolean))]
+        [MediatorMessageSink("SearchCustomersMessage")]
         private void SearchCustomersMessageSink(Boolean dummy)
         {
             SearchCustomersCommand.Execute(null);
@@ -157,7 +157,7 @@ namespace MVVM.ViewModels
         /// Mediator callback from SearchCustomersViewModel
         /// </summary>
         /// <param name="editableCustomer">The Customer to edit</param>
-        [MediatorMessageSink("EditCustomerMessage", ParameterType = typeof(CustomerModel))]
+        [MediatorMessageSink("EditCustomerMessage")]
         private void EditCustomerMessageSink(CustomerModel editableCustomer)
         {
             if (!IsNewWorkSpaceItemAllowed<AddEditCustomerViewModel>())
