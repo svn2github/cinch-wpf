@@ -25,9 +25,13 @@ namespace MVVM.Demo
     {
         public MainWindow()
         {
-            //register known windows
-            IUIVisualizerService popupVisualizer = ViewModelBase.ServiceProvider.Resolve<IUIVisualizerService>();
-            popupVisualizer.Register("AddEditOrderPopup", typeof(AddEditOrderPopup));
+            //register known windows via callback from ViewModelBase
+            //when services are ready
+            ViewModelBase.SetupVisualizer = (x) =>
+                {
+                    x.Register("AddEditOrderPopup", typeof(AddEditOrderPopup));
+                };
+
             this.DataContext = new MainWindowViewModel();
             InitializeComponent();
         }

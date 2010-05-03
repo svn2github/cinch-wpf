@@ -89,3 +89,17 @@ C:\Users\sacha\Desktop\cinch\Cinch\obj\Debug\Cinch.Properties.Resources.resource
 C:\Users\sacha\Desktop\cinch\Cinch\obj\Debug\Cinch.csproj.GenerateResource.Cache
 C:\Users\sacha\Desktop\cinch\Cinch\obj\Debug\Cinch.dll
 C:\Users\sacha\Desktop\cinch\Cinch\obj\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.g.resources
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.Properties.Resources.resources
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\log4net.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\SLF.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\SLF.Log4netFacade.dll

@@ -89,7 +89,11 @@
     <Compile Include="AttachedBehaviours\LifetimeEvent.cs" />
     <Compile Include="Events\EventArgs\CloseRequestEventArgs.cs" />
     <Compile Include="Events\EventArgs\UICompletedEventArgs.cs" />
+    <Compile Include="Services\Default_Service_Implementations\WPF\WPFSLFLogger.cs" />
     <Compile Include="Services\Default_Service_Implementations\WPF\WPFUIVisualizerService.cs" />
+    <Compile Include="Services\IOC\Default\Unity\IIOCProvider.cs" />
+    <Compile Include="Services\IOC\Default\Unity\UnityProvider.cs" />
+    <Compile Include="Services\Service Interfaces\ILogger.cs" />
     <Compile Include="Threading\BackgroundTaskManager.cs" />
     <Compile Include="Threading\AddRangeObservableCollection.cs" />
     <Compile Include="Threading\DispatcherNotifiedObservableCollection.cs" />
@@ -105,7 +109,7 @@
     <Compile Include="Services\Default_Service_Implementations\Test\TestOpenFileService.cs" />
     <Compile Include="Services\Default_Service_Implementations\WPF\WPFSaveFileService.cs" />
     <Compile Include="Services\Default_Service_Implementations\WPF\WPFOpenFileService.cs" />
-    <Compile Include="Services\IOC\UnitySingleton.cs" />
+    <Compile Include="Services\IOC\Default\Unity\UnitySingleton.cs" />
     <Compile Include="Services\Service Interfaces\ISaveFileService.cs" />
     <Compile Include="Services\Service Interfaces\IOpenFileService.cs" />
     <Compile Include="Services\Default_Service_Implementations\WPF\WPFMessageBoxService.cs" />

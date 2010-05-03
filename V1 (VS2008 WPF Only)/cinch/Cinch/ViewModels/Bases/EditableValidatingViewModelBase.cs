@@ -24,6 +24,26 @@ namespace Cinch
         private Dictionary<string, object> _savedState;
         #endregion
 
+        #region Ctor
+        /// <summary>
+        /// Constructs a new EditableValidatingViewModelBase using a new default
+        /// UnityProvider IOC provider
+        /// </summary>
+        public EditableValidatingViewModelBase() : base(new UnityProvider())
+        {
+           	
+        }
+
+        /// <summary>
+        /// Constructs a new EditableValidatingViewModelBase using a user 
+        /// selected IIOCProvider based IOC provider
+        /// </summary>
+        public EditableValidatingViewModelBase(IIOCProvider iocProvider)
+            : base(iocProvider)
+        {
+        }
+        #endregion
+
         #region Public/Protected Methods
         /// <summary>
         /// Begins an edit on an object.

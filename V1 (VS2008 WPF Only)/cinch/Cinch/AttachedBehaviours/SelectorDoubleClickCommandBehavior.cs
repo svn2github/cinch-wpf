@@ -11,7 +11,7 @@ namespace Cinch
     /// Simple helper class that encapsulates the 
     /// parameter that is passed to the ICommand
     /// </summary>
-    internal class DoubleClickData
+    public class DoubleClickData
     {
         #region Data
         public Object DoubleClickedItem { get; set; }

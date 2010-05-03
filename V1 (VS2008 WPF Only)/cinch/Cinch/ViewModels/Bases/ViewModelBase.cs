@@ -9,10 +9,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-using Microsoft.Practices.Unity;
-using Microsoft.Practices.Unity.Configuration;
+
 using System.Linq.Expressions;
-using Slf;
+
 
 namespace Cinch
 {
@@ -37,7 +36,11 @@ namespace Cinch
         private SimpleCommand loadedCommand;
         private SimpleCommand unloadedCommand;
         private SimpleCommand closeCommand;
-        static ILogger logger = null;
+        private IIOCProvider iocProvider = null;
+        private static ILogger logger;
+        private static Boolean isInitialised = false;
+        private static Action<IUIVisualizerService> setupVisualizer = null;
+
 
         //workspace data
         private SimpleCommand closeWorkSpaceCommand;
@@ -64,6 +67,9 @@ namespace Cinch
         /// ViewModel then this event can be ignored.
         /// </summary>
         public event EventHandler<EventArgs> ActivateRequest;
+
+
+
         #endregion
 
         #region Ctor
@@ -71,8 +77,27 @@ namespace Cinch
         /// Constructs a new ViewModelBase and wires up all the Window based Lifetime
         /// commands such as activatedCommand/deactivatedCommand/loadedCommand/closeCommand
         /// </summary>
-        public ViewModelBase()
+        public ViewModelBase() : this(new UnityProvider())
         {
+           	
+        }
+
+        public ViewModelBase(IIOCProvider iocProvider)
+        {
+
+            if (iocProvider == null)
+                throw new InvalidOperationException(
+                    String.Format(
+                        "ViewModelBase constructor requires a IIOCProvider instance in order to work"));
+
+            this.iocProvider = iocProvider;
+
+            if (!ViewModelBase.isInitialised)
+            {
+                iocProvider.SetupContainer();
+                FetchCoreServiceTypes();
+            }
+
             //Register all decorated methods to the Mediator
             Mediator.Register(this);
 
@@ -124,41 +149,9 @@ namespace Cinch
             {
                 CanExecuteDelegate = x => true,
                 ExecuteDelegate = x => OnCloseActivePopUp(x)
-            };	
+            };
         }
 
-        /// <summary>
-        /// Registers the default service implemenations with the Unity container, and
-        /// then configures Unity container (which allows for changes to be made to pick
-        /// up overriden services within Unity configuration).
-        /// And finally add all services found to a list of Core services which are available
-        /// to the ViewModelBase class
-        /// </summary>
-        static ViewModelBase()
-        {
-
-            try
-            {
-                //regiser defaults
-                RegisterDefaultServices();
-
-                //configure Unity (there could be some different Service implementations
-                //in the config that override the defaults just setup
-                UnityConfigurationSection section = (UnityConfigurationSection)
-                               ConfigurationManager.GetSection("unity");
-                if (section != null && section.Containers.Count > 0)
-                {
-                    section.Containers.Default.Configure(UnitySingleton.Instance.Container);
-                }
-                
-                //fetch the core service
-                FetchCoreServiceTypes();
-            }
-            catch(Exception ex)
-            {
-                throw new ApplicationException("There was a problem configuring the Unity container\r\n" + ex.Message);
-            }
-        }
         #endregion
 
         #region Public/Protected Methods/Events
@@ -277,6 +270,15 @@ namespace Cinch
         #endregion
 
         #region Public Properties
+
+        /// <summary>
+        /// Delegate that is called when the services are injected
+        /// </summary>
+        public static Action<IUIVisualizerService> SetupVisualizer
+        {
+            get { return setupVisualizer; }
+            set { setupVisualizer=value; }
+        }
  
         /// <summary>
         /// Mediator : Mediator = Messaging pattern
@@ -402,81 +404,38 @@ namespace Cinch
                 }
                 catch
                 {
-                    logger.Error("Error firing CloseWorkSpace event");
+                    String err = "Error firing CloseWorkSpace event";
+#if debug
+                    Debug.WriteLine(err);
+#endif
+                    Console.WriteLine(err);
                 }
             }
 
         }
 
-        /// <summary>
-        /// This method registers default services with the service provider. 
-        /// These can be overriden by providing a new service implementation 
-        /// and a new Unity config section in the project where the new service 
-        /// implementation is defined 
-        /// </summary>
-        private static void RegisterDefaultServices()
-        {
-            //try and add Logger if there is one available
-            try
-            {
-                logger = LoggerService.GetLogger();
 
-                //Although the ILoggerService is exposed as a regular property, we can
-                //also add it, in case user want to get it using Resolve<T> method as
-                //they do for resolving other services
-                ServiceProvider.Add(typeof(ILogger), logger);
-            }
-            catch
-            {
-                throw new ApplicationException("There is a problem registering the Default ILogger service");
-            }
-
-
-            //try add other default services
-            //users can override this using specific Unity App.Config
-            //section entry
-            try
-            {
-                //IUIVisualizerService : Register a default WPFUIVisualizerService
-                UnitySingleton.Instance.Container.RegisterInstance(
-                    typeof(IUIVisualizerService), new WPFUIVisualizerService());
-
-                //IMessageBoxService : Register a default WPFMessageBoxService
-                UnitySingleton.Instance.Container.RegisterInstance(
-                    typeof(IMessageBoxService), new WPFMessageBoxService());
-
-                //IOpenFileService : Register a default WPFOpenFileService
-                UnitySingleton.Instance.Container.RegisterInstance(
-                    typeof(IOpenFileService), new WPFOpenFileService());
-
-                //ISaveFileService : Register a default WPFSaveFileService
-                UnitySingleton.Instance.Container.RegisterInstance(
-                    typeof(ISaveFileService), new WPFSaveFileService());
-
-            }
-            catch (ResolutionFailedException rex)
-            {
-                LogExceptionIfLoggerAvailable(rex);
-
-            }
-            catch (Exception ex)
-            {
-                LogExceptionIfLoggerAvailable(ex);
-            }
-        }
 
 
         /// <summary>
         /// This method registers services with the service provider.
         /// </summary>
-        private static void FetchCoreServiceTypes()
+        private void FetchCoreServiceTypes()
         {
             try
             {
+                ViewModelBase.isInitialised = false;
+
+                //ILogger : Allows MessageBoxs to be shown 
+                logger = (ILogger)this.iocProvider.GetTypeFromContainer<ILogger>();
+
+                ServiceProvider.Add(typeof(ILogger), logger);
+
                 //IMessageBoxService : Allows MessageBoxs to be shown 
                 IMessageBoxService messageBoxService = 
                     (IMessageBoxService)UnitySingleton.Instance.Container.Resolve(
                         typeof(IMessageBoxService));
+
                 ServiceProvider.Add(typeof(IMessageBoxService), messageBoxService);
 
                 //IOpenFileService : Allows Opening of files 
@@ -497,10 +456,13 @@ namespace Cinch
                         typeof(IUIVisualizerService));
                 ServiceProvider.Add(typeof(IUIVisualizerService), uiVisualizerService);
 
-            }
-            catch (ResolutionFailedException rex)
-            {
-                LogExceptionIfLoggerAvailable(rex);
+                //call the callback delegate to setup IUIVisualizerService managed
+                //windows
+                if (SetupVisualizer != null)
+                    SetupVisualizer(uiVisualizerService);
+
+                ViewModelBase.isInitialised = true;
+
             }
             catch (Exception ex)
             {
@@ -544,7 +506,7 @@ namespace Cinch
         private static void LogExceptionIfLoggerAvailable(Exception ex)
         {
             if (logger != null)
-                logger.Error(ex);
+                logger.Error("An error occurred", ex);
 
             throw new ApplicationException(ex.Message);
         }

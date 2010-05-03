@@ -137,3 +137,23 @@ C:\Users\sacha\Desktop\cinch\MVVM.ViewModels\obj\Debug\MVVM.ViewModels.Propertie
 C:\Users\sacha\Desktop\cinch\MVVM.ViewModels\obj\Debug\MVVM.ViewModels.csproj.GenerateResource.Cache
 C:\Users\sacha\Desktop\cinch\MVVM.ViewModels\obj\Debug\MVVM.ViewModels.dll
 C:\Users\sacha\Desktop\cinch\MVVM.ViewModels\obj\Debug\MVVM.ViewModels.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\MVVM.ViewModels.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\MVVM.ViewModels.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\log4net.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\MVVM.DataAccess.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\MVVM.Models.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\SLF.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\SLF.Log4netFacade.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\Dynamic.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\MVVM.Models.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\MVVM.DataAccess.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\obj\Debug\MVVM.ViewModels.Properties.Resources.resources
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\obj\Debug\MVVM.ViewModels.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\obj\Debug\MVVM.ViewModels.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\obj\Debug\MVVM.ViewModels.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.ViewModels\bin\Debug\Cinch.dll

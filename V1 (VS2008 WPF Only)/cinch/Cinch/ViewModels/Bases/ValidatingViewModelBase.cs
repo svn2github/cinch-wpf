@@ -52,6 +52,25 @@ namespace Cinch
         #region Data
         private List<Rule> rules = new List<Rule>();
         #endregion
+        
+        #region Ctor
+        /// <summary>
+        /// Constructs a new ValidatingViewModelBase using a new default
+        /// UnityProvider IOC provider
+        /// </summary>
+        public ValidatingViewModelBase() : base(new UnityProvider())
+        {
+           	
+        }
+
+        /// <summary>
+        /// Constructs a new ValidatingViewModelBase using a user 
+        /// selected IIOCProvider based IOC provider
+        /// </summary>
+        public ValidatingViewModelBase(IIOCProvider iocProvider) : base(iocProvider)
+        {
+        }
+        #endregion
 
         #region Public Methods/Properties
         /// <summary>

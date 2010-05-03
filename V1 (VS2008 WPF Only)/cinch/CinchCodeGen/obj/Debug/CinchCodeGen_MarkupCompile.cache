@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\
 CinchCodeGen
 none
 false
 DEBUG;TRACE
-C:\Users\sacha\Desktop\cinch\CinchCodeGen\App.xaml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\App.xaml
 8-1020381844
 
 29212549405
-25342150338
+2535562480
 Popups\ReferencedAssembliesPopup.xaml;Popups\StringEntryPopup.xaml;Popups\PropertyListPopup.xaml;Resources\AppStyles.xaml;MainWindow.xaml;Views\GeneratedCodeView.xaml;Views\SinglePropertyView.xaml;Views\PropertiesView.xaml;
 
