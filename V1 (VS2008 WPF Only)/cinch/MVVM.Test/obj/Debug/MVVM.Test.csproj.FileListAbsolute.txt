@@ -198,3 +198,26 @@ C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\obj\Debug\MVVM
 C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\obj\Debug\MVVM.Test.dll
 C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\obj\Debug\MVVM.Test.pdb
 C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\MVVM.Test.dll.config
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\MVVM.Test.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\MVVM.Test.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\MVVM.DataAccess.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\MVVM.Models.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\MVVM.ViewModels.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\Dynamic.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\SLF.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\MVVM.ViewModels.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\MVVM.Models.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\MVVM.DataAccess.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\bin\Debug\Cinch.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\obj\Debug\MVVM.Test.g.resources
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\obj\Debug\MVVM.Test.Properties.Resources.resources
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\obj\Debug\MVVM.Test.csproj.GenerateResource.Cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\obj\Debug\MVVM.Test.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Test\obj\Debug\MVVM.Test.pdb

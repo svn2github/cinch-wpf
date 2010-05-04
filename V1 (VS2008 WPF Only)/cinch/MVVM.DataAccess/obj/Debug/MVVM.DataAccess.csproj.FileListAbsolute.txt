@@ -88,3 +88,13 @@ C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\obj\Debu
 C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.csproj.GenerateResource.Cache
 C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.dll
 C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\bin\Debug\MVVM.DataAccess.dll.config
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\bin\Debug\MVVM.DataAccess.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\bin\Debug\MVVM.DataAccess.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\bin\Debug\Dynamic.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.g.resources
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.Properties.Resources.resources
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.csproj.GenerateResource.Cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.DataAccess\obj\Debug\MVVM.DataAccess.pdb

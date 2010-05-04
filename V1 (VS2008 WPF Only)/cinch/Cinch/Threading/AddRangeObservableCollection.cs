@@ -82,6 +82,30 @@ namespace Cinch
             OnCollectionChanged(new
                 NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
         }
+
+
+        /// <summary>
+        /// Adds a range of items to the Collection, without firing the
+        /// CollectionChanged event
+        /// </summary>
+        /// <param name="list">The items to add</param>
+        public void RmoveRange(IEnumerable<T> list)
+        {
+            if (list == null)
+                throw new ArgumentNullException("list");
+
+            _suppressNotification = true;
+
+            foreach (T item in list)
+            {
+                Remove(item);
+            }
+            _suppressNotification = false;
+            OnCollectionChanged(new
+                NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
+        }
+
+
         #endregion
 
     }

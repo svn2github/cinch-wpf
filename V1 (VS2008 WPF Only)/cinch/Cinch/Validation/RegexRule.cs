@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
@@ -18,16 +16,26 @@ namespace Cinch
     {
         #region Data
         private string regex;
+        private RegexOptions regexOptions;
         #endregion
 
         #region Ctor
         /// <summary>
         /// Constructor.
         /// </summary>
-        public RegexRule(string propertyName, string description, string regex)
+        public RegexRule(string propertyName, string description, string regex, RegexOptions regexOptions)
             : base(propertyName, description)
         {
             this.regex = regex;
+            this.regexOptions = regexOptions;
+        }
+
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        public RegexRule(string propertyName, string description, string regex)
+          : this(propertyName, description, regex, RegexOptions.None)
+        {
         }
         #endregion
 
@@ -35,10 +43,10 @@ namespace Cinch
         public override bool ValidateRule(Object domainObject)
         {
             PropertyInfo pi = domainObject.GetType().GetProperty(this.PropertyName);
-            String value = pi.GetValue(domainObject, null) as String;
-            if (!String.IsNullOrEmpty(value))
+            string value = pi.GetValue(domainObject, null) as string;
+            if (!string.IsNullOrEmpty(value))
             {
-                Match m = Regex.Match(value, regex);
+                Match m = Regex.Match(value, this.regex, this.regexOptions);
                 return !m.Success;
             }
             else

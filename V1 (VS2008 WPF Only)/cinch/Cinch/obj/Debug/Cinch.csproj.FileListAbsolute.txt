@@ -103,3 +103,17 @@ C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.dl
 C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\log4net.dll
 C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\SLF.dll
 C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\SLF.Log4netFacade.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\Cinch.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\log4net.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\SLF.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\bin\Debug\SLF.Log4netFacade.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.g.resources
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.Properties.Resources.resources
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.csproj.GenerateResource.Cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\Cinch\obj\Debug\Cinch.pdb
