@@ -26,11 +26,17 @@ namespace CinchCodeGen
         #region Ctor
         public MainWindow()
 		{
-            //register known windows
-            IUIVisualizerService popupVisualizer = ViewModelBase.ServiceProvider.Resolve<IUIVisualizerService>();
-            popupVisualizer.Register("PropertyListPopup", typeof(PropertyListPopup));
-            popupVisualizer.Register("ReferencedAssembliesPopup", typeof(ReferencedAssembliesPopup));
-            popupVisualizer.Register("StringEntryPopup", typeof(StringEntryPopup));
+            //register known windows via callback from ViewModelBase
+            //when services are ready
+            ViewModelBase.SetupVisualizer = (x) =>
+            {
+                x.Register("PropertyListPopup", typeof(PropertyListPopup));
+                x.Register("ReferencedAssembliesPopup", typeof(ReferencedAssembliesPopup));
+                x.Register("StringEntryPopup", typeof(StringEntryPopup));
+            };
+            
+            
+            
             this.DataContext = new MainWindowViewModel();
             this.InitializeComponent();
         }
