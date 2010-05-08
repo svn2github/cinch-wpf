@@ -530,28 +530,24 @@ namespace Cinch
                 ServiceProvider.Add(typeof(ILogger), logger);
 
                 //IMessageBoxService : Allows MessageBoxs to be shown 
-                IMessageBoxService messageBoxService = 
-                    (IMessageBoxService)UnitySingleton.Instance.Container.Resolve(
-                        typeof(IMessageBoxService));
+                IMessageBoxService messageBoxService =
+                    (IMessageBoxService)this.iocProvider.GetTypeFromContainer<IMessageBoxService>();
 
                 ServiceProvider.Add(typeof(IMessageBoxService), messageBoxService);
 
                 //IOpenFileService : Allows Opening of files 
-                IOpenFileService openFileService = 
-                    (IOpenFileService)UnitySingleton.Instance.Container.Resolve(
-                        typeof(IOpenFileService));
+                IOpenFileService openFileService =
+                    (IOpenFileService)this.iocProvider.GetTypeFromContainer<IOpenFileService>();
                 ServiceProvider.Add(typeof(IOpenFileService), openFileService);
 
                 //ISaveFileService : Allows Saving of files 
                 ISaveFileService saveFileService =
-                    (ISaveFileService)UnitySingleton.Instance.Container.Resolve(
-                        typeof(ISaveFileService));
+                    (ISaveFileService)this.iocProvider.GetTypeFromContainer<ISaveFileService>();
                 ServiceProvider.Add(typeof(ISaveFileService), saveFileService);
 
                 //IUIVisualizerService : Allows popup management
                 IUIVisualizerService uiVisualizerService =
-                    (IUIVisualizerService)UnitySingleton.Instance.Container.Resolve(
-                        typeof(IUIVisualizerService));
+                   (IUIVisualizerService)this.iocProvider.GetTypeFromContainer<IUIVisualizerService>();
                 ServiceProvider.Add(typeof(IUIVisualizerService), uiVisualizerService);
 
                 //call the callback delegate to setup IUIVisualizerService managed

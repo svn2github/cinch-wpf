@@ -388,7 +388,7 @@ namespace Cinch
         /// </summary>
         /// <param name="obj">Dependency Object</param>
         /// <returns>Mapping collection</returns>
-        public static IList GetMappings(DependencyObject obj)
+        public static CommandEventCollection GetMappings(DependencyObject obj)
         {
             return InternalGetMappingCollection(obj);
         }

@@ -131,3 +131,17 @@ C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.
 C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\obj\Debug\MVVM.Models.dll
 C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\obj\Debug\MVVM.Models.pdb
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\MVVM.Models.dll
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\MVVM.Models.pdb
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\MVVM.DataAccess.dll
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\Dynamic.dll
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\SLF.dll
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\MVVM.DataAccess.pdb
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\obj\Debug\MVVM.Models.dll
+C:\Users\sacha\Desktop\cinch\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Models\obj\Debug\MVVM.Models.pdb
