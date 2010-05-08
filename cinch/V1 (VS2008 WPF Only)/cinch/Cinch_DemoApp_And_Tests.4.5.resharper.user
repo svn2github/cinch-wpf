@@ -1,0 +1,37 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Threading/d:ExtensionMethods/f:DispatcherExtensions.cs" caret="7399" fromTop="45" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Validation/f:RegexRule.cs" caret="15" fromTop="1" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Threading/f:AddRangeObservableCollection.cs" caret="3339" fromTop="91" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Threading/d:ExtensionMethods/f:DispatcherExtensions.cs" caret="0" fromTop="0" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Threading/d:ExtensionMethods/f:DispatcherExtensions.cs" caret="7399" fromTop="45" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Validation/f:RegexRule.cs" caret="0" fromTop="0" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Validation/f:RegexRule.cs" caret="1750" fromTop="45" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Validation/f:RegexRule.cs" caret="15" fromTop="1" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Threading/f:AddRangeObservableCollection.cs" caret="3537" fromTop="34" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Threading/f:AddRangeObservableCollection.cs" caret="2843" fromTop="27" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Threading/f:AddRangeObservableCollection.cs" caret="3535" fromTop="45" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Threading/f:AddRangeObservableCollection.cs" caret="3082" fromTop="22" />
+      <File id="6DB457F0-C6B4-4268-8304-4F5B586E50FF/d:Threading/f:AddRangeObservableCollection.cs" caret="3332" fromTop="31" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerMSTest>
+    <UseTestRunConfigFromMetadataFile>False</UseTestRunConfigFromMetadataFile>
+  </UnitTestRunnerMSTest>
+</Configuration>
