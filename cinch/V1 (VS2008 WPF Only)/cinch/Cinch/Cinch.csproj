@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6DB457F0-C6B4-4268-8304-4F5B586E50FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cinch</RootNamespace>
+    <AssemblyName>Cinch</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\SLF\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Unity\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Unity\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Unity\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="SLF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\SLF\SLF.dll</HintPath>
+    </Reference>
+    <Reference Include="SLF.Log4netFacade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\SLF\SLF.Log4netFacade.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttachedBehaviours\BindableInput.cs" />
+    <Compile Include="AttachedBehaviours\SelectorDoubleClickCommandBehavior.cs" />
+    <Compile Include="AttachedBehaviours\UserControlLifetimeEvent.cs" />
+    <Compile Include="AttachedBehaviours\NumericTextBoxBehavior.cs" />
+    <Compile Include="BusinessObjects\Bases\ObservableHelper.cs" />
+    <Compile Include="BusinessObjects\PropertyObserver.cs" />
+    <Compile Include="Commanding\AttachedCommands\EventCommander.cs" />
+    <Compile Include="Commanding\AttachedCommands\SingleEventCommand.cs" />
+    <Compile Include="Commanding\SimpleCommand.cs" />
+    <Compile Include="AttachedBehaviours\LifetimeEvent.cs" />
+    <Compile Include="Events\EventArgs\CloseRequestEventArgs.cs" />
+    <Compile Include="Events\EventArgs\UICompletedEventArgs.cs" />
+    <Compile Include="Services\Default_Service_Implementations\WPF\WPFSLFLogger.cs" />
+    <Compile Include="Services\Default_Service_Implementations\WPF\WPFUIVisualizerService.cs" />
+    <Compile Include="Services\IOC\Default\Unity\IIOCProvider.cs" />
+    <Compile Include="Services\IOC\Default\Unity\UnityProvider.cs" />
+    <Compile Include="Services\Service Interfaces\ILogger.cs" />
+    <Compile Include="Threading\BackgroundTaskManager.cs" />
+    <Compile Include="Threading\AddRangeObservableCollection.cs" />
+    <Compile Include="Threading\DispatcherNotifiedObservableCollection.cs" />
+    <Compile Include="Threading\ExtensionMethods\DispatcherExtensions.cs" />
+    <Compile Include="Validation\RegexRule.cs" />
+    <Compile Include="Validation\Rule.cs" />
+    <Compile Include="Validation\SimpleRule.cs" />
+    <Compile Include="BusinessObjects\Bases\ValidatingObject.cs" />
+    <Compile Include="BusinessObjects\DataWrapper.cs" />
+    <Compile Include="UI\FocusHelper.cs" />
+    <Compile Include="UI\WPFMenuItem.cs" />
+    <Compile Include="Services\Default_Service_Implementations\Test\TestSaveFileService.cs" />
+    <Compile Include="Services\Default_Service_Implementations\Test\TestOpenFileService.cs" />
+    <Compile Include="Services\Default_Service_Implementations\WPF\WPFSaveFileService.cs" />
+    <Compile Include="Services\Default_Service_Implementations\WPF\WPFOpenFileService.cs" />
+    <Compile Include="Services\IOC\Default\Unity\UnitySingleton.cs" />
+    <Compile Include="Services\Service Interfaces\ISaveFileService.cs" />
+    <Compile Include="Services\Service Interfaces\IOpenFileService.cs" />
+    <Compile Include="Services\Default_Service_Implementations\WPF\WPFMessageBoxService.cs" />
+    <Compile Include="UI\WaitCursor.cs" />
+    <Compile Include="Events\WeakEvents\WeakEvent.cs" />
+    <Compile Include="Events\WeakEvents\WeakEventHelper.cs" />
+    <Compile Include="Events\WeakEvents\WeakEventProxy.cs" />
+    <Compile Include="Services\Default_Service_Implementations\Test\TestMessageBoxService.cs" />
+    <Compile Include="Services\Default_Service_Implementations\Test\TestUIVisualizerService.cs" />
+    <Compile Include="BusinessObjects\Bases\EditableValidatingObject.cs" />
+    <Compile Include="Messaging\Mediator\Mediator.cs" />
+    <Compile Include="Messaging\Mediator\MediatorMessageSinkAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\Service Interfaces\IMessageBoxService.cs" />
+    <Compile Include="Services\Service Interfaces\IUIVisualizerService.cs" />
+    <Compile Include="Services\ServiceProvider.cs" />
+    <Compile Include="Threading\ApplicationHelper.cs" />
+    <Compile Include="ViewModels\Bases\EditableValidatingViewModelBase.cs" />
+    <Compile Include="ViewModels\Bases\ValidatingViewModelBase.cs" />
+    <Compile Include="ViewModels\Enums\ViewMode.cs" />
+    <Compile Include="ViewModels\Bases\ViewModelBase.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Events\WeakEvents\copyright.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

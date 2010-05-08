@@ -1,0 +1,366 @@
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\App.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.cache
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.lref
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\App.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\App.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.cache
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.lref
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\App.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.cache
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.lref
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\bin\Debug\Cinch.dll
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\App.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\App.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.cache
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.lref
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Cinch.dll
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\App.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.cache
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.lref
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.g.cs
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\App.baml
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.g.cs
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.g.cs
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.cache
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.lref
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.baml
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.baml
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\In Progress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\LanguageDefinitions\CSharpVSNET.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\AqiStar.TextBox.dll
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\LanguageDefinitions\CSharpVSNET.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\LanguageDefinitions\CSharpVSNET.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\LanguageDefinitions\CSharpVSNET.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.baml
+C:\Users\sacha\Desktop\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\bin\Debug\AqiStar.TextBox.dll
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\LanguageDefinitions\CSharpVSNET.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.baml
+C:\Users\Sacha\Desktop\InProgress\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.exe
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\bin\Debug\Cinch.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\LanguageDefinitions\CSharpVSNET.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\App.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\App.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.cache
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.lref
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\MainWindow.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Views\GeneratedCodeViewNoLicense.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
+C:\Users\Sacha\Desktop\InProgress\Cinch Code Generator\CinchCodeGen\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\log4net.dll
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\SLF.dll
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\SLF.Log4netFacade.dll
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\App.baml
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.g.cs
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\MainWindow.g.cs
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.cache
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.lref
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.baml
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\MainWindow.baml
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\App.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\MainWindow.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.lref
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\MainWindow.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.exe
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\log4net.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\SLF.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\SLF.Log4netFacade.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\Cinch.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.exe.config
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.exe
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\CinchCodeGen.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\log4net.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\SLF.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\SLF.Log4netFacade.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\bin\Debug\Cinch.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\SinglePropertyView.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\App.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\MainWindow.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\GeneratedCodeView.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\SinglePropertyView.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\PropertiesView.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\App.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen_MarkupCompile.lref
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\ReferencedAssembliesPopup.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\StringEntryPopup.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Popups\PropertyListPopup.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Resources\AppStyles.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\MainWindow.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\Views\PropertiesView.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.g.resources
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.Properties.Resources.resources
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.csproj.GenerateResource.Cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.exe
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\CinchCodeGen\obj\Debug\CinchCodeGen.pdb

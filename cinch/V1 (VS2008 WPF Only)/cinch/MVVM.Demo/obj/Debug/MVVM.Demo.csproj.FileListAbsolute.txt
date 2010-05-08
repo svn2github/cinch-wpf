@@ -1,0 +1,449 @@
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Dynamic.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\Brushes.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\GlobalConverters.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\TabStyles.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.exe
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.exe
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Dynamic.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\Brushes.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\GlobalConverters.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\TabStyles.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.exe
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\Brushes.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.g.cs
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Dynamic.dll
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.pdb
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.pdb
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.pdb
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\GlobalConverters.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\TabStyles.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.baml
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
+C:\Users\sacha\Desktop\In Progress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.exe
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Dynamic.dll
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.pdb
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\Brushes.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\GlobalConverters.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\TabStyles.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.baml
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
+C:\Users\Sacha\Desktop\InProgress\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.exe
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Dynamic.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\Brushes.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\GlobalConverters.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\TabStyles.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.exe
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Dynamic.dll
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\Brushes.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\GlobalConverters.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\TabStyles.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.baml
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
+C:\Users\sacha\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.exe
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.exe
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Dynamic.dll
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.ViewModels.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.Models.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\MVVM.DataAccess.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\bin\Debug\Cinch.pdb
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\Brushes.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\App.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\GlobalConverters.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Resources\TabStyles.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\SearchCustomersView.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\MainWindow.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\Views\StartPageView.baml
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
+C:\Documents and Settings\barbers\Desktop\Cinch_DemoApp_And_Tests\Cinch_DemoApp_And_Tests\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.exe
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\MVVM.Demo.exe
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\Cinch.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\log4net.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\MVVM.DataAccess.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\MVVM.ViewModels.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\SLF.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\SLF.Log4netFacade.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\MVVM.Models.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\Dynamic.dll
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\MVVM.ViewModels.pdb
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\MVVM.Models.pdb
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\MVVM.DataAccess.pdb
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Resources\Brushes.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\App.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\MainWindow.g.cs
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Resources\GlobalConverters.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Resources\TabStyles.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\SearchCustomersView.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\MainWindow.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\Views\StartPageView.baml
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
+C:\Users\sacha\Desktop\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.Demo.exe
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\log4net.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.DataAccess.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.ViewModels.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\SLF.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\SLF.Log4netFacade.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.Models.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Dynamic.dll
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.ViewModels.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.Models.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.DataAccess.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Cinch.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\Brushes.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\App.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\MainWindow.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\App.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\GlobalConverters.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\TabStyles.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\SearchCustomersView.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\MainWindow.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\StartPageView.baml
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.exe
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
+C:\Users\sacha\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.Demo.exe.config
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.exe
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.Demo.exe
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.Demo.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Cinch.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\log4net.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.DataAccess.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.ViewModels.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\SLF.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\SLF.Log4netFacade.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.Models.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Dynamic.dll
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.ViewModels.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.Models.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\MVVM.DataAccess.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\bin\Debug\Cinch.pdb
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\AppStyles.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\Brushes.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\ListViewStyles.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\MenuStyles.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\UserControls\FancyButton.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\App.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Popups\AddEditOrderPopup.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\UserControls\FancyButton.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\SearchCustomersView.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\MainWindow.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\StartPageView.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\App.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.cache
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo_MarkupCompile.lref
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\GlobalConverters.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Resources\TabStyles.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\AddEditCustomerView.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\SearchCustomersView.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\MainWindow.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\Views\StartPageView.baml
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.g.resources
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.Properties.Resources.resources
+C:\Documents and Settings\barbers\Desktop\cinch\V1 (VS2008 WPF Only)\cinch\MVVM.Demo\obj\Debug\MVVM.Demo.csproj.GenerateResource.Cache

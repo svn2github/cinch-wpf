@@ -1,0 +1,160 @@
+﻿<Window x:Class="MVVM.Demo.AddEditOrderPopup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Cinch="clr-namespace:Cinch;assembly=Cinch"        
+    Title="Customer Orders" Height="350" Width="500"
+    Icon="../Images/Orders.png"        
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterOwner">
+    
+    <Window.Resources>
+
+
+        <!-- ProductDataTemplate -->
+        <DataTemplate x:Key="ProductTemplate">
+            <StackPanel Orientation="Vertical">
+                <TextBlock  Text="{Binding Path=ProductName}" Foreground="Black" 
+                        TextTrimming="CharacterEllipsis" HorizontalAlignment="Stretch"
+                        Margin="2" VerticalAlignment="Center"/>
+                <TextBlock  Text="{Binding Path=ProductPrice}" Foreground="Black" 
+                        TextTrimming="CharacterEllipsis" HorizontalAlignment="Stretch"
+                        Margin="2" VerticalAlignment="Center" FontWeight="Bold"/>
+            </StackPanel>
+        </DataTemplate>
+
+
+    </Window.Resources>
+    
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+              Background="Black">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Margin="10,0,0,0" Orientation="Horizontal" VerticalAlignment="Stretch">
+                <Image Source="../Images/Orders.png" HorizontalAlignment="Left" 
+                   VerticalAlignment="Center" Width="36" Height="36"/>
+
+
+                <Label Content="{Binding DisplayName}" FontWeight="Bold" Foreground="Orange"
+                   FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+            </StackPanel>
+
+            <Rectangle Grid.Row="1" HorizontalAlignment="Stretch" Height="2" Fill="Black" 
+                       VerticalAlignment="Bottom"/>
+
+
+        </Grid>
+
+
+        <GroupBox Grid.Row="1" Background="White"
+                  BorderBrush="Black" BorderThickness="2" Margin="40,40,40,10">
+            <GroupBox.Header>
+                <Label Content="Order Details" FontWeight="Bold" 
+                        FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </GroupBox.Header>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <!-- Product-->
+                <StackPanel Grid.Row="0" Margin="5"
+                        Orientation="Horizontal">
+                    <Label Content="Product" FontWeight="Normal" FontSize="11" Width="150"/>
+                    <ComboBox Width="200"
+                        SelectedItem="{Binding Path=CurrentProduct}"
+                        VerticalContentAlignment="Center"
+                        IsSynchronizedWithCurrentItem="True"
+                        Height="50" ItemsSource="{Binding Path=Products}" 
+                        ItemTemplate="{StaticResource ProductTemplate}"/>
+                </StackPanel>
+
+
+                <!-- Quantity-->
+                <StackPanel Grid.Row="1" Margin="5"
+                    Orientation="Horizontal">
+                    <Label Content="Quantity" FontWeight="Normal" FontSize="11" Width="150"/>
+                    <TextBox FontWeight="Normal" FontSize="11" Width="200"
+                        Cinch:NumericTextBoxBehavior.IsEnabled="True"            
+                        Text="{Binding Path=CurrentCustomerOrder.Quantity.DataValue,
+                        UpdateSourceTrigger=LostFocus, ValidatesOnDataErrors=True,
+                        ValidatesOnExceptions=True}"
+                        Style="{StaticResource ValidatingTextBox}"
+                        IsEnabled="{Binding Path=CurrentCustomerOrder.Quantity.IsEditable}"/>
+                </StackPanel>
+
+
+                <!-- DeliveryDate-->
+                <StackPanel Grid.Row="2" Margin="5"
+                    Orientation="Horizontal">
+                    <Label Content="DeliveryDate" FontWeight="Normal" FontSize="11" Width="150"/>
+                    <TextBox FontWeight="Normal" FontSize="11" Width="200"
+                        Cinch:NumericTextBoxBehavior.IsEnabled="True"            
+                        Text="{Binding Path=CurrentCustomerOrder.DeliveryDate.DataValue,
+                        UpdateSourceTrigger=LostFocus, ValidatesOnDataErrors=True,
+                        ValidatesOnExceptions=True}"
+                        Style="{StaticResource ValidatingTextBox}"
+                        IsEnabled="False"/>
+                </StackPanel>
+
+            </Grid>
+
+
+
+
+        </GroupBox>
+
+
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="40,0,0,0">
+            
+            <Button Template="{StaticResource GlassButton}"
+                Content="Save" IsDefault="True" 
+                Width="90" Height="30"
+                HorizontalAlignment="Center"
+	            VerticalAlignment="Center"
+                Command="{Binding SaveOrderCommand}"
+                Margin="5"/>
+
+            <Button Template="{StaticResource GlassButton}"
+                Content="Edit"
+                Width="90" Height="30"
+                HorizontalAlignment="Center"
+	            VerticalAlignment="Center"
+                Command="{Binding EditOrderCommand}"
+                Margin="5"/>
+
+            <Button Template="{StaticResource GlassButton}"
+                Content="Cancel" IsCancel="True" 
+                Width="90" Height="30"
+                HorizontalAlignment="Center"
+	            VerticalAlignment="Center"
+                Command="{Binding CancelOrderCommand}"
+                Margin="5"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
