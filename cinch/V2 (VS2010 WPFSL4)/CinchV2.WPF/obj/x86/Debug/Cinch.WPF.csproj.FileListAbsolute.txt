@@ -1,0 +1,57 @@
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Cinch.WPF.dll
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Cinch.WPF.pdb
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.g.resources
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.Properties.Resources.resources
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.dll
+C:\Users\sacha\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.pdb
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.g.resources
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.Properties.Resources.resources
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Cinch.WPF.dll
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Cinch.WPF.pdb
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.dll
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.pdb
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Cinch.WPF.dll
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Cinch.WPF.pdb
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.g.resources
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.Properties.Resources.resources
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.dll
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.pdb
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Cinch.WPF.dll
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Cinch.WPF.pdb
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.g.resources
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.Properties.Resources.resources
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.dll
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.pdb
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Cinch.WPF.dll
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Cinch.WPF.pdb
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.g.resources
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.Properties.Resources.resources
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.dll
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2\CinchV2.WPF\obj\x86\Debug\Cinch.WPF.pdb
+C:\Users\WIN7LAP001\Desktop\In Progress\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\MEFedMVVM.WPF.dll
+C:\Users\sacha\Desktop\CinchV2\CinchV2\CinchV2.WPF\bin\Debug\MEFedMVVM.WPF.dll
