@@ -47,7 +47,6 @@ namespace Cinch
     {
         private Func<T1, bool> canExecuteMethod;
         private Action<T2> executeMethod;
-        private List<WeakReference> canExecuteChangedHandlers;
         private bool isActive=true;
         private event EventHandler isActiveChanged;
         private event Action<Object> commandCompleted;
@@ -124,21 +123,55 @@ namespace Cinch
             Execute((T2)parameter);
         }
 
+#if SILVERLIGHT
+        /// <summary>
+        /// Occurs when changes occur that affect whether the command should execute.
+        /// </summary>
+        public event EventHandler CanExecuteChanged;
+#else
+        /// <summary>
+        /// Occurs when changes occur that affect whether the command should execute.
+        /// </summary>
         public event EventHandler CanExecuteChanged
         {
-            add { WeakEventHandlerManager.AddWeakReferenceHandler(ref canExecuteChangedHandlers, value, 2); }
-            remove { WeakEventHandlerManager.RemoveWeakReferenceHandler(canExecuteChangedHandlers, value); }
-        }
+            add
+            {
+                if (canExecuteMethod != null)
+                {
+                    CommandManager.RequerySuggested += value;
+                }
+            }
 
-        [SuppressMessage("Microsoft.Design", "CA1030:UseEventsWhereAppropriate")]
+            remove
+            {
+                if (canExecuteMethod != null)
+                {
+                    CommandManager.RequerySuggested -= value;
+                }
+            }
+        }
+#endif
+
+
+
+        /// <summary>
+        /// Raises the <see cref="CanExecuteChanged" /> event.
+        /// </summary>
+        [SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic",
+            Justification = "The this keyword is used in the Silverlight version")]
+        [SuppressMessage("Microsoft.Design", "CA1030:UseEventsWhereAppropriate",
+            Justification = "This cannot be an event")]
         public void RaiseCanExecuteChanged()
         {
-            OnCanExecuteChanged();
-        }
-
-        protected virtual void OnCanExecuteChanged()
-        {
-            WeakEventHandlerManager.CallWeakReferenceHandlers(this, canExecuteChangedHandlers);
+#if SILVERLIGHT
+            var handler = CanExecuteChanged;
+            if (handler != null)
+            {
+                handler(this, EventArgs.Empty);
+            }
+#else
+            CommandManager.InvalidateRequerySuggested();
+#endif
         }
     }
 }
