@@ -17,6 +17,7 @@ namespace Cinch
     {
         #region Data
         private Boolean isCloseable = true;
+        private String displayName = string.Empty;
         #endregion
 
         #region Public Properties
@@ -30,7 +31,42 @@ namespace Cinch
         /// CloseActiveWorkspace (CinchV1 compatibility only)
         /// </summary>
         public SimpleCommand<Object, Object> CloseWorkSpaceCommand { get; private set; }
- 
+
+
+        /// <summary>
+        /// Is this ViewModel closeable (for compatibility with Cinch V1)
+        /// </summary>
+        static PropertyChangedEventArgs isCloseableArgs =
+            ObservableHelper.CreateArgs<ViewModelBase>(x => x.IsCloseable);
+
+        public Boolean IsCloseable
+        {
+            get { return isCloseable; }
+            set
+            {
+                isCloseable = value;
+                NotifyPropertyChanged(isCloseableArgs);
+            }
+        }
+
+
+        /// <summary>
+        /// DisplayName for ViewModel (for compatibility with Cinch V1)
+        /// </summary>
+        static PropertyChangedEventArgs displayNameArgs =
+            ObservableHelper.CreateArgs<ViewModelBase>(x => x.DisplayName);
+
+        public String DisplayName
+        {
+            get { return displayName; }
+            set
+            {
+                displayName = value;
+                NotifyPropertyChanged(displayNameArgs);
+            }
+        }
+
+
         #endregion
 
         #region Event(s)
