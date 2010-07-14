@@ -79,9 +79,6 @@
     <Compile Include="..\CinchV2\Commands\SimpleCommand.cs">
       <Link>Commands\SimpleCommand.cs</Link>
     </Compile>
-    <Compile Include="..\CinchV2\Commands\WeakEventHandlerManager.cs">
-      <Link>Commands\WeakEventHandlerManager.cs</Link>
-    </Compile>
     <Compile Include="..\CinchV2\Events\EventArgs\CloseRequestEventArgs.cs">
       <Link>Events\EventArgs\CloseRequestEventArgs.cs</Link>
     </Compile>
@@ -90,6 +87,9 @@
     </Compile>
     <Compile Include="..\CinchV2\Events\WeakEvents\WeakEvent.cs">
       <Link>Events\WeakEvents\WeakEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\CinchV2\Events\WeakEvents\WeakEventAction.cs">
+      <Link>Events\WeakEvents\WeakEventAction.cs</Link>
     </Compile>
     <Compile Include="..\CinchV2\Events\WeakEvents\WeakEventHelper.cs">
       <Link>Events\WeakEvents\WeakEventHelper.cs</Link>

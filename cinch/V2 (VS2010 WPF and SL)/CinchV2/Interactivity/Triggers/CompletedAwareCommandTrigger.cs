@@ -36,7 +36,7 @@ namespace Cinch
         #region Command
         public static readonly DependencyProperty CommandProperty =
             DependencyProperty.Register("Command", typeof(ICompletionAwareCommand),
-                typeof(CompletedAwareCommandTrigger),null);
+                typeof(CompletedAwareCommandTrigger), null);
 
         /// <summary>
         /// Gets or sets the Command property. 
@@ -60,15 +60,7 @@ namespace Cinch
         protected override void OnAttached()
         {
             base.OnAttached();
-
-#if !SILVERLIGHT
-            if (!AssociatedObject.IsLoaded)
-            {
-                this.Command.CommandCompleted  += Command_Completed;
-            }
-#else
-            this.Command.CommandCompleted  += Command_Completed;
-#endif
+            this.Command.CommandCompleted += Command_Completed;
 
         }
 

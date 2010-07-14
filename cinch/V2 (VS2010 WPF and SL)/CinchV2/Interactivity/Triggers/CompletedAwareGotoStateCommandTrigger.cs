@@ -74,8 +74,8 @@ namespace Cinch
         #region DPs
 
         #region Command
-        public static readonly DependencyProperty CommandProperty = 
-            DependencyProperty.Register("Command", typeof(ICompletionAwareCommand), 
+        public static readonly DependencyProperty CommandProperty =
+            DependencyProperty.Register("Command", typeof(ICompletionAwareCommand),
                 typeof(CompletedAwareGoToStateCommandTrigger), null);
 
         /// <summary>
@@ -120,16 +120,7 @@ namespace Cinch
         protected override void OnAttached()
         {
             base.OnAttached();
-
-#if !SILVERLIGHT
-            if (!AssociatedObject.IsLoaded)
-            {
-                this.Command.CommandCompleted  += Command_Completed;
-            }
-#else
             this.Command.CommandCompleted += Command_Completed;
-#endif
-
         }
 
 

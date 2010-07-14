@@ -16,81 +16,42 @@ namespace Cinch
         /// <summary>
         /// Notifies that the command has completed
         /// </summary>
-        event Action<Object> CommandCompleted;
+        //event Action<Object> CommandCompleted;
+
+        WeakActionEvent<object> CommandCompleted { get; set; }
     }
+
+
     
-
-    /// <summary>
-    /// Interface that defines if the object instance is active
-    /// and notifies when the activity changes.
-    /// </summary>
-    public interface IActiveAware
-    {
-        /// <summary>
-        /// Gets or sets a value indicating whether the object is active.
-        /// </summary>
-        /// <value><see langword="true" /> if the object is active; otherwise <see langword="false" />.</value>
-        bool IsActive { get; set; }
-
-        /// <summary>
-        /// Notifies that the value for <see cref="IsActive"/> property has changed.
-        /// </summary>
-        event EventHandler IsActiveChanged;
-    }
-
 
     /// <summary>
     /// Simple delegating command, based largely on DelegateCommand from PRISM/CAL
     /// </summary>
     /// <typeparam name="T">The type for the </typeparam>
-    public class SimpleCommand<T1,T2> : ICommand, IActiveAware, ICompletionAwareCommand
+    public class SimpleCommand<T1, T2> : ICommand, ICompletionAwareCommand
     {
         private Func<T1, bool> canExecuteMethod;
         private Action<T2> executeMethod;
-        private bool isActive=true;
-        private event EventHandler isActiveChanged;
-        private event Action<Object> commandCompleted;
+        private WeakActionEvent<object> commandCompleted;
 
         public SimpleCommand(Func<T1, bool> canExecuteMethod, Action<T2> executeMethod)
         {
             this.executeMethod = executeMethod;
             this.canExecuteMethod = canExecuteMethod;
+            this.CommandCompleted = new WeakActionEvent<object>();
         }
 
         public SimpleCommand(Action<T2> executeMethod)
         {
             this.executeMethod = executeMethod;
             this.canExecuteMethod = (x) => { return true; };
-        }
-       
-        public event EventHandler IsActiveChanged
-        {
-            add { isActiveChanged += value; }
-            remove { isActiveChanged -= value; }
+            this.CommandCompleted = new WeakActionEvent<object>();
         }
 
-        public event Action<Object> CommandCompleted
-        {
-            add { commandCompleted += value; }
-            remove { commandCompleted -= value; }
-        }
+      
 
 
-        public bool IsActive
-        {
-            get { return isActive; }
-            set
-            {
-                if (isActive == value) return;
-                isActive = value;
-
-                EventHandler handler = isActiveChanged;
-                if (handler != null)
-                {
-                    handler(this, EventArgs.Empty);
-                }
-            }
-        }
+        public WeakActionEvent<object> CommandCompleted { get; set; }
 
         public bool CanExecute(T1 parameter)
         {
@@ -106,16 +67,17 @@ namespace Cinch
             }
 
             //now raise CommandCompleted for this ICommand
-            Action<Object> completedHandler = commandCompleted;
+            WeakActionEvent<object> completedHandler = CommandCompleted;
             if (completedHandler != null)
             {
-                completedHandler(parameter);
+
+                completedHandler.Invoke(parameter);
             }
         }
 
         public bool CanExecute(object parameter)
         {
-            return CanExecute((T1)parameter) && IsActive;
+            return CanExecute((T1)parameter);
         }
 
         public void Execute(object parameter)

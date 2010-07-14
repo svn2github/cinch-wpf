@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="BusinessObjects\Bases\EditableValidatingObject.cs" />
     <Compile Include="Events\WeakEvents\WeakEvent.cs" />
+    <Compile Include="Events\WeakEvents\WeakEventAction.cs" />
     <Compile Include="Events\WeakEvents\WeakEventHelper.cs" />
     <Compile Include="Events\WeakEvents\WeakEventProxy.cs" />
     <Compile Include="Interactivity\Actions\CommandDrivenGoToStateAction.cs" />
@@ -85,7 +86,6 @@
     <Compile Include="BusinessObjects\DataWrapper.cs" />
     <Compile Include="Commands\EventToCommandArgs.cs" />
     <Compile Include="Commands\SimpleCommand.cs" />
-    <Compile Include="Commands\WeakEventHandlerManager.cs" />
     <Compile Include="Events\EventArgs\CloseRequestEventArgs.cs" />
     <Compile Include="Events\EventArgs\UICompletedEventArgs.cs" />
     <Compile Include="Messaging\MediatorMessageSinkAttribute.cs" />

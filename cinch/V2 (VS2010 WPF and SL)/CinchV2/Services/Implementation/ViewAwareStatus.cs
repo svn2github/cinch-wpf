@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.ComponentModel.Composition;
 using System.Windows.Threading;
 using MEFedMVVM.Services.Contracts;
+using System.Linq;
 using MEFedMVVM.ViewModelLocator;
 
 namespace Cinch
@@ -22,17 +24,70 @@ namespace Cinch
     {
 
         #region Data
-        private FrameworkElement view = null;
+        WeakReference weakViewInstance;
         #endregion
 
         #region IViewAwareStatus Members
 
-        public event Action ViewLoaded;
-        public event Action ViewUnloaded;
+        readonly IList<WeakAction> loadedHandlers = new List<WeakAction>();
+        public event Action ViewLoaded
+        {
+            add
+            {
+                loadedHandlers.Add(new WeakAction(value.Target, typeof(Action), value.Method));
+            }
+            remove
+            {
+
+            }
+        }
+
+
+        readonly IList<WeakAction> unloadedHandlers = new List<WeakAction>();
+        public event Action ViewUnloaded
+        {
+            add
+            {
+                unloadedHandlers.Add(new WeakAction(value.Target, typeof(Action), value.Method));
+            }
+            remove
+            {
+
+            }
+        }
+
+
+
 
 #if !SILVERLIGHT
-        public event Action ViewActivated;
-        public event Action ViewDeactivated;
+
+        readonly IList<WeakAction> activatedHandlers = new List<WeakAction>();
+        public event Action ViewActivated
+        {
+            add
+            {
+                activatedHandlers.Add(new WeakAction(value.Target, typeof(Action), value.Method));
+            }
+            remove
+            {
+
+            }
+        }
+
+
+        readonly IList<WeakAction> deactivatedHandlers = new List<WeakAction>();
+        public event Action ViewDeactivated
+        {
+            add
+            {
+                deactivatedHandlers.Add(new WeakAction(value.Target, typeof(Action), value.Method));
+            }
+            remove
+            {
+
+            }
+        }
+
 #endif
 
         public Dispatcher ViewsDispatcher { get; private set; }
@@ -41,7 +96,7 @@ namespace Cinch
         {
             get
             {
-                return (Object)view;
+                return (Object)weakViewInstance.Target;
             }
         }
         #endregion
@@ -50,33 +105,36 @@ namespace Cinch
 
         public void InjectContext(object view)
         {
-            if (this.view == view)
-                return;
+            if (this.weakViewInstance != null)
+            {
+                if (this.weakViewInstance.Target == view)
+                    return;
+            }
 
             // unregister before hooking new events
-            if (this.view != null)
+            if (this.weakViewInstance != null && this.weakViewInstance.Target != null)
             {
-                this.view.Loaded -= OnViewLoaded;
-                this.view.Unloaded -= OnViewUnloaded;
+                ((FrameworkElement)this.weakViewInstance.Target).Loaded -= OnViewLoaded;
+                ((FrameworkElement)this.weakViewInstance.Target).Unloaded -= OnViewUnloaded;
 #if !SILVERLIGHT
-                Window w = this.view as Window;
+                Window w = this.weakViewInstance.Target as Window;
                 if (w != null)
                 {
-                    w.Activated -= OnViewActivated;
-                    w.Deactivated -= OnViewDeactivated;
+                    ((Window)this.weakViewInstance.Target).Activated -= OnViewActivated;
+                    ((Window)this.weakViewInstance.Target).Deactivated -= OnViewDeactivated;
                 }
 #endif
             }
 
-            this.view = view as FrameworkElement;
+            var x = view as FrameworkElement;
 
-            if (this.view != null)
+            if (x != null)
             {
-                this.view.Loaded += OnViewLoaded;
-                this.view.Unloaded += OnViewUnloaded;
+                x.Loaded += OnViewLoaded;
+                x.Unloaded += OnViewUnloaded;
 
 #if !SILVERLIGHT
-                Window w = this.view as Window;
+                Window w = x as Window;
                 if (w != null)
                 {
                     w.Activated += OnViewActivated;
@@ -84,24 +142,26 @@ namespace Cinch
                 }
 #endif
                 //get the Views Dispatcher
-                this.ViewsDispatcher = this.view.Dispatcher;
+                this.ViewsDispatcher = x.Dispatcher;
+                weakViewInstance = new WeakReference(x);
 
             }
         }
 
-
-
-
         private void OnViewLoaded(object sender, RoutedEventArgs e)
         {
-            if (ViewLoaded != null)
-                ViewLoaded();
+            foreach (var loadedHandler in loadedHandlers)
+            {
+                loadedHandler.GetMethod().DynamicInvoke();
+            }
         }
 
         private void OnViewUnloaded(object sender, RoutedEventArgs e)
         {
-            if (ViewUnloaded != null)
-                ViewUnloaded();
+            foreach (var unloadedHandler in unloadedHandlers)
+            {
+                unloadedHandler.GetMethod().DynamicInvoke();
+            }
         }
 
 
@@ -109,14 +169,19 @@ namespace Cinch
 
         private void OnViewActivated(object sender, EventArgs e)
         {
-            if (ViewActivated != null)
-                ViewActivated();
+            foreach (var activatedHandler in activatedHandlers)
+            {
+                activatedHandler.GetMethod().DynamicInvoke();
+            }
+
         }
 
         private void OnViewDeactivated(object sender, EventArgs e)
         {
-            if (ViewDeactivated != null)
-                ViewDeactivated();
+            foreach (var deactivatedHandler in deactivatedHandlers)
+            {
+                deactivatedHandler.GetMethod().DynamicInvoke();
+            }
         }
 
 
