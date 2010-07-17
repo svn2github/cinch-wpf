@@ -113,9 +113,6 @@
     <Compile Include="..\CinchV2\Messaging\MediatorSingleton.cs">
       <Link>Messaging\MediatorSingleton.cs</Link>
     </Compile>
-    <Compile Include="..\CinchV2\Services\Implementation\ViewAwareStatus.cs">
-      <Link>Services\Implementation\ViewAwareStatus.cs</Link>
-    </Compile>
     <Compile Include="..\CinchV2\Services\Implementation\VSMService.cs">
       <Link>Services\Implementation\VSMService.cs</Link>
     </Compile>
@@ -198,6 +195,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Services\Implementation\ViewAwareStatus.cs" />
     <Compile Include="Services\Implementation\WPFMessageBoxService.cs" />
     <Compile Include="Services\Implementation\WPFOpenFileService.cs" />
     <Compile Include="Services\Implementation\WPFSaveFileService.cs" />

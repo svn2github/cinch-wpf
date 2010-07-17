@@ -7,7 +7,8 @@ using System.Diagnostics;
 namespace Cinch
 {
 
-    #region WeakAction Class
+
+    #region WeakAction Inner Class
     /// <summary>
     /// This class creates a weak delegate of form Action(Of Object)
     /// </summary>
@@ -81,19 +82,19 @@ namespace Cinch
         #region Data
         static readonly Mediator instance = new Mediator();
         static readonly object syncLock = new object();
-        private readonly Dictionary<object, List<WeakAction>> _registeredHandlers = 
+        private readonly Dictionary<object, List<WeakAction>> _registeredHandlers =
             new Dictionary<object, List<WeakAction>>();
         #endregion
 
         #region Ctor
         static Mediator()
-        { 
-            
+        {
+
         }
 
         private Mediator()
         {
-         
+
         }
         #endregion
 

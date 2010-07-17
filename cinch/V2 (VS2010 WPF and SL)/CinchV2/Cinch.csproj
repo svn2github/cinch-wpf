@@ -90,7 +90,6 @@
     <Compile Include="Events\EventArgs\UICompletedEventArgs.cs" />
     <Compile Include="Messaging\MediatorMessageSinkAttribute.cs" />
     <Compile Include="Messaging\MediatorSingleton.cs" />
-    <Compile Include="Services\Implementation\ViewAwareStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

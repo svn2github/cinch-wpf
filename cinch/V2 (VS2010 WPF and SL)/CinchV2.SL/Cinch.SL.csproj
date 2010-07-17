@@ -115,9 +115,6 @@
     <Compile Include="..\CinchV2\Messaging\MediatorSingleton.cs">
       <Link>Messaging\MediatorSingleton.cs</Link>
     </Compile>
-    <Compile Include="..\CinchV2\Services\Implementation\ViewAwareStatus.cs">
-      <Link>Services\Implementation\ViewAwareStatus.cs</Link>
-    </Compile>
     <Compile Include="..\CinchV2\Services\Implementation\VSMService.cs">
       <Link>Services\Implementation\VSMService.cs</Link>
     </Compile>
@@ -185,6 +182,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Implementation\ChildWindowService.cs" />
     <Compile Include="Services\Implementation\SLMessageBoxService.cs" />
+    <Compile Include="Services\Implementation\ViewAwareStatus.cs" />
     <Compile Include="Services\Interfaces\IMessageBoxService.cs" />
     <Compile Include="Services\Interfaces\IChildWindowService.cs" />
     <Compile Include="Services\Test Implementations\TestMessageBoxService.cs" />

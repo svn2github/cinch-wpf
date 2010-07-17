@@ -5,15 +5,16 @@ using System.Reflection;
 
 namespace Cinch
 {
-    internal class WeakEventAction : WeakReference
+    public class WeakEventAction
     {
         #region Data
 
         readonly MethodInfo _method;
         readonly Type _delegateType;
+        #endregion
 
-
-
+        #region Public Properties
+        public WeakReference TargetObject { get; private set; }
         #endregion
 
         #region Internal Methods
@@ -24,9 +25,9 @@ namespace Cinch
         /// <param name="target">The sender</param>
         /// <param name="method">The _method to call on sender</param>
         /// <param name="parameterType">The parameter type if using generics</param>
-        internal WeakEventAction(object target, MethodInfo method, Type parameterType)
-            : base(target)
+        public WeakEventAction(object target, MethodInfo method, Type parameterType)
         {
+            this.TargetObject = new WeakReference(target);
             this._method = method;
             this._delegateType = parameterType == null
                                  ? typeof(Action)
@@ -39,13 +40,13 @@ namespace Cinch
         /// <returns>Callback delegate</returns>
         internal Delegate CreateAction()
         {
-            var target = base.Target;
+            var target = TargetObject.Target;
             if (target != null)
             {
                 // Rehydrate into a real Action
                 // object, so that the _method
                 // can be invoked on the target.
-                return Delegate.CreateDelegate(this._delegateType, base.Target, this._method);
+                return Delegate.CreateDelegate(this._delegateType, TargetObject.Target, this._method);
             }
 
             return null;
@@ -68,7 +69,7 @@ namespace Cinch
             if (parameters != null && parameters.Length > 1)
                 throw new InvalidOperationException("Action should have only 0 or 1 parameter");
 
-            if (_delegates.Any(del => del.Target == handler.Target))
+            if (_delegates.Any(del => del.TargetObject.Target == handler.Target))
             {
                 return;
             }
@@ -88,7 +89,7 @@ namespace Cinch
         private void Remove(Action<T> handler)
         {
             foreach (var del in _delegates)
-                if (del.Target == handler.Target)
+                if (del.TargetObject.Target == handler.Target)
                 {
                     _delegates.Remove(del);
                     return;
@@ -102,7 +103,7 @@ namespace Cinch
             for (var i = _delegates.Count - 1; i > -1; --i)
             {
                 var weakAction = _delegates[i];
-                if (!weakAction.IsAlive)
+                if (!weakAction.TargetObject.IsAlive)
                     _delegates.RemoveAt(i);
                 else
                 {
