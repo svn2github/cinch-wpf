@@ -57,10 +57,6 @@ namespace Cinch
         }
 
 
-
-
-#if !SILVERLIGHT
-
         readonly IList<WeakAction> activatedHandlers = new List<WeakAction>();
         public event Action ViewActivated
         {
@@ -88,8 +84,6 @@ namespace Cinch
             }
         }
 
-#endif
-
         public Dispatcher ViewsDispatcher { get; private set; }
 
         public Object View
@@ -114,16 +108,23 @@ namespace Cinch
             // unregister before hooking new events
             if (this.weakViewInstance != null && this.weakViewInstance.Target != null)
             {
-                ((FrameworkElement)this.weakViewInstance.Target).Loaded -= OnViewLoaded;
-                ((FrameworkElement)this.weakViewInstance.Target).Unloaded -= OnViewUnloaded;
-#if !SILVERLIGHT
-                Window w = this.weakViewInstance.Target as Window;
-                if (w != null)
+
+                object targ = this.weakViewInstance.Target;
+
+                if (targ != null)
                 {
-                    ((Window)this.weakViewInstance.Target).Activated -= OnViewActivated;
-                    ((Window)this.weakViewInstance.Target).Deactivated -= OnViewDeactivated;
+
+                    ((FrameworkElement)targ).Loaded -= OnViewLoaded;
+                    ((FrameworkElement)targ).Unloaded -= OnViewUnloaded;
+
+                    Window w = targ as Window;
+                    if (w != null)
+                    {
+                        ((Window)this.weakViewInstance.Target).Activated -= OnViewActivated;
+                        ((Window)this.weakViewInstance.Target).Deactivated -= OnViewDeactivated;
+                    }
                 }
-#endif
+
             }
 
             var x = view as FrameworkElement;
@@ -133,14 +134,13 @@ namespace Cinch
                 x.Loaded += OnViewLoaded;
                 x.Unloaded += OnViewUnloaded;
 
-#if !SILVERLIGHT
                 Window w = x as Window;
                 if (w != null)
                 {
                     w.Activated += OnViewActivated;
                     w.Deactivated += OnViewDeactivated;
                 }
-#endif
+
                 //get the Views Dispatcher
                 this.ViewsDispatcher = x.Dispatcher;
                 weakViewInstance = new WeakReference(x);
@@ -165,8 +165,6 @@ namespace Cinch
         }
 
 
-#if !SILVERLIGHT
-
         private void OnViewActivated(object sender, EventArgs e)
         {
             foreach (var activatedHandler in activatedHandlers)
@@ -183,10 +181,6 @@ namespace Cinch
                 deactivatedHandler.GetMethod().DynamicInvoke();
             }
         }
-
-
-#endif
-
         #endregion
     }
 }
