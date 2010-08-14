@@ -47,7 +47,7 @@ namespace Cinch
     ///     }  
     /// </code>
     /// </example>
-    public abstract class ValidatingViewModelBase : ViewModelBase, IDataErrorInfo
+    public abstract partial class ValidatingViewModelBase : ViewModelBase, IDataErrorInfo
     {
         #region Data
         private List<Rule> rules = new List<Rule>();

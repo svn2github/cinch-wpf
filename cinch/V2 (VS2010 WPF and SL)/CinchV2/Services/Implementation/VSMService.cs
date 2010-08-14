@@ -61,8 +61,12 @@ namespace Cinch
                 AttachAndExecuteLastState(root);
             else
             {
-                // if not then check if they are in the content (This is what Blend does, the Visual States are defined in the first element)
+
+#if SILVERLIGHT
                 var contentControlRoot = root as UserControl;
+#else
+                var contentControlRoot = root as ContentControl;
+#endif
                 if (contentControlRoot != null)
                 {
                     var child = (FrameworkElement)contentControlRoot.Content;

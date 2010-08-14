@@ -47,7 +47,7 @@ namespace Cinch
     ///     }  
     /// </code>
     /// </example>
-    public class ValidatingObject : IDataErrorInfo, INotifyPropertyChanged, IParentablePropertyExposer
+    public partial class ValidatingObject : IDataErrorInfo, INotifyPropertyChanged, IParentablePropertyExposer
     {
         #region Data
         private List<Rule> rules = new List<Rule>();

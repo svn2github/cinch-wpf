@@ -459,6 +459,20 @@ namespace CinchCodeGen
             sb.AppendLine(String.Format("\t\tpublic {0}()", vmToPersist.VMName));
             sb.AppendLine("\t\t{");
 
+
+            //write out auto generated part callbacks
+            sb.AppendLine();
+            sb.AppendLine("\t\t\t#region Create Auto Generated Property Callbacks");
+            sb.AppendLine("\t\t\t//Create callbacks for auto generated properties in auto generated partial class part");
+            sb.AppendLine("\t\t\t//Which allows this part to know when a property in the generated part changes");
+            foreach (var prop in vmToPersist.VMProperties)
+            {
+                sb.AppendLine(prop.CustomPartCtorCallBack);
+            }
+            sb.AppendLine("\t\t\t#endregion");
+
+
+
             //write out wrappers if they are needed
             if (propsWithWrappers.Count() > 0)
             {
@@ -470,23 +484,14 @@ namespace CinchCodeGen
                 sb.AppendLine("\t\t\t//need for reflection");
                 sb.AppendLine("\t\t\tcachedListOfDataWrappers =");
                 sb.AppendLine(String.Format(
-                    "\t\t\t    DataWrapperHelper.GetWrapperProperties<{0}>(this);",vmToPersist.VMName));
+                    "\t\t\t    DataWrapperHelper.GetWrapperProperties<{0}>(this);", vmToPersist.VMName));
                 sb.AppendLine("\t\t\t#endregion");
 
 
             }
 
-            sb.AppendLine("\t\t\t#endregion");
 
-            //write out auto generated part callbacks
-            sb.AppendLine();
-            sb.AppendLine("\t\t\t#region Create Auto Generated Property Callbacks");
-            sb.AppendLine("\t\t\t//Create callbacks for auto generated properties in auto generated partial class part");
-            sb.AppendLine("\t\t\t//Which allows this part to know when a property in the generated part changes");
-            foreach (var prop in vmToPersist.VMProperties)
-            {
-                sb.AppendLine(prop.CustomPartCtorCallBack);
-            }
+           
 
 
             //write out example validation, if this ViewModel type supports them
@@ -759,7 +764,7 @@ namespace CinchCodeGen
 
                 return
                 UseDataWrapper ?
-                String.Format("\t\t\t{0} = new Cinch.DataWrapper<{1}>(this,{2}ChangeArgs);",
+                String.Format("\t\t\t{0} = new Cinch.DataWrapper<{1}>(this,{2}ChangeArgs, {2}Callback);",
                     UpperPropName, PropertyType, LowerPropName) :
                 String.Empty;
             }

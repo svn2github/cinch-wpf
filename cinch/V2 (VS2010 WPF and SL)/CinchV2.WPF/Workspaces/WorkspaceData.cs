@@ -10,7 +10,7 @@ namespace Cinch
     /// Workspace data class which can be used within a DataTemplate along
     /// with the NavProps DP to manage workspaces
     /// </summary>
-    public class WorkspaceData : INotifyPropertyChanged, IDisposable
+    public partial class WorkspaceData : INotifyPropertyChanged, IDisposable
     {
         #region Data
         private string imagePath;
@@ -36,13 +36,42 @@ namespace Cinch
         }
         #endregion
 
+        #region Custom Closing Event
+
+        public event CancelEventHandler WorkspaceTabClosing;
+
+        protected void NotifyWorkspaceTabClosing(CancelEventArgs args)
+        {
+            CancelEventHandler handler = WorkspaceTabClosing;
+
+            if (handler != null)
+            {
+                handler(this, args);
+            }
+        }
+
+        #endregion
+
         #region Command Implememtation
         /// <summary>
         /// Executes the CloseWorkSpace Command
         /// </summary>
         private void ExecuteCloseWorkSpaceCommand(object o)
         {
-            Mediator.Instance.NotifyColleagues<WorkspaceData>("RemoveWorkspaceItem", this);
+            CancelEventHandler handler = WorkspaceTabClosing;
+            if (handler != null && WorkspaceTabClosing.GetInvocationList().Count() > 0)
+            {
+                CancelEventArgs args = new CancelEventArgs(false);
+                NotifyWorkspaceTabClosing(args);
+                if (args.Cancel == false)
+                {
+                    Mediator.Instance.NotifyColleagues<WorkspaceData>("RemoveWorkspaceItem", this);
+                }
+            }
+            else
+            {
+                Mediator.Instance.NotifyColleagues<WorkspaceData>("RemoveWorkspaceItem", this);
+            }
         }
         #endregion
 
@@ -152,7 +181,8 @@ namespace Cinch
         #region Overrides
         public override string ToString()
         {
-            return String.Format("ViewLookupKey {0}, DataValue {1}, DisplayText {2}", ViewLookupKey, DataValue.ToString(), DisplayText);
+            return String.Format("ViewLookupKey {0}, DisplayText {2}, IsCloseable {3}",
+                ViewLookupKey, DisplayText, IsCloseable);
         }
         #endregion
 

@@ -15,7 +15,7 @@ namespace Cinch
     /// If you have attributed up your views using the ViewnameToViewLookupKeyMetadataAttribute
     /// Registration of Views with the IUIVisualizerService service is automatic.
     /// However you can still register views manually, to do this simply put some lines like this in you App.Xaml.cs
-    /// MefLocator.Container.GetExport<IUIVisualizerService>().Value.Register("MainWindow", typeof(MainWindow));
+    /// ViewModelRepository.Instance.Resolver.Container.GetExport<IUIVisualizerService>().Value.Register("MainWindow", typeof(MainWindow));
     /// </summary>
     [PartCreationPolicy(CreationPolicy.Shared)]
     [ExportService(ServiceType.Both, typeof(IUIVisualizerService))]

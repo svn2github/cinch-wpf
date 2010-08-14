@@ -162,6 +162,7 @@ namespace Cinch
             backgroundWorker.RunWorkerCompleted += 
                 delegate(object sender, RunWorkerCompletedEventArgs e)
             {
+
                 // Call the completion action
                 CompletionAction((TResult)e.Result);
                 

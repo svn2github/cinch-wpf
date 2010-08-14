@@ -40,9 +40,7 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MEFedMVVM.WPF">
-      <HintPath>Lib\MEFedMVVM.WPF.dll</HintPath>
-    </Reference>
+    <Reference Include="MEFedMVVM.WPF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b6db3dc4f5fba1e3, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Lib\Microsoft.Expression.Interactions.dll</HintPath>
@@ -195,6 +193,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Services\Implementation\ViewAwareStatusWindow.cs" />
     <Compile Include="Services\Implementation\ViewAwareStatus.cs" />
     <Compile Include="Services\Implementation\WPFMessageBoxService.cs" />
     <Compile Include="Services\Implementation\WPFOpenFileService.cs" />
@@ -204,10 +203,12 @@
     <Compile Include="Services\Interfaces\IOpenFileService.cs" />
     <Compile Include="Services\Interfaces\ISaveFileService.cs" />
     <Compile Include="Services\Interfaces\IUIVisualizerService.cs" />
+    <Compile Include="Services\Interfaces\IViewAwareStatusWindow.cs" />
     <Compile Include="Services\Test Implementations\TestMessageBoxService.cs" />
     <Compile Include="Services\Test Implementations\TestOpenFileService.cs" />
     <Compile Include="Services\Test Implementations\TestSaveFileService.cs" />
     <Compile Include="Services\Test Implementations\TestUIVisualizerService.cs" />
+    <Compile Include="Services\Test Implementations\TestViewAwareStatusWindow.cs" />
     <Compile Include="Threading\AddRangeObservableCollection.cs" />
     <Compile Include="Threading\ApplicationHelper.cs" />
     <Compile Include="Threading\DispatcherNotifiedObservableCollection.cs" />
@@ -237,6 +238,8 @@
     <Resource Include="..\CinchV2\Events\WeakEvents\WeakEvent Copyrights.txt">
       <Link>Events\WeakEvents\WeakEvent Copyrights.txt</Link>
     </Resource>
+    <Content Include="Lib\MEFedMVVM.WPF.dll" />
+    <Content Include="Lib\MEFedMVVM.WPF.pdb" />
     <Content Include="Lib\Microsoft.Expression.Interactions.dll" />
     <Content Include="Lib\System.Windows.Interactivity.dll" />
   </ItemGroup>

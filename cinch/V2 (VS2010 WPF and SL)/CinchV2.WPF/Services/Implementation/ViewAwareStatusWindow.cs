@@ -6,28 +6,32 @@ using System.Windows.Threading;
 using MEFedMVVM.Services.Contracts;
 using System.Linq;
 using MEFedMVVM.ViewModelLocator;
+using System.ComponentModel;
 
 namespace Cinch
 {
     /// <summary>
-    /// View aware service that provides the following
-    /// 1. Events for ViewLoaded / ViewUnloaded (WPF and SL)
-    /// 2. Events for ViewActivated / ViewDeactivated (WPF Only)
+    /// View aware service that provides the following Events. Where we are specifically
+    /// targetting a Window type. As such this is only available for WPF
+    ///    ViewLoaded / ViewUnloaded
+    ///    ViewActivated / ViewDeactivated
+    ///    ViewWindowClosed / ViewWindowContentRendered / 
+    ///    ViewWindowLocationChanged / ViewWindowStateChanged
     /// 3. Views current Dispatcher
     /// 4. If the view implements <c>IViewCreationContextProvider</c>
     ///    the current Views Context will also be available to allow
     ///    the ViewModel to obtain some view specific contextual information
     /// </summary>
     [PartCreationPolicy(CreationPolicy.NonShared)]
-    [ExportService(ServiceType.Both, typeof(IViewAwareStatus))]
-    public class ViewAwareStatus : IViewAwareStatus
+    [ExportService(ServiceType.Both, typeof(IViewAwareStatusWindow))]
+    public class ViewAwareStatusWindow : IViewAwareStatusWindow
     {
 
         #region Data
         WeakReference weakViewInstance;
         #endregion
 
-        #region IViewAwareStatus Members
+        #region IViewAwareStatusWindow Members
 
         readonly IList<WeakAction> loadedHandlers = new List<WeakAction>();
         public event Action ViewLoaded
@@ -84,6 +88,73 @@ namespace Cinch
             }
         }
 
+
+        readonly IList<WeakAction> closedHandlers = new List<WeakAction>();
+        public event Action ViewWindowClosed
+        {
+            add
+            {
+                closedHandlers.Add(new WeakAction(value.Target, typeof(Action), value.Method));
+            }
+            remove
+            {
+
+            }
+        }
+
+        private readonly WeakEvent<EventHandler<CancelEventArgs>> viewWindowClosingEvent = new WeakEvent<EventHandler<CancelEventArgs>>();
+        public event EventHandler<CancelEventArgs> ViewWindowClosing
+        {
+            add
+            {
+                viewWindowClosingEvent.Add(value);
+            }
+            remove
+            {
+                viewWindowClosingEvent.Remove(value);
+            }
+        }
+
+        readonly IList<WeakAction> contentRenderedHandlers = new List<WeakAction>();
+        public event Action ViewWindowContentRendered
+        {
+            add
+            {
+                contentRenderedHandlers.Add(new WeakAction(value.Target, typeof(Action), value.Method));
+            }
+            remove
+            {
+
+            }
+        }
+
+        readonly IList<WeakAction> locationChangedHandlers = new List<WeakAction>();
+        public event Action ViewWindowLocationChanged
+        {
+            add
+            {
+                locationChangedHandlers.Add(new WeakAction(value.Target, typeof(Action), value.Method));
+            }
+            remove
+            {
+
+            }
+        }
+
+        readonly IList<WeakAction> stateChangedHandlers = new List<WeakAction>();
+        public event Action ViewWindowStateChanged
+        {
+            add
+            {
+                stateChangedHandlers.Add(new WeakAction(value.Target, typeof(Action), value.Method));
+            }
+            remove
+            {
+
+            }
+        }
+
+
         public Dispatcher ViewsDispatcher { get; private set; }
 
         public Object View
@@ -93,8 +164,6 @@ namespace Cinch
                 return (Object)weakViewInstance.Target;
             }
         }
-
-  
         #endregion
 
         #region IContextAware Members
@@ -116,8 +185,13 @@ namespace Cinch
                 if (targ != null)
                 {
 
-                    ((FrameworkElement)targ).Loaded -= OnViewLoaded;
-                    ((FrameworkElement)targ).Unloaded -= OnViewUnloaded;
+                    ((FrameworkElement)this.weakViewInstance.Target).Loaded -= OnViewLoaded;
+                    ((FrameworkElement)this.weakViewInstance.Target).Unloaded -= OnViewUnloaded;
+                    ((Window)this.weakViewInstance.Target).Closed -= OnViewWindowClosed;
+                    ((Window)this.weakViewInstance.Target).Closing -= OnViewWindowClosing;
+                    ((Window)this.weakViewInstance.Target).ContentRendered -= OnViewWindowContentRendered;
+                    ((Window)this.weakViewInstance.Target).LocationChanged -= OnViewWindowLocationChanged;
+                    ((Window)this.weakViewInstance.Target).StateChanged -= OnViewWindowStateChanged;
 
                     Window w = targ as Window;
                     if (w != null)
@@ -141,6 +215,11 @@ namespace Cinch
                 {
                     w.Activated += OnViewActivated;
                     w.Deactivated += OnViewDeactivated;
+                    w.Closed += OnViewWindowClosed;
+                    w.Closing += OnViewWindowClosing;
+                    w.ContentRendered += OnViewWindowContentRendered;
+                    w.LocationChanged += OnViewWindowLocationChanged;
+                    w.StateChanged += OnViewWindowStateChanged;
                 }
 
                 //get the Views Dispatcher
@@ -149,8 +228,6 @@ namespace Cinch
 
             }
         }
-
-   
         #endregion
 
         #region Private Helpers
@@ -189,6 +266,43 @@ namespace Cinch
             }
         }
 
+
+        private void OnViewWindowClosed(object sender, EventArgs e)
+        {
+            foreach (var closedHandler in closedHandlers)
+            {
+                closedHandler.GetMethod().DynamicInvoke();
+            }
+        }
+
+        private void OnViewWindowClosing(object sender, CancelEventArgs e)
+        {
+            viewWindowClosingEvent.Raise(this, e);
+        }
+
+        private void OnViewWindowContentRendered(object sender, EventArgs e)
+        {
+            foreach (var contentRenderedHandler in contentRenderedHandlers)
+            {
+                contentRenderedHandler.GetMethod().DynamicInvoke();
+            }
+        }
+
+        private void OnViewWindowLocationChanged(object sender, EventArgs e)
+        {
+            foreach (var locationChangedHandler in locationChangedHandlers)
+            {
+                locationChangedHandler.GetMethod().DynamicInvoke();
+            }
+        }
+
+        private void OnViewWindowStateChanged(object sender, EventArgs e)
+        {
+            foreach (var stateChangedHandler in stateChangedHandlers)
+            {
+                stateChangedHandler.GetMethod().DynamicInvoke();
+            }
+        }
         #endregion
     }
 }

@@ -40,9 +40,7 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MEFedMVVM">
-      <HintPath>Lib\MEFedMVVM.dll</HintPath>
-    </Reference>
+    <Reference Include="MEFedMVVM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Lib\Microsoft.Expression.Interactions.dll</HintPath>
@@ -128,6 +126,7 @@
   <ItemGroup />
   <ItemGroup>
     <Resource Include="Events\WeakEvents\WeakEvent Copyrights.txt" />
+    <Content Include="Lib\MEFedMVVM.dll" />
     <Content Include="Lib\Microsoft.Expression.Interactions.dll" />
     <Content Include="Lib\System.Windows.Interactivity.dll" />
     <Resource Include="README.txt" />

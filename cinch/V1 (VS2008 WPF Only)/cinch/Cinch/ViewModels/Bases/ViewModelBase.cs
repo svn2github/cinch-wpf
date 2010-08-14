@@ -26,7 +26,7 @@ namespace Cinch
     /// <item>Workspace support</item>
     /// </list>
     /// </summary>
-    public abstract class ViewModelBase : INotifyPropertyChanged, IDisposable, IParentablePropertyExposer
+    public abstract partial class ViewModelBase : INotifyPropertyChanged, IDisposable, IParentablePropertyExposer
     {
         #region Data
         private SimpleCommand closeActivePopUpCommand;

@@ -12,7 +12,7 @@ namespace Cinch
     /// Provides a IDataErrorInfo validating object that is also
     /// editable by implementing the IEditableObject interface
     /// </summary>
-    public abstract class EditableValidatingViewModelBase :
+    public abstract partial class EditableValidatingViewModelBase :
         ValidatingViewModelBase, IEditableObject
     {
         #region Data
