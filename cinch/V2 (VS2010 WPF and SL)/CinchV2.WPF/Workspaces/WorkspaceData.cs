@@ -181,7 +181,7 @@ namespace Cinch
         #region Overrides
         public override string ToString()
         {
-            return String.Format("ViewLookupKey {0}, DisplayText {2}, IsCloseable {3}",
+            return String.Format("ViewLookupKey {0}, DisplayText {1}, IsCloseable {2}",
                 ViewLookupKey, DisplayText, IsCloseable);
         }
         #endregion
