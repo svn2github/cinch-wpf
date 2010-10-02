@@ -62,7 +62,8 @@ namespace Cinch
     public abstract class DataWrapperBase : DataWrapperDirtySupportingBase
     {
         #region Data
-        private Boolean isEditable = false;
+        private Boolean isEditable = true;
+        private Boolean isReadOnly = false;
         private IParentablePropertyExposer parent = null;
         private PropertyChangedEventArgs parentPropertyChangeArgs = null;
         private Action valuesChangedCallBack = null;
@@ -118,6 +119,35 @@ namespace Cinch
         #region Public Properties
 
         /// <summary>
+        /// This indicated whether the DataWrapper is Readonly. This is expected
+        /// to be the inverse of the IsEditable property. This property has been
+        /// added for convenience, so you do not have to use a ValueConverter in
+        /// your XAML to convert IsEditable -> ReadOnly in controls that support
+        /// ReadOnly such as textBox
+        /// </summary>
+        static PropertyChangedEventArgs isReadOnlyChangeArgs =
+            ObservableHelper.CreateArgs<DataWrapperBase>(x => x.IsReadOnly);
+
+        public Boolean IsReadOnly
+        {
+            get { return isReadOnly; }
+            set
+            {
+                if (isReadOnly != value)
+                {
+                    isReadOnly = value;
+                    NotifyPropertyChanged(isReadOnlyChangeArgs);
+                    NotifyParentPropertyChanged();
+                    if (valuesChangedCallBack != null)
+                        valuesChangedCallBack();
+                }
+            }
+
+        }
+
+
+
+        /// <summary>
         /// The editable state of the data, the View
         /// is expected to use this to enable/disable
         /// data entry. The ViewModel would set this
@@ -138,6 +168,9 @@ namespace Cinch
                     NotifyParentPropertyChanged();
                     if (valuesChangedCallBack != null)
                         valuesChangedCallBack();
+
+                    //now set IsReadOnly too
+                    IsReadOnly = !IsEditable;
                 }
             }
 
@@ -199,6 +232,7 @@ namespace Cinch
         #region Data
         private T dataValue = default(T);
         private Action valuesChangedCallBack = null;
+        private object parentViewModel = null;
         #endregion
 
         #region Ctors
@@ -206,6 +240,7 @@ namespace Cinch
             PropertyChangedEventArgs parentPropertyChangeArgs)
             : base(parent, parentPropertyChangeArgs)
         {
+            parentViewModel = (object)parent;
         }
 
         /// <summary>
@@ -217,6 +252,7 @@ namespace Cinch
             : base(parent, parentPropertyChangeArgs, valuesChangedCallBack)
         {
             this.valuesChangedCallBack = valuesChangedCallBack;
+            parentViewModel = (object)parent;
         }
         #endregion
 
@@ -246,6 +282,10 @@ namespace Cinch
             get { return this.HasPropertyChanged("dataValue"); }
         }
 
+        public object ParentViewModel
+        {
+            get { return parentViewModel; }
+        }
         #endregion
     }
 

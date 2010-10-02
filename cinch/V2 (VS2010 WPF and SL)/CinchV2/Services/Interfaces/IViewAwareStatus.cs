@@ -17,7 +17,8 @@ namespace Cinch
 
         event Action ViewActivated;
         event Action ViewDeactivated;
-
+#else
+        void PerformCleanUp();
 #endif
 
         Dispatcher ViewsDispatcher { get; }

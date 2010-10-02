@@ -39,6 +39,23 @@ namespace Cinch
                 return (Object)view;
             }
         }
+
+        /// <summary>
+        /// Unhooks all events
+        /// </summary>
+        public void PerformCleanUp()
+        {
+            // unregister events
+            if (this.view != null)
+            {
+                this.view.Loaded -= OnViewLoaded;
+                this.view.Unloaded -= OnViewUnloaded;
+                this.view = null;
+                this.ViewsDispatcher = null;
+                this.view = null;
+            }
+        }
+
         #endregion
 
         #region IContextAware Members

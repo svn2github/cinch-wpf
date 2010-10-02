@@ -67,6 +67,12 @@ namespace Cinch
             }
         }
 
+#if SILVERLIGHT
+        public void PerformCleanUp()
+        {
+            //As this is test double not much to do really
+        }
+#endif
 
         #endregion
 
