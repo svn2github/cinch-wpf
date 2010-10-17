@@ -36,8 +36,33 @@ namespace Cinch
         /// </summary>
         /// <param name="propertyName">The property name</param>
         /// <returns>True if the property has changes since is was put into edit mode</returns>
+        /// <summary>
+        /// Deteremines if a property has changes since is was put into edit mode
+        /// </summary>
+        /// <param name="propertyName">The property name</param>
+        /// <returns>True if the property has changes since is was put into edit mode</returns>
         public bool HasPropertyChanged(string propertyName)
         {
+#if SILVERLIGHT
+
+            string _propertyName = propertyName.ToLower();
+
+            if (_savedState == null)
+                return false;
+
+            object saveValue;
+            object currentValue;
+
+            if (!_savedState.TryGetValue(_propertyName, out saveValue) ||
+            !this.GetFieldValues().TryGetValue(_propertyName, out currentValue))
+                return false;
+
+            if (saveValue == null || currentValue == null)
+                return saveValue != currentValue;
+
+            return !saveValue.Equals(currentValue);
+
+#else
             if (_savedState == null)
                 return false;
 
@@ -50,10 +75,47 @@ namespace Cinch
                 return saveValue != currentValue;
 
             return !saveValue.Equals(currentValue);
+#endif
         }
         #endregion
 
+
+#if SILVERLIGHT
+        protected override Dictionary<string, object> GetFieldValues()
+        {
+            Dictionary<string, object> _propertyValues = null;
+
+            // Get all Properties. The Instance flag is what causes everything to return.
+            var _props = GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            if (_props.Count() > 0)
+            {
+                _propertyValues = new Dictionary<string, object>();
+
+                // Only get a DataWrapper that has a datavalue property
+                var _property = _props.SingleOrDefault(p => p.Name.ToLower() == "datavalue");
+
+                // Only add Primitives, Strings & objects right now.
+                // Lists or collection don't get added. You'll have to call BeginEdit() on each object you add to a list when it's
+                // contained in a parent object.
+                // TODO here figure out how if we get a DataWrapper which is a collection, how to loop through that collection of objects and
+                // set them to edit mode as well.
+                if (_property != null && (_property.PropertyType.BaseType == typeof(ValueType) || _property.PropertyType.BaseType == typeof(object)))
+                {
+                    _propertyValues.Add(_property.Name.ToLower(), _property.GetValue(this, null));
+                }
+                else
+                {
+                    Debug.WriteLine(string.Format("Property did not contain a DataValue property. List of properties{0}", _props.ToString()));
+                }
+            }
+
+            return _propertyValues; 
+        }
+#endif
     }
+
+
 
     /// <summary>
     /// Abstract base class for DataWrapper - allows easier access to
