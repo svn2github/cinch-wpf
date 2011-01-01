@@ -161,7 +161,7 @@ namespace Cinch
                 {
                     if (isModal)
                     {
-                        bvm.CloseRequest += ((s, e) =>
+                        bvm.CloseRequest += ((EventHandler<CloseRequestEventArgs>)((s, e) =>
                         {
                             try
                             {
@@ -171,29 +171,32 @@ namespace Cinch
                             {
                                 win.Close();
                             }
-                        });
+                        })).MakeWeak(eh => bvm.CloseRequest -= eh);
+
+
                     }
                     else
                     {
-                        bvm.CloseRequest += ((s, e) => win.Close());
+                        bvm.CloseRequest += ((EventHandler<CloseRequestEventArgs>)((s, e) => win.Close()))
+                                .MakeWeak(eh => bvm.CloseRequest -= eh); 
                     }
-                    bvm.ActivateRequest += ((s, e) => win.Activate());
+                    bvm.ActivateRequest += ((EventHandler<EventArgs>)((s, e) => win.Activate()))
+                        .MakeWeak(eh => bvm.ActivateRequest -= eh); 
                 }
             }
 
-            if (completedProc != null)
+            win.Closed += (s, e) =>
             {
-                win.Closed +=
-                    (s, e) =>
-                        completedProc
-                        (this, new UICompletedEventArgs
-                        {
-                            State = dataContext,
-                            Result = (isModal) ? win.DialogResult : null
-                        }
-                        );
+                if (completedProc != null)
+                {
+                    completedProc(this, new UICompletedEventArgs()
+                    {
+                        State = dataContext,
+                        Result = (isModal) ? win.DialogResult : null
+                    });
+                }
+            };
 
-            }
 
             return win;
         }

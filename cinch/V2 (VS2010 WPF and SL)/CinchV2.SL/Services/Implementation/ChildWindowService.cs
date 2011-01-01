@@ -5,6 +5,7 @@ using System.ComponentModel.Composition;
 using System.Windows.Controls;
 using System.Threading;
 using MEFedMVVM.ViewModelLocator;
+using System.ComponentModel;
 
 namespace Cinch
 {
@@ -120,6 +121,10 @@ namespace Cinch
         #endregion
 
         #region Private Methods
+
+
+
+
         /// <summary>
         /// This creates the SL ChildWindow from a key.
         /// </summary>
@@ -150,14 +155,11 @@ namespace Cinch
                 ((IViewStatusAwareInjectionAware)dataContext).InitialiseViewAwareService(viewAwareStatus);
             }
 
-            win.DataContext = dataContext;
 
-            if (dataContext != null)
-            {
-                var bvm = dataContext as ViewModelBase;
-                if (bvm != null)
-                {
-                    bvm.CloseRequest += ((s, e) =>
+            win.DataContext = dataContext;
+            ViewModelBase bvm=null;
+
+            EventHandler<CloseRequestEventArgs> handler = ((s, e) =>
                     {
                         try
                         {
@@ -169,20 +171,33 @@ namespace Cinch
                         }
                     });
 
+
+            if (dataContext != null)
+            {
+                bvm = dataContext as ViewModelBase;
+                if (bvm != null)
+                {
+                    bvm.CloseRequest += handler;
+
                 }
             }
 
-            if (completedProc != null)
-            {
-                win.Closing += (s, e) =>
-                        completedProc(this, new UICompletedEventArgs()
-                            {
-                                State = dataContext,
-                                Result = win.DialogResult
-                            }
-                        );
 
-            }
+            win.Closed += (s, e) =>
+            {
+                bvm.CloseRequest -= handler;
+
+                if (completedProc != null)
+                {
+                    completedProc(this, new UICompletedEventArgs()
+                    {
+                        State = dataContext,
+                        Result = win.DialogResult
+                    });
+
+                    GC.Collect();
+                }
+            };
 
             return win;
         }

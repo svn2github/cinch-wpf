@@ -164,6 +164,9 @@
     <Compile Include="..\CinchV2\ViewModels\EditableValidatingViewModelBase.cs">
       <Link>ViewModels\EditableValidatingViewModelBase.cs</Link>
     </Compile>
+    <Compile Include="..\CinchV2\ViewModels\ICinchDisposable.cs">
+      <Link>ViewModels\ICinchDisposable.cs</Link>
+    </Compile>
     <Compile Include="..\CinchV2\ViewModels\IViewStatusAwareInjectionAware.cs">
       <Link>ViewModels\IViewStatusAwareInjectionAware.cs</Link>
     </Compile>

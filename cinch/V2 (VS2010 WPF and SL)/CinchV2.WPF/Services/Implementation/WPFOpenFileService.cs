@@ -48,16 +48,12 @@ namespace Cinch
 
         /// <summary>
         /// FileName : Simply use embedded OpenFileDialog.FileName
-        /// But DO NOT allow a Set as it will ONLY come from user
-        /// picking a file
+        /// Also allow users to set new FileName, which sets OpenFileDialog.FileName
         /// </summary>
         public string FileName
         {
             get { return ofd.FileName; }
-            set 
-            {  
-                //Do nothing
-            }
+            set { ofd.FileName = value; }
         }
 
         /// <summary>

@@ -100,6 +100,9 @@ namespace Cinch
             WorkspaceData viewNavData = (WorkspaceData)e.NewValue;
 
             var theView = ViewResolver.CreateView(viewNavData.ViewLookupKey);
+            viewNavData.ViewModelInstance = ((FrameworkElement)theView).DataContext;
+
+
             IWorkSpaceAware dataAwareView = theView as IWorkSpaceAware;
             if (dataAwareView == null)
             {

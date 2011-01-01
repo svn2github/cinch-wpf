@@ -107,6 +107,7 @@
     <Compile Include="Validation\RegexRule.cs" />
     <Compile Include="Validation\Rule.cs" />
     <Compile Include="Validation\SimpleRule.cs" />
+    <Compile Include="ViewModels\ICinchDisposable.cs" />
     <Compile Include="ViewModels\IViewStatusAwareInjectionAware.cs" />
     <Compile Include="ViewModels\EditableValidatingViewModelBase.cs" />
     <Compile Include="Workspaces\PopupNameToViewLookupKeyMetadataAttribute.cs" />

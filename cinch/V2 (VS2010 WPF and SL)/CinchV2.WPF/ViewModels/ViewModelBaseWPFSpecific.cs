@@ -32,7 +32,7 @@ namespace Cinch
             //This is used for popup control only
             CloseActivePopUpCommand = new SimpleCommand<object, object>(x => true, x => ExecuteCloseActivePopupCommand(x));
             CloseWorkSpaceCommand = new SimpleCommand<object, object>(x => true, x => ExecuteCloseWorkSpaceCommand());
-  
+
             Mediator.Instance.RegisterHandler<WorkspaceData>("RemoveWorkspaceItem", OnNotifyDataRecieved);
             collectionView = CollectionViewSource.GetDefaultView(this.Views);
 

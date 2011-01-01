@@ -76,6 +76,13 @@ namespace Cinch
         #endregion
 
         #region Public Properties
+
+        /// <summary>
+        /// The ViewModel that was created for this WorkSpaceData object, if it was used to create a View
+        /// </summary>
+        public Object ViewModelInstance { get; set; }
+
+
         /// <summary>
         /// CloseActivePopUpCommand : Close popup command
         /// </summary>

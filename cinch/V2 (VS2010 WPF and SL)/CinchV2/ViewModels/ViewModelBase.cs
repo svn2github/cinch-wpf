@@ -13,7 +13,7 @@ namespace Cinch
     /// <summary>
     /// This is a common partial section of a ViewModelBase class that is used by WPF/SL
     /// </summary>
-    public abstract partial class ViewModelBase  : INotifyPropertyChanged, IDisposable, IParentablePropertyExposer
+    public abstract partial class ViewModelBase : INotifyPropertyChanged, ICinchDisposable, IParentablePropertyExposer
     {
         #region Data
         private Boolean isCloseable = true;
@@ -74,7 +74,7 @@ namespace Cinch
         /// Raised when this workspace should be removed from the UI.
         /// </summary>
         public event EventHandler<EventArgs> CloseWorkSpace;
-        #endregion 
+        #endregion
 
         #region Private Methods
 
@@ -219,11 +219,13 @@ namespace Cinch
 
         #endregion
 
-        #region IDisposable Members
+        #region ICinchDisposable Members
 
         /// <summary>
-        /// Invoked when this object is being removed from the application
-        /// and will be subject to garbage collection.
+        /// This provides a hook for user code to call ICinchDisposable.Dispose()
+        /// to clean up the ViewModelBase and also allows the virtual void OnDispose()
+        /// method to be called, which will run any specific clean up code the user
+        /// may have added in an override of the virtual void OnDispose() method
         /// </summary>
         public void Dispose()
         {
@@ -253,7 +255,7 @@ namespace Cinch
         }
 #endif
 
-        #endregion // IDisposable Members
+        #endregion // ICinchDisposable Members
 
     }
 }

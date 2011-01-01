@@ -50,16 +50,12 @@ namespace Cinch
 
         /// <summary>
         /// FileName : Simply use embedded SaveFileDialog.FileName
-        /// But DO NOT allow a Set as it will ONLY come from user
-        /// picking a file
+        /// Also allow users to set new FileName, which sets SaveFileDialog.FileName
         /// </summary>
         public string FileName
         {
             get { return sfd.FileName; }
-            set 
-            {  
-                //Do nothing
-            }
+            set { sfd.FileName = value; }
         }
 
         /// <summary>
