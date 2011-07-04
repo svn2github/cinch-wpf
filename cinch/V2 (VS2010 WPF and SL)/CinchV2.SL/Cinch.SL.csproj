@@ -46,8 +46,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MEFedMVVM.SL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f93dadc99e0a0572, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="MEFedMVVM.SL">
       <HintPath>Lib\MEFedMVVM.SL.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -73,6 +72,9 @@
     </Compile>
     <Compile Include="..\CinchV2\BusinessObjects\DataWrapper.cs">
       <Link>BusinessObjects\DataWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\CinchV2\BusinessObjects\Validator.cs">
+      <Link>BusinessObjects\Validator.cs</Link>
     </Compile>
     <Compile Include="..\CinchV2\Commands\EventToCommandArgs.cs">
       <Link>Commands\EventToCommandArgs.cs</Link>
@@ -151,6 +153,12 @@
     </Compile>
     <Compile Include="..\CinchV2\Utilities\PropertyObserver.cs">
       <Link>Utilities\PropertyObserver.cs</Link>
+    </Compile>
+    <Compile Include="..\CinchV2\Utilities\WeakDelegateReference.cs">
+      <Link>Utilities\WeakDelegateReference.cs</Link>
+    </Compile>
+    <Compile Include="..\CinchV2\Validation\GenericRule.cs">
+      <Link>Validation\GenericRule.cs</Link>
     </Compile>
     <Compile Include="..\CinchV2\Validation\RegexRule.cs">
       <Link>Validation\RegexRule.cs</Link>

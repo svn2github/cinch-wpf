@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\Bases\EditableValidatingObject.cs" />
+    <Compile Include="BusinessObjects\Validator.cs" />
     <Compile Include="Events\WeakEvents\WeakEvent.cs" />
     <Compile Include="Events\WeakEvents\WeakEventAction.cs" />
     <Compile Include="Events\WeakEvents\WeakEventHelper.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Services\Interfaces\IVSM.cs" />
     <Compile Include="Services\Test Implementations\TestVSMService.cs" />
     <Compile Include="Threading\BackgroundTaskManager.cs" />
+    <Compile Include="Threading\Controls\AsyncHost.cs" />
     <Compile Include="Threading\ISynchronizationContext.cs" />
     <Compile Include="Threading\UISynchronizationContext.cs" />
     <Compile Include="UI Misc\CinchMenuItem.cs" />
@@ -104,6 +106,8 @@
     <Compile Include="Services\Interfaces\IViewAwareStatus.cs" />
     <Compile Include="Services\Test Implementations\TestViewAwareStatus.cs" />
     <Compile Include="Utilities\PropertyObserver.cs" />
+    <Compile Include="Utilities\WeakDelegateReference.cs" />
+    <Compile Include="Validation\GenericRule.cs" />
     <Compile Include="Validation\RegexRule.cs" />
     <Compile Include="Validation\Rule.cs" />
     <Compile Include="Validation\SimpleRule.cs" />
@@ -124,7 +128,6 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="Events\WeakEvents\WeakEvent Copyrights.txt" />
     <Content Include="Lib\MEFedMVVM.dll" />

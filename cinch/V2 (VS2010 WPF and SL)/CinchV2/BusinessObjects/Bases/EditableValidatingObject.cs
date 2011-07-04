@@ -87,10 +87,11 @@ namespace Cinch
         /// <returns>Clone of current object</returns>
         protected virtual Dictionary<string, object> GetFieldValues()
         {
-            return GetType().GetFields(BindingFlags.Public | 
-                BindingFlags.NonPublic | BindingFlags.Instance).Select(
-                fi => new { Key = fi.Name, Value = fi.GetValue(this) })
-                    .ToDictionary(k => k.Key, k => k.Value);
+            return GetType().GetProperties(BindingFlags.Public |
+            BindingFlags.NonPublic | BindingFlags.Instance)
+                .Where(pi => pi.CanRead && pi.GetIndexParameters().Length == 0)
+                .Select(pi => new { Key = pi.Name, Value = pi.GetValue(this, null) })
+                .ToDictionary(k => k.Key, k => k.Value);
         }
 
         /// <summary>
@@ -99,18 +100,20 @@ namespace Cinch
         /// <param name="fieldValues">Object to restore state from</param>
         protected virtual void RestoreFieldValues(Dictionary<string, object> fieldValues)
         {
-            foreach (FieldInfo fi in GetType().GetFields(
-                BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
+            foreach (PropertyInfo pi in GetType().GetProperties(
+            BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance)
+                .Where(pi => pi.CanWrite && pi.GetIndexParameters().Length == 0))
             {
                 object value;
-                if (fieldValues.TryGetValue(fi.Name, out value))
-                    fi.SetValue(this, value);
+                if (fieldValues.TryGetValue(pi.Name, out value))
+                    pi.SetValue(this, value, null);
                 else
-                {   
-                    Debug.WriteLine("Failed to restore field " + 
-                        fi.Name + " from cloned values, field not found in Dictionary.");
+                {
+                    Debug.WriteLine("Failed to restore property " +
+                    pi.Name + " from cloned values, property not found in Dictionary.");
                 }
             }
+
         }
         #endregion
     }

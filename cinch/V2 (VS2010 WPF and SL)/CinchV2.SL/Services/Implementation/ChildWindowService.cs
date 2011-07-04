@@ -185,7 +185,9 @@ namespace Cinch
 
             win.Closed += (s, e) =>
             {
+
                 bvm.CloseRequest -= handler;
+                win.DataContext = dataContext;
 
                 if (completedProc != null)
                 {

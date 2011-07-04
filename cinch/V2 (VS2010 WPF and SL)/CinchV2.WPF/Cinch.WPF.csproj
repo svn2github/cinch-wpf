@@ -69,6 +69,9 @@
     <Compile Include="..\CinchV2\BusinessObjects\DataWrapper.cs">
       <Link>BusinessObjects\DataWrapper.cs</Link>
     </Compile>
+    <Compile Include="..\CinchV2\BusinessObjects\Validator.cs">
+      <Link>BusinessObjects\Validator.cs</Link>
+    </Compile>
     <Compile Include="..\CinchV2\Commands\EventToCommandArgs.cs">
       <Link>Commands\EventToCommandArgs.cs</Link>
     </Compile>
@@ -129,6 +132,9 @@
     <Compile Include="..\CinchV2\Threading\BackgroundTaskManager.cs">
       <Link>Threading\BackgroundTaskManager.cs</Link>
     </Compile>
+    <Compile Include="..\CinchV2\Threading\Controls\AsyncHost.cs">
+      <Link>Threading\Controls\AsyncHost.cs</Link>
+    </Compile>
     <Compile Include="..\CinchV2\Threading\ISynchronizationContext.cs">
       <Link>Threading\ISynchronizationContext.cs</Link>
     </Compile>
@@ -146,6 +152,12 @@
     </Compile>
     <Compile Include="..\CinchV2\Utilities\PropertyObserver.cs">
       <Link>Utilities\PropertyObserver.cs</Link>
+    </Compile>
+    <Compile Include="..\CinchV2\Utilities\WeakDelegateReference.cs">
+      <Link>Utilities\WeakDelegateReference.cs</Link>
+    </Compile>
+    <Compile Include="..\CinchV2\Validation\GenericRule.cs">
+      <Link>Validation\GenericRule.cs</Link>
     </Compile>
     <Compile Include="..\CinchV2\Validation\RegexRule.cs">
       <Link>Validation\RegexRule.cs</Link>
@@ -214,10 +226,20 @@
     <Compile Include="Services\Test Implementations\TestViewAwareStatusWindow.cs" />
     <Compile Include="Threading\AddRangeObservableCollection.cs" />
     <Compile Include="Threading\ApplicationHelper.cs" />
+    <Compile Include="Threading\Controls\AsyncBusyUserControl.xaml.cs">
+      <DependentUpon>AsyncBusyUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Threading\Controls\AsyncFailedUserControl.xaml.cs">
+      <DependentUpon>AsyncFailedUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Threading\Controls\CircularProgressBar.xaml.cs">
+      <DependentUpon>CircularProgressBar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Threading\DispatcherNotifiedObservableCollection.cs" />
     <Compile Include="Utilities\BindingEvaluator.cs" />
     <Compile Include="Utilities\ObservableDictionary.cs" />
     <Compile Include="Utilities\TreeHelper.cs" />
+    <Compile Include="ViewModels\IViewStatusAwareWindowInjectionAware.cs" />
     <Compile Include="Workspaces\PopupResolver.cs" />
     <Compile Include="ViewModels\ViewModelBaseWPFSpecific.cs" />
     <Compile Include="Workspaces\CinchBootStrapper.cs" />
@@ -246,7 +268,20 @@
     <Content Include="Lib\Microsoft.Expression.Interactions.dll" />
     <Content Include="Lib\System.Windows.Interactivity.dll" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Page Include="Threading\Controls\AsyncBusyUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Threading\Controls\AsyncFailedUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Threading\Controls\CircularProgressBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -148,6 +148,15 @@ namespace Cinch
                 ((IViewStatusAwareInjectionAware)dataContext).InitialiseViewAwareService(viewAwareStatus);
             }
 
+            if (dataContext is IViewStatusAwareWindowInjectionAware)
+            {
+                IViewAwareStatusWindow viewAwareStatusWindow =
+                    ViewModelRepository.Instance.Resolver.Container.GetExport<IViewAwareStatusWindow>().Value;
+                viewAwareStatusWindow.InjectContext((FrameworkElement)win);
+                ((IViewStatusAwareWindowInjectionAware)dataContext).InitialiseViewAwareWindowService(viewAwareStatusWindow);
+            }
+
+
             win.DataContext = dataContext;
 
 
@@ -187,6 +196,7 @@ namespace Cinch
 
             win.Closed += (s, e) =>
             {
+                win.DataContext = null;
                 if (completedProc != null)
                 {
                     completedProc(this, new UICompletedEventArgs()
@@ -196,6 +206,7 @@ namespace Cinch
                     });
                 }
             };
+
 
 
             return win;
