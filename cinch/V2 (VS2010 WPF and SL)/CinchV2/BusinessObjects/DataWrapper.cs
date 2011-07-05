@@ -43,8 +43,6 @@ namespace Cinch
         /// <returns>True if the property has changes since is was put into edit mode</returns>
         public bool HasPropertyChanged(string propertyName)
         {
-#if SILVERLIGHT
-
             string _propertyName = propertyName.ToLower();
 
             if (_savedState == null)
@@ -62,25 +60,12 @@ namespace Cinch
 
             return !saveValue.Equals(currentValue);
 
-#else
-            if (_savedState == null)
-                return false;
 
-            object saveValue;
-            object currentValue;
-            if (!_savedState.TryGetValue(propertyName, out saveValue) ||
-                  !this.GetFieldValues().TryGetValue(propertyName, out currentValue))
-                return false;
-            if (saveValue == null || currentValue == null)
-                return saveValue != currentValue;
-
-            return !saveValue.Equals(currentValue);
-#endif
         }
         #endregion
 
 
-#if SILVERLIGHT
+
         protected override Dictionary<string, object> GetFieldValues()
         {
             Dictionary<string, object> _propertyValues = null;
@@ -110,9 +95,9 @@ namespace Cinch
                 }
             }
 
-            return _propertyValues; 
+            return _propertyValues;
         }
-#endif
+
     }
 
 
