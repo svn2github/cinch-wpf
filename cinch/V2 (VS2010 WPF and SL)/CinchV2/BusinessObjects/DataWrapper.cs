@@ -56,7 +56,16 @@ namespace Cinch
                 return false;
 
             if (saveValue == null || currentValue == null)
-                return saveValue != currentValue;
+            {
+                if (saveValue is string || currentValue is string)
+                {
+                    return (string)(saveValue ?? string.Empty) != (string)(currentValue ?? string.Empty);
+                }
+                else
+                {
+                    return saveValue != currentValue;
+                }
+            }
 
             return !saveValue.Equals(currentValue);
 
