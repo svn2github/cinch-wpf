@@ -163,13 +163,22 @@ namespace Cinch
         private bool NotifyColleagues(object key, object message)
         {
             List<WeakAction> wr;
+            List<WeakAction> wrCopy=new List<WeakAction>();
             lock (_registeredHandlers)
             {
                 if (!_registeredHandlers.TryGetValue(key, out wr))
                     return false;
+                else
+                {
+                    foreach (var weakRe in wr)
+                    {
+                        wrCopy.Add(weakRe);
+                    }
+                }
+
             }
 
-            foreach (var cb in wr)
+            foreach (var cb in wrCopy)
             {
                 Delegate action = cb.GetMethod();
 
