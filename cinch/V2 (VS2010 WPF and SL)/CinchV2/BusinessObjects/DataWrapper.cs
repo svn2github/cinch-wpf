@@ -107,6 +107,25 @@ namespace Cinch
             return _propertyValues;
         }
 
+
+        protected override void RestoreFieldValues(Dictionary<string, object> fieldValues)
+        {
+            foreach (PropertyInfo pi in GetType().GetProperties(
+            BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance)
+                .Where(pi => pi.CanWrite && pi.GetIndexParameters().Length == 0))
+            {
+                object value;
+                if (fieldValues.TryGetValue(pi.Name.ToLower(), out value))
+                    pi.SetValue(this, value, null);
+                else
+                {
+                    Debug.WriteLine("Failed to restore property " +
+                    pi.Name + " from cloned values, property not found in Dictionary.");
+                }
+            }
+
+        }
+
     }
 
 
