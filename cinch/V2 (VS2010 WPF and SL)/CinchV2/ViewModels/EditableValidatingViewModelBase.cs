@@ -47,9 +47,12 @@ namespace Cinch
         /// </summary>
         public void CancelEdit()
         {
-            OnCancelEdit();
-            RestoreFieldValues(_savedState);
-            _savedState = null;
+            if (_savedState != null)
+            {
+                OnCancelEdit();
+                RestoreFieldValues(_savedState);
+                _savedState = null;
+            }
         }
 
         /// <summary>

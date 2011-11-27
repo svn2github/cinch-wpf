@@ -5,6 +5,7 @@ using System.Linq;
 using System.ComponentModel;
 
 using System.Collections.Generic;
+using System.Collections;
 
 namespace Cinch
 {
@@ -94,7 +95,8 @@ namespace Cinch
                 // contained in a parent object.
                 // TODO here figure out how if we get a DataWrapper which is a collection, how to loop through that collection of objects and
                 // set them to edit mode as well.
-                if (_property != null && (_property.PropertyType.BaseType == typeof(ValueType) || _property.PropertyType.BaseType == typeof(object)))
+                if (_property != null && !_property.PropertyType.IsSubclassOf(typeof(IEnumerable)) && 
+                    (_property.PropertyType.BaseType == typeof(ValueType) || _property.PropertyType.IsSubclassOf(typeof(object))))
                 {
                     _propertyValues.Add(_property.Name.ToLower(), _property.GetValue(this, null));
                 }
