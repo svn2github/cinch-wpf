@@ -110,7 +110,7 @@ namespace Cinch
                 throw new ArgumentException("The first delegate parameter must be of type 'object'");
 
             ParameterInfo argsParameter = invoke.GetParameters()[1];
-            if (!argsParameter.ParameterType.IsSubclassOf(typeof(EventArgs)))
+            if (!(typeof(EventArgs).IsAssignableFrom(argsParameter.ParameterType)))
                 throw new ArgumentException("The second delegate parameter must be derived from type 'EventArgs'. Type is " + argsParameter.ParameterType);
 
             if (invoke.ReturnType != typeof(void))

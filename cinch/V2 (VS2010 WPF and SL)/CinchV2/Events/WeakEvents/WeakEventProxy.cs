@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace Cinch
 {
     /// <summary>
+    /// http://www.paulstovell.com/weakevents
+    /// 
     /// An event handler wrapper used to create weak-reference event handlers, 
     /// so that event subscribers can be garbage collected without the event publisher 
     /// interfering. 
@@ -12,91 +16,39 @@ namespace Cinch
     /// <example>
     /// <![CDATA[
     /// 
-    ///        You might have an event that is available like ncc.CollectionChanged
-    /// 
-    ///        //SO DECLARE LISTENERS LIKE
-    ///        private EventHandler<NotifyCollectionChangedEventArgs> 
-    ///         collectionChangeHandler;
-    ///        private WeakEventProxy<NotifyCollectionChangedEventArgs> 
-    ///         weakCollectionChangeListener;
-    ///
-    ///        //THEN WIRE IT UP LIKE
-    ///        if (weakCollectionChangeListener == null)
-    ///        {
-    ///          collectionChangeHandler = OnCollectionChanged;
-    ///          weakCollectionChangeListener = 
-    ///             new WeakEventProxy<NotifyCollectionChangedEventArgs>(
-    ///                 collectionChangeHandler);
-    ///        }
-    ///        ncc.CollectionChanged += weakCollectionChangeListener.Handler;
+    ///        When subscribing to events, instead of writing:
     ///        
-    /// 
-    ///        private void OnCollectionChanged(object sender, 
-    ///         NotifyCollectionChangedEventArgs e)
-    ///        {
-    ///
-    ///        }
+    ///        alarm.Beep += Alarm_Beeped;
+    ///        
+    ///        Just write:
+    ///        
+    ///        alarm.Beeped += new WeakEventHandler<AlarmEventArgs>(Alarm_Beeped).Handler;
     /// ]]>
     /// </example>
-    public class WeakEventProxy<TEventArgs> : IDisposable
-        where TEventArgs : EventArgs
+    [DebuggerNonUserCode]
+    public sealed class WeakEventProxy<TEventArgs> where TEventArgs : EventArgs
     {
-        #region Data
-        private WeakReference callbackReference;
-        private readonly object syncRoot = new object();
-        #endregion
+        private readonly WeakReference _targetReference;
+        private readonly MethodInfo _method;
 
-        #region Ctor
-        /// <summary>
-        /// Initializes a new instance of the <see cref="WeakEventProxy&lt;TEventArgs&gt;"/> class.
-        /// </summary>
-        /// <param name="callback">The callback.</param>
         public WeakEventProxy(EventHandler<TEventArgs> callback)
         {
-            callbackReference = new WeakReference(callback, true);
+            _method = callback.Method;
+            _targetReference = new WeakReference(callback.Target, true);
         }
-        #endregion
 
-        #region Public Methods
-        /// <summary>
-        /// Used as the event handler which should be subscribed to source collections.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        [DebuggerNonUserCode]
         public void Handler(object sender, TEventArgs e)
         {
-            //acquire callback, if any
-            EventHandler<TEventArgs> callback;
-            lock (syncRoot)
+            var target = _targetReference.Target;
+            if (target != null)
             {
-                callback = callbackReference == null ? null : callbackReference.Target as EventHandler<TEventArgs>;
-            }
-
-            if (callback != null)
-            {
-                callback(sender, e);
-            }
-        }
-
-        /// <summary>
-        /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
-        /// </summary>
-        /// <filterpriority>2</filterpriority>
-        public void Dispose()
-        {
-            lock (syncRoot)
-            {
-                GC.SuppressFinalize(this);
-
-                if (callbackReference != null)
+                var callback = (Action<object, TEventArgs>)Delegate.CreateDelegate(typeof(Action<object, TEventArgs>), target, _method, true);
+                if (callback != null)
                 {
-                    //test for null in case the reference was already cleared
-                    callbackReference.Target = null;
+                    callback(sender, e);
                 }
-
-                callbackReference = null;
             }
         }
-        #endregion
     }
 }
